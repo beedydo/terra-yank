@@ -242,7 +242,7 @@ function renderIntegrations() {
                 </div>
                 <div class="field">
                   <label>Repository name</label>
-                  <input id="newRepoName" placeholder="i2cv2-imports" />
+                  <input id="newRepoName" placeholder="terra-yank-imports" />
                 </div>
                 <div class="field action-field">
                   <label>&nbsp;</label>
@@ -769,7 +769,7 @@ function renderExport() {
         </div>
         <div class="field">
           <label>Folder prefix</label>
-          <input id="exportPrefix" value="${escapeHtml(gitlab?.filePrefix || "i2cv2")}" />
+          <input id="exportPrefix" value="${escapeHtml(gitlab?.filePrefix || "terra-yank")}" />
         </div>
       </div>
       <div class="button-row">

@@ -1,7 +1,7 @@
 {
-  "name": "i2cv2",
+  "name": "terra-yank",
   "version": "1.0.0",
-  "description": "I2CV2 helps GCC cloud engineers discover AWS resources that are not managed by Terraform, select resources to bring under IaC, generate/import Terraform, and iteratively refactor the result into a governed GitLab workflow.",
+  "description": "TerraYank helps GCC cloud engineers discover AWS resources that are not managed by Terraform, select resources to bring under IaC, generate/import Terraform, and iteratively refactor the result into a governed GitLab workflow.",
   "main": "dist/server.js",
   "scripts": {
     "build": "mkdir -p dist && cp -r src/* dist/",

@@ -14,7 +14,7 @@ process.on("unhandledRejection", (err) => {
   await initDb();
   const app = await createApp();
   const server = app.listen(port, () => {
-    console.log(`i2cv2 server listening on port ${port}`);
+    console.log(`terra-yank server listening on port ${port}`);
   });
   server.on("error", (err) => {
     console.error("Server error:", err);

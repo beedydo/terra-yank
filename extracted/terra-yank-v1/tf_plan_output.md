@@ -28122,7 +28122,7 @@ Plan: 586 to import, 0 to add, 23 to change, 0 to destroy.
 Error: reading SSM Parameter (aap/postgres/componenet-tables-pw): operation error SSM: GetParameter, https response error StatusCode: 400, RequestID: 227be310-625c-4d5e-a5cc-e963cfffe9fc, api error ValidationException: Parameter name: can't be prefixed with "ssm" (case-insensitive). If formed as a path, it can consist of sub-paths divided by slash symbol; each sub-path can be formed as a mix of letters, numbers and the following 3 symbols .-_
 
 
-Error: reading KMS Key (120e3596-78ef-4776-8a9f-b5d97209eb5a): reading KMS Key (120e3596-78ef-4776-8a9f-b5d97209eb5a) rotation enabled: operation error KMS: GetKeyRotationStatus, https response error StatusCode: 400, RequestID: 945e73c0-cad8-475f-9890-0b2a9104e889, api error AccessDeniedException: User: arn:aws:iam::396913734272:user/i2cv2-readonly is not authorized to perform: kms:GetKeyRotationStatus on resource: arn:aws:kms:ap-southeast-1:396913734272:key/120e3596-78ef-4776-8a9f-b5d97209eb5a because no resource-based policy allows the kms:GetKeyRotationStatus action
+Error: reading KMS Key (120e3596-78ef-4776-8a9f-b5d97209eb5a): reading KMS Key (120e3596-78ef-4776-8a9f-b5d97209eb5a) rotation enabled: operation error KMS: GetKeyRotationStatus, https response error StatusCode: 400, RequestID: 945e73c0-cad8-475f-9890-0b2a9104e889, api error AccessDeniedException: User: arn:aws:iam::396913734272:user/terra-yank-readonly is not authorized to perform: kms:GetKeyRotationStatus on resource: arn:aws:kms:ap-southeast-1:396913734272:key/120e3596-78ef-4776-8a9f-b5d97209eb5a because no resource-based policy allows the kms:GetKeyRotationStatus action
 
 
 Error: Cannot import non-existent remote object

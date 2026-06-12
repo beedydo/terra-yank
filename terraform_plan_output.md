@@ -32963,7 +32963,7 @@ can be imported; check that the id is correct and that it is associated with
 the provider's configured region or endpoint, or use "terraform apply" to
 create a new remote object for this resource.
 
-Error: reading GuardDuty Detector (6ac9e919acdbfd96662cc9085201d459/threatintelset/aec1a0dfd6ad18daf711752445a8b5d6): operation error GuardDuty: GetDetector, https response error StatusCode: 403, RequestID: adcdab23-3587-4199-8cd5-29d0e340b790, api error AccessDeniedException: User: arn:aws:iam::396913734272:user/i2cv2-readonly is not authorized to perform: guardduty:GetDetector on resource: arn:aws:guardduty:ap-southeast-1:396913734272:detector/6ac9e919acdbfd96662cc9085201d459/threatintelset/aec1a0dfd6ad18daf711752445a8b5d6 because no identity-based policy allows the guardduty:GetDetector action
+Error: reading GuardDuty Detector (6ac9e919acdbfd96662cc9085201d459/threatintelset/aec1a0dfd6ad18daf711752445a8b5d6): operation error GuardDuty: GetDetector, https response error StatusCode: 403, RequestID: adcdab23-3587-4199-8cd5-29d0e340b790, api error AccessDeniedException: User: arn:aws:iam::396913734272:user/terra-yank-readonly is not authorized to perform: guardduty:GetDetector on resource: arn:aws:guardduty:ap-southeast-1:396913734272:detector/6ac9e919acdbfd96662cc9085201d459/threatintelset/aec1a0dfd6ad18daf711752445a8b5d6 because no identity-based policy allows the guardduty:GetDetector action
 
 
 Error: Cannot import non-existent remote object
@@ -32993,7 +32993,7 @@ can be imported; check that the id is correct and that it is associated with
 the provider's configured region or endpoint, or use "terraform apply" to
 create a new remote object for this resource.
 
-Error: reading Secrets Manager Secret (arn:aws:secretsmanager:ap-southeast-1:396913734272:secret:vm-amp-prdizeda-aap-1b-secret-IA4c0t): operation error Secrets Manager: DescribeSecret, https response error StatusCode: 400, RequestID: e7bc393e-54bc-4acc-b672-802a1de00458, api error AccessDeniedException: User: arn:aws:iam::396913734272:user/i2cv2-readonly is not authorized to perform: secretsmanager:DescribeSecret on resource: arn:aws:secretsmanager:ap-southeast-1:396913734272:secret:vm-amp-prdizeda-aap-1b-secret-IA4c0t because no identity-based policy allows the secretsmanager:DescribeSecret action
+Error: reading Secrets Manager Secret (arn:aws:secretsmanager:ap-southeast-1:396913734272:secret:vm-amp-prdizeda-aap-1b-secret-IA4c0t): operation error Secrets Manager: DescribeSecret, https response error StatusCode: 400, RequestID: e7bc393e-54bc-4acc-b672-802a1de00458, api error AccessDeniedException: User: arn:aws:iam::396913734272:user/terra-yank-readonly is not authorized to perform: secretsmanager:DescribeSecret on resource: arn:aws:secretsmanager:ap-southeast-1:396913734272:secret:vm-amp-prdizeda-aap-1b-secret-IA4c0t because no identity-based policy allows the secretsmanager:DescribeSecret action
 
 
 Error: Cannot import non-existent remote object
@@ -33005,13 +33005,13 @@ can be imported; check that the id is correct and that it is associated with
 the provider's configured region or endpoint, or use "terraform apply" to
 create a new remote object for this resource.
 
-Error: reading KMS Key (e4d5f23b-e6c9-4c21-86f8-93d45429c2fc): reading KMS Key (e4d5f23b-e6c9-4c21-86f8-93d45429c2fc): operation error KMS: DescribeKey, https response error StatusCode: 400, RequestID: b96a02fb-1e1c-4846-9fe9-725bad37186f, api error AccessDeniedException: User: arn:aws:iam::396913734272:user/i2cv2-readonly is not authorized to perform: kms:DescribeKey on resource: arn:aws:kms:ap-southeast-1:396913734272:key/e4d5f23b-e6c9-4c21-86f8-93d45429c2fc because no identity-based policy allows the kms:DescribeKey action
+Error: reading KMS Key (e4d5f23b-e6c9-4c21-86f8-93d45429c2fc): reading KMS Key (e4d5f23b-e6c9-4c21-86f8-93d45429c2fc): operation error KMS: DescribeKey, https response error StatusCode: 400, RequestID: b96a02fb-1e1c-4846-9fe9-725bad37186f, api error AccessDeniedException: User: arn:aws:iam::396913734272:user/terra-yank-readonly is not authorized to perform: kms:DescribeKey on resource: arn:aws:kms:ap-southeast-1:396913734272:key/e4d5f23b-e6c9-4c21-86f8-93d45429c2fc because no identity-based policy allows the kms:DescribeKey action
 
 
-Error: reading S3 Bucket (amp-s3-logging) policy: operation error S3: GetBucketPolicy, https response error StatusCode: 403, RequestID: TJ4NKZWN6HRN43XZ, HostID: j63UxoetzTEgaSvCBeMjgBZKKu9DoFturf+BMCP02kQzqsFNI2YhzrCBtUSjhUQs61iemVeThNE+FfdFs0ToMPXoFpMrrHFB, api error AccessDenied: User: arn:aws:iam::396913734272:user/i2cv2-readonly is not authorized to perform: s3:GetBucketPolicy on resource: "arn:aws:s3:::amp-s3-logging" because no identity-based policy allows the s3:GetBucketPolicy action
+Error: reading S3 Bucket (amp-s3-logging) policy: operation error S3: GetBucketPolicy, https response error StatusCode: 403, RequestID: TJ4NKZWN6HRN43XZ, HostID: j63UxoetzTEgaSvCBeMjgBZKKu9DoFturf+BMCP02kQzqsFNI2YhzrCBtUSjhUQs61iemVeThNE+FfdFs0ToMPXoFpMrrHFB, api error AccessDenied: User: arn:aws:iam::396913734272:user/terra-yank-readonly is not authorized to perform: s3:GetBucketPolicy on resource: "arn:aws:s3:::amp-s3-logging" because no identity-based policy allows the s3:GetBucketPolicy action
 
 
-Error: listing tags for RDS (Relational Database) DB Option Group (arn:aws:rds:ap-southeast-1:396913734272:og:default:postgres-16): operation error RDS: ListTagsForResource, https response error StatusCode: 403, RequestID: 50949e20-3c0d-41c8-84ca-9b921e72d2df, api error AccessDenied: User: arn:aws:iam::396913734272:user/i2cv2-readonly is not authorized to perform: rds:ListTagsForResource on resource: arn:aws:rds:ap-southeast-1:396913734272:og:default:postgres-16 because no identity-based policy allows the rds:ListTagsForResource action
+Error: listing tags for RDS (Relational Database) DB Option Group (arn:aws:rds:ap-southeast-1:396913734272:og:default:postgres-16): operation error RDS: ListTagsForResource, https response error StatusCode: 403, RequestID: 50949e20-3c0d-41c8-84ca-9b921e72d2df, api error AccessDenied: User: arn:aws:iam::396913734272:user/terra-yank-readonly is not authorized to perform: rds:ListTagsForResource on resource: arn:aws:rds:ap-southeast-1:396913734272:og:default:postgres-16 because no identity-based policy allows the rds:ListTagsForResource action
 
 
 Error: Cannot import non-existent remote object
@@ -33170,7 +33170,7 @@ can be imported; check that the id is correct and that it is associated with
 the provider's configured region or endpoint, or use "terraform apply" to
 create a new remote object for this resource.
 
-Error: reading Backup Plan (f28a8b95-929b-4c4a-bea8-44389e2d0221): operation error Backup: GetBackupPlan, https response error StatusCode: 403, RequestID: ece2dec3-0209-4a87-8c43-941ebae72b6b, api error AccessDeniedException: User: arn:aws:iam::396913734272:user/i2cv2-readonly is not authorized to perform: backup:GetBackupPlan on resource: arn:aws:backup:ap-southeast-1:396913734272:backup-plan:f28a8b95-929b-4c4a-bea8-44389e2d0221 because no identity-based policy allows the backup:GetBackupPlan action
+Error: reading Backup Plan (f28a8b95-929b-4c4a-bea8-44389e2d0221): operation error Backup: GetBackupPlan, https response error StatusCode: 403, RequestID: ece2dec3-0209-4a87-8c43-941ebae72b6b, api error AccessDeniedException: User: arn:aws:iam::396913734272:user/terra-yank-readonly is not authorized to perform: backup:GetBackupPlan on resource: arn:aws:backup:ap-southeast-1:396913734272:backup-plan:f28a8b95-929b-4c4a-bea8-44389e2d0221 because no identity-based policy allows the backup:GetBackupPlan action
 
 
 Error: Cannot import non-existent remote object
@@ -33191,7 +33191,7 @@ can be imported; check that the id is correct and that it is associated with
 the provider's configured region or endpoint, or use "terraform apply" to
 create a new remote object for this resource.
 
-Error: reading SSM Parameter (aap/postgres/componenet-tables-pw): operation error SSM: GetParameter, https response error StatusCode: 400, RequestID: 3a7098b9-3f69-49c4-a6b9-06b93f8ddfe5, api error AccessDeniedException: User: arn:aws:iam::396913734272:user/i2cv2-readonly is not authorized to perform: ssm:GetParameter on resource: arn:aws:ssm:ap-southeast-1:396913734272:* because no identity-based policy allows the ssm:GetParameter action
+Error: reading SSM Parameter (aap/postgres/componenet-tables-pw): operation error SSM: GetParameter, https response error StatusCode: 400, RequestID: 3a7098b9-3f69-49c4-a6b9-06b93f8ddfe5, api error AccessDeniedException: User: arn:aws:iam::396913734272:user/terra-yank-readonly is not authorized to perform: ssm:GetParameter on resource: arn:aws:ssm:ap-southeast-1:396913734272:* because no identity-based policy allows the ssm:GetParameter action
 
 
 Error: Cannot import non-existent remote object
@@ -33203,7 +33203,7 @@ can be imported; check that the id is correct and that it is associated with
 the provider's configured region or endpoint, or use "terraform apply" to
 create a new remote object for this resource.
 
-Error: reading ACM Certificate (arn:aws:acm:ap-southeast-1:396913734272:certificate/1736aac9-5f35-4ff1-960a-9cbcbdba34f2): operation error ACM: DescribeCertificate, https response error StatusCode: 400, RequestID: 6ba65d8c-e69a-46fa-8c53-0be164416de2, api error AccessDeniedException: User: arn:aws:iam::396913734272:user/i2cv2-readonly is not authorized to perform: acm:DescribeCertificate on resource: arn:aws:acm:ap-southeast-1:396913734272:certificate/1736aac9-5f35-4ff1-960a-9cbcbdba34f2 because no identity-based policy allows the acm:DescribeCertificate action
+Error: reading ACM Certificate (arn:aws:acm:ap-southeast-1:396913734272:certificate/1736aac9-5f35-4ff1-960a-9cbcbdba34f2): operation error ACM: DescribeCertificate, https response error StatusCode: 400, RequestID: 6ba65d8c-e69a-46fa-8c53-0be164416de2, api error AccessDeniedException: User: arn:aws:iam::396913734272:user/terra-yank-readonly is not authorized to perform: acm:DescribeCertificate on resource: arn:aws:acm:ap-southeast-1:396913734272:certificate/1736aac9-5f35-4ff1-960a-9cbcbdba34f2 because no identity-based policy allows the acm:DescribeCertificate action
 
 
 Error: Cannot import non-existent remote object
@@ -33233,7 +33233,7 @@ can be imported; check that the id is correct and that it is associated with
 the provider's configured region or endpoint, or use "terraform apply" to
 create a new remote object for this resource.
 
-Error: reading Secrets Manager Secret (arn:aws:secretsmanager:ap-southeast-1:396913734272:secret:vm-amp-prdizgw-aap-1a-secret-37mFUG): operation error Secrets Manager: DescribeSecret, https response error StatusCode: 400, RequestID: 93c7c019-0b53-4fb5-94a1-7f319be2691b, api error AccessDeniedException: User: arn:aws:iam::396913734272:user/i2cv2-readonly is not authorized to perform: secretsmanager:DescribeSecret on resource: arn:aws:secretsmanager:ap-southeast-1:396913734272:secret:vm-amp-prdizgw-aap-1a-secret-37mFUG because no identity-based policy allows the secretsmanager:DescribeSecret action
+Error: reading Secrets Manager Secret (arn:aws:secretsmanager:ap-southeast-1:396913734272:secret:vm-amp-prdizgw-aap-1a-secret-37mFUG): operation error Secrets Manager: DescribeSecret, https response error StatusCode: 400, RequestID: 93c7c019-0b53-4fb5-94a1-7f319be2691b, api error AccessDeniedException: User: arn:aws:iam::396913734272:user/terra-yank-readonly is not authorized to perform: secretsmanager:DescribeSecret on resource: arn:aws:secretsmanager:ap-southeast-1:396913734272:secret:vm-amp-prdizgw-aap-1a-secret-37mFUG because no identity-based policy allows the secretsmanager:DescribeSecret action
 
 
 Error: Cannot import non-existent remote object
@@ -33263,7 +33263,7 @@ can be imported; check that the id is correct and that it is associated with
 the provider's configured region or endpoint, or use "terraform apply" to
 create a new remote object for this resource.
 
-Error: reading SSM Association (75116f1f-252b-4dd0-92d5-956c6cf0aec6): operation error SSM: DescribeAssociation, https response error StatusCode: 400, RequestID: 9c27dc11-ffa0-4856-9c95-848bd6b7bdd4, api error AccessDeniedException: User: arn:aws:iam::396913734272:user/i2cv2-readonly is not authorized to perform: ssm:DescribeAssociation on resource: arn:aws:ssm:ap-southeast-1:396913734272:association/75116f1f-252b-4dd0-92d5-956c6cf0aec6 because no identity-based policy allows the ssm:DescribeAssociation action
+Error: reading SSM Association (75116f1f-252b-4dd0-92d5-956c6cf0aec6): operation error SSM: DescribeAssociation, https response error StatusCode: 400, RequestID: 9c27dc11-ffa0-4856-9c95-848bd6b7bdd4, api error AccessDeniedException: User: arn:aws:iam::396913734272:user/terra-yank-readonly is not authorized to perform: ssm:DescribeAssociation on resource: arn:aws:ssm:ap-southeast-1:396913734272:association/75116f1f-252b-4dd0-92d5-956c6cf0aec6 because no identity-based policy allows the ssm:DescribeAssociation action
 
 
 Error: Cannot import non-existent remote object
@@ -33302,7 +33302,7 @@ can be imported; check that the id is correct and that it is associated with
 the provider's configured region or endpoint, or use "terraform apply" to
 create a new remote object for this resource.
 
-Error: reading S3 Bucket (ansible-hub-396913734272) policy: operation error S3: GetBucketPolicy, https response error StatusCode: 403, RequestID: SS8T2FHMG9Q8TKN4, HostID: rQ8GMw7vr3O54Afp9C+msJRDfn3c3YFulv805TgXwOsBPK9XZ5sOlgllSUDwpsmmH3BJ4GmnHT2lM+oS2Az77RxB27MGCaGF, api error AccessDenied: User: arn:aws:iam::396913734272:user/i2cv2-readonly is not authorized to perform: s3:GetBucketPolicy on resource: "arn:aws:s3:::ansible-hub-396913734272" because no identity-based policy allows the s3:GetBucketPolicy action
+Error: reading S3 Bucket (ansible-hub-396913734272) policy: operation error S3: GetBucketPolicy, https response error StatusCode: 403, RequestID: SS8T2FHMG9Q8TKN4, HostID: rQ8GMw7vr3O54Afp9C+msJRDfn3c3YFulv805TgXwOsBPK9XZ5sOlgllSUDwpsmmH3BJ4GmnHT2lM+oS2Az77RxB27MGCaGF, api error AccessDenied: User: arn:aws:iam::396913734272:user/terra-yank-readonly is not authorized to perform: s3:GetBucketPolicy on resource: "arn:aws:s3:::ansible-hub-396913734272" because no identity-based policy allows the s3:GetBucketPolicy action
 
 
 Error: Cannot import non-existent remote object
@@ -33323,7 +33323,7 @@ can be imported; check that the id is correct and that it is associated with
 the provider's configured region or endpoint, or use "terraform apply" to
 create a new remote object for this resource.
 
-Error: reading Lambda Function (prd-lf-cft-lmp-agent-win-rec-file): operation error Lambda: GetFunction, https response error StatusCode: 403, RequestID: d9c7dd74-9157-4aa1-b61f-80d1ea3a1144, api error AccessDeniedException: User: arn:aws:iam::396913734272:user/i2cv2-readonly is not authorized to perform: lambda:GetFunction on resource: arn:aws:lambda:ap-southeast-1:396913734272:function:prd-lf-cft-lmp-agent-win-rec-file because no identity-based policy allows the lambda:GetFunction action
+Error: reading Lambda Function (prd-lf-cft-lmp-agent-win-rec-file): operation error Lambda: GetFunction, https response error StatusCode: 403, RequestID: d9c7dd74-9157-4aa1-b61f-80d1ea3a1144, api error AccessDeniedException: User: arn:aws:iam::396913734272:user/terra-yank-readonly is not authorized to perform: lambda:GetFunction on resource: arn:aws:lambda:ap-southeast-1:396913734272:function:prd-lf-cft-lmp-agent-win-rec-file because no identity-based policy allows the lambda:GetFunction action
 
 
 Error: Cannot import non-existent remote object
@@ -33335,7 +33335,7 @@ can be imported; check that the id is correct and that it is associated with
 the provider's configured region or endpoint, or use "terraform apply" to
 create a new remote object for this resource.
 
-Error: reading Lambda Function (prd-lf-cft-omp-agent-win-upld-file): operation error Lambda: GetFunction, https response error StatusCode: 403, RequestID: 9c9e3309-818e-4ae4-bd7e-b60826d43c02, api error AccessDeniedException: User: arn:aws:iam::396913734272:user/i2cv2-readonly is not authorized to perform: lambda:GetFunction on resource: arn:aws:lambda:ap-southeast-1:396913734272:function:prd-lf-cft-omp-agent-win-upld-file because no identity-based policy allows the lambda:GetFunction action
+Error: reading Lambda Function (prd-lf-cft-omp-agent-win-upld-file): operation error Lambda: GetFunction, https response error StatusCode: 403, RequestID: 9c9e3309-818e-4ae4-bd7e-b60826d43c02, api error AccessDeniedException: User: arn:aws:iam::396913734272:user/terra-yank-readonly is not authorized to perform: lambda:GetFunction on resource: arn:aws:lambda:ap-southeast-1:396913734272:function:prd-lf-cft-omp-agent-win-upld-file because no identity-based policy allows the lambda:GetFunction action
 
 
 Error: Cannot import non-existent remote object
@@ -33449,7 +33449,7 @@ can be imported; check that the id is correct and that it is associated with
 the provider's configured region or endpoint, or use "terraform apply" to
 create a new remote object for this resource.
 
-Error: reading Lambda Function (prd-lf-cft-lmp-agent-win-upld-file): operation error Lambda: GetFunction, https response error StatusCode: 403, RequestID: 167329f0-2074-45bc-84ed-f35177f96deb, api error AccessDeniedException: User: arn:aws:iam::396913734272:user/i2cv2-readonly is not authorized to perform: lambda:GetFunction on resource: arn:aws:lambda:ap-southeast-1:396913734272:function:prd-lf-cft-lmp-agent-win-upld-file because no identity-based policy allows the lambda:GetFunction action
+Error: reading Lambda Function (prd-lf-cft-lmp-agent-win-upld-file): operation error Lambda: GetFunction, https response error StatusCode: 403, RequestID: 167329f0-2074-45bc-84ed-f35177f96deb, api error AccessDeniedException: User: arn:aws:iam::396913734272:user/terra-yank-readonly is not authorized to perform: lambda:GetFunction on resource: arn:aws:lambda:ap-southeast-1:396913734272:function:prd-lf-cft-lmp-agent-win-upld-file because no identity-based policy allows the lambda:GetFunction action
 
 
 Error: Cannot import non-existent remote object
@@ -33587,7 +33587,7 @@ can be imported; check that the id is correct and that it is associated with
 the provider's configured region or endpoint, or use "terraform apply" to
 create a new remote object for this resource.
 
-Error: reading KMS Key (8d1f9e7c-8dc7-4cbf-80f3-5505be451bf8): reading KMS Key (8d1f9e7c-8dc7-4cbf-80f3-5505be451bf8): operation error KMS: DescribeKey, https response error StatusCode: 400, RequestID: 976f834c-81f7-42bb-b81d-5d6f983a434d, api error AccessDeniedException: User: arn:aws:iam::396913734272:user/i2cv2-readonly is not authorized to perform: kms:DescribeKey on resource: arn:aws:kms:ap-southeast-1:396913734272:key/8d1f9e7c-8dc7-4cbf-80f3-5505be451bf8 because no identity-based policy allows the kms:DescribeKey action
+Error: reading KMS Key (8d1f9e7c-8dc7-4cbf-80f3-5505be451bf8): reading KMS Key (8d1f9e7c-8dc7-4cbf-80f3-5505be451bf8): operation error KMS: DescribeKey, https response error StatusCode: 400, RequestID: 976f834c-81f7-42bb-b81d-5d6f983a434d, api error AccessDeniedException: User: arn:aws:iam::396913734272:user/terra-yank-readonly is not authorized to perform: kms:DescribeKey on resource: arn:aws:kms:ap-southeast-1:396913734272:key/8d1f9e7c-8dc7-4cbf-80f3-5505be451bf8 because no identity-based policy allows the kms:DescribeKey action
 
 
 Error: Cannot import non-existent remote object
@@ -33629,7 +33629,7 @@ can be imported; check that the id is correct and that it is associated with
 the provider's configured region or endpoint, or use "terraform apply" to
 create a new remote object for this resource.
 
-Error: reading EventBridge Rule (DO-NOT-DELETE-AmazonInspectorEc2TagManagedRule): operation error EventBridge: DescribeRule, https response error StatusCode: 400, RequestID: cdba14bc-eedd-4b89-8c92-2928248399e3, api error AccessDeniedException: User: arn:aws:iam::396913734272:user/i2cv2-readonly is not authorized to perform: events:DescribeRule on resource: arn:aws:events:ap-southeast-1:396913734272:rule/DO-NOT-DELETE-AmazonInspectorEc2TagManagedRule because no identity-based policy allows the events:DescribeRule action
+Error: reading EventBridge Rule (DO-NOT-DELETE-AmazonInspectorEc2TagManagedRule): operation error EventBridge: DescribeRule, https response error StatusCode: 400, RequestID: cdba14bc-eedd-4b89-8c92-2928248399e3, api error AccessDeniedException: User: arn:aws:iam::396913734272:user/terra-yank-readonly is not authorized to perform: events:DescribeRule on resource: arn:aws:events:ap-southeast-1:396913734272:rule/DO-NOT-DELETE-AmazonInspectorEc2TagManagedRule because no identity-based policy allows the events:DescribeRule action
 
 
 Error: Cannot import non-existent remote object
@@ -33659,7 +33659,7 @@ can be imported; check that the id is correct and that it is associated with
 the provider's configured region or endpoint, or use "terraform apply" to
 create a new remote object for this resource.
 
-Error: reading S3 Bucket (user-data-396913734272) policy: operation error S3: GetBucketPolicy, https response error StatusCode: 403, RequestID: KJ2DKM27ZA5ZZ3FW, HostID: ymkxgCBupPT0ajNMWnuTiba5VQ4Gvg7UChyhYZ/8uYtaVfzAtWu0dTTD1ejmxxqurqRTW4MbKaVRgwA17HT5pTJHWsF+3YSu, api error AccessDenied: User: arn:aws:iam::396913734272:user/i2cv2-readonly is not authorized to perform: s3:GetBucketPolicy on resource: "arn:aws:s3:::user-data-396913734272" because no identity-based policy allows the s3:GetBucketPolicy action
+Error: reading S3 Bucket (user-data-396913734272) policy: operation error S3: GetBucketPolicy, https response error StatusCode: 403, RequestID: KJ2DKM27ZA5ZZ3FW, HostID: ymkxgCBupPT0ajNMWnuTiba5VQ4Gvg7UChyhYZ/8uYtaVfzAtWu0dTTD1ejmxxqurqRTW4MbKaVRgwA17HT5pTJHWsF+3YSu, api error AccessDenied: User: arn:aws:iam::396913734272:user/terra-yank-readonly is not authorized to perform: s3:GetBucketPolicy on resource: "arn:aws:s3:::user-data-396913734272" because no identity-based policy allows the s3:GetBucketPolicy action
 
 
 Error: Cannot import non-existent remote object
@@ -33716,10 +33716,10 @@ can be imported; check that the id is correct and that it is associated with
 the provider's configured region or endpoint, or use "terraform apply" to
 create a new remote object for this resource.
 
-Error: reading Lambda Function (rach-upload-cft): operation error Lambda: GetFunction, https response error StatusCode: 403, RequestID: 410e0d3d-8530-45d6-80cc-3562ab99f972, api error AccessDeniedException: User: arn:aws:iam::396913734272:user/i2cv2-readonly is not authorized to perform: lambda:GetFunction on resource: arn:aws:lambda:ap-southeast-1:396913734272:function:rach-upload-cft because no identity-based policy allows the lambda:GetFunction action
+Error: reading Lambda Function (rach-upload-cft): operation error Lambda: GetFunction, https response error StatusCode: 403, RequestID: 410e0d3d-8530-45d6-80cc-3562ab99f972, api error AccessDeniedException: User: arn:aws:iam::396913734272:user/terra-yank-readonly is not authorized to perform: lambda:GetFunction on resource: arn:aws:lambda:ap-southeast-1:396913734272:function:rach-upload-cft because no identity-based policy allows the lambda:GetFunction action
 
 
-Error: reading S3 Bucket (testing-rach-receive-lambda) policy: operation error S3: GetBucketPolicy, https response error StatusCode: 403, RequestID: JZVWEQNPTHX4W61D, HostID: PEgeNA1oIOzNuu+6CFMf5S7bE8achTvRZL5q4MJE2MWafa8M+Dx0RywBOu3z5YINu40QD47CoRPuXimWzyr1l1lkcqoWxQlh, api error AccessDenied: User: arn:aws:iam::396913734272:user/i2cv2-readonly is not authorized to perform: s3:GetBucketPolicy on resource: "arn:aws:s3:::testing-rach-receive-lambda" because no identity-based policy allows the s3:GetBucketPolicy action
+Error: reading S3 Bucket (testing-rach-receive-lambda) policy: operation error S3: GetBucketPolicy, https response error StatusCode: 403, RequestID: JZVWEQNPTHX4W61D, HostID: PEgeNA1oIOzNuu+6CFMf5S7bE8achTvRZL5q4MJE2MWafa8M+Dx0RywBOu3z5YINu40QD47CoRPuXimWzyr1l1lkcqoWxQlh, api error AccessDenied: User: arn:aws:iam::396913734272:user/terra-yank-readonly is not authorized to perform: s3:GetBucketPolicy on resource: "arn:aws:s3:::testing-rach-receive-lambda" because no identity-based policy allows the s3:GetBucketPolicy action
 
 
 Error: Cannot import non-existent remote object
@@ -33758,7 +33758,7 @@ can be imported; check that the id is correct and that it is associated with
 the provider's configured region or endpoint, or use "terraform apply" to
 create a new remote object for this resource.
 
-Error: reading Lambda Layer Version (arn:aws:lambda:ap-southeast-1:396913734272:layer:awsconfig-pac-rules-layer:3): operation error Lambda: GetLayerVersion, https response error StatusCode: 403, RequestID: f6786217-3f42-427c-919d-9dbf2dc0231a, api error AccessDeniedException: User: arn:aws:iam::396913734272:user/i2cv2-readonly is not authorized to perform: lambda:GetLayerVersion on resource: arn:aws:lambda:ap-southeast-1:396913734272:layer:awsconfig-pac-rules-layer:3 because no identity-based policy allows the lambda:GetLayerVersion action
+Error: reading Lambda Layer Version (arn:aws:lambda:ap-southeast-1:396913734272:layer:awsconfig-pac-rules-layer:3): operation error Lambda: GetLayerVersion, https response error StatusCode: 403, RequestID: f6786217-3f42-427c-919d-9dbf2dc0231a, api error AccessDeniedException: User: arn:aws:iam::396913734272:user/terra-yank-readonly is not authorized to perform: lambda:GetLayerVersion on resource: arn:aws:lambda:ap-southeast-1:396913734272:layer:awsconfig-pac-rules-layer:3 because no identity-based policy allows the lambda:GetLayerVersion action
 
 
 Error: Cannot import non-existent remote object
@@ -33779,10 +33779,10 @@ pre-existing objects can be imported; check that the id is correct and that
 it is associated with the provider's configured region or endpoint, or use
 "terraform apply" to create a new remote object for this resource.
 
-Error: reading Secrets Manager Secret (arn:aws:secretsmanager:ap-southeast-1:396913734272:secret:prd-sender-id-go4DbO): operation error Secrets Manager: DescribeSecret, https response error StatusCode: 400, RequestID: cb40b6c7-c783-4571-92a7-4096a338dde3, api error AccessDeniedException: User: arn:aws:iam::396913734272:user/i2cv2-readonly is not authorized to perform: secretsmanager:DescribeSecret on resource: arn:aws:secretsmanager:ap-southeast-1:396913734272:secret:prd-sender-id-go4DbO because no identity-based policy allows the secretsmanager:DescribeSecret action
+Error: reading Secrets Manager Secret (arn:aws:secretsmanager:ap-southeast-1:396913734272:secret:prd-sender-id-go4DbO): operation error Secrets Manager: DescribeSecret, https response error StatusCode: 400, RequestID: cb40b6c7-c783-4571-92a7-4096a338dde3, api error AccessDeniedException: User: arn:aws:iam::396913734272:user/terra-yank-readonly is not authorized to perform: secretsmanager:DescribeSecret on resource: arn:aws:secretsmanager:ap-southeast-1:396913734272:secret:prd-sender-id-go4DbO because no identity-based policy allows the secretsmanager:DescribeSecret action
 
 
-Error: reading Lambda Function (DynatraceApiClientFunction-lqm01706-8fb5f9d0): operation error Lambda: GetFunction, https response error StatusCode: 403, RequestID: 3055d704-7e24-4ce2-b844-cf4d97b8de54, api error AccessDeniedException: User: arn:aws:iam::396913734272:user/i2cv2-readonly is not authorized to perform: lambda:GetFunction on resource: arn:aws:lambda:ap-southeast-1:396913734272:function:DynatraceApiClientFunction-lqm01706-8fb5f9d0 because no identity-based policy allows the lambda:GetFunction action
+Error: reading Lambda Function (DynatraceApiClientFunction-lqm01706-8fb5f9d0): operation error Lambda: GetFunction, https response error StatusCode: 403, RequestID: 3055d704-7e24-4ce2-b844-cf4d97b8de54, api error AccessDeniedException: User: arn:aws:iam::396913734272:user/terra-yank-readonly is not authorized to perform: lambda:GetFunction on resource: arn:aws:lambda:ap-southeast-1:396913734272:function:DynatraceApiClientFunction-lqm01706-8fb5f9d0 because no identity-based policy allows the lambda:GetFunction action
 
 
 Error: Cannot import non-existent remote object
@@ -33803,7 +33803,7 @@ can be imported; check that the id is correct and that it is associated with
 the provider's configured region or endpoint, or use "terraform apply" to
 create a new remote object for this resource.
 
-Error: reading ELBv2 Listener (arn:aws:elasticloadbalancing:ap-southeast-1:396913734272:listener/net/sgts-gitlab-dedicated/a2fe57d8082d3068/6b28e1060fee4df7) attributes: operation error Elastic Load Balancing v2: DescribeListenerAttributes, https response error StatusCode: 403, RequestID: 181e741e-f351-49e7-8484-66fbc99e0795, api error AccessDenied: User: arn:aws:iam::396913734272:user/i2cv2-readonly is not authorized to perform: elasticloadbalancing:DescribeListenerAttributes because no identity-based policy allows the elasticloadbalancing:DescribeListenerAttributes action
+Error: reading ELBv2 Listener (arn:aws:elasticloadbalancing:ap-southeast-1:396913734272:listener/net/sgts-gitlab-dedicated/a2fe57d8082d3068/6b28e1060fee4df7) attributes: operation error Elastic Load Balancing v2: DescribeListenerAttributes, https response error StatusCode: 403, RequestID: 181e741e-f351-49e7-8484-66fbc99e0795, api error AccessDenied: User: arn:aws:iam::396913734272:user/terra-yank-readonly is not authorized to perform: elasticloadbalancing:DescribeListenerAttributes because no identity-based policy allows the elasticloadbalancing:DescribeListenerAttributes action
 
 
 Error: Cannot import non-existent remote object
@@ -33824,10 +33824,10 @@ can be imported; check that the id is correct and that it is associated with
 the provider's configured region or endpoint, or use "terraform apply" to
 create a new remote object for this resource.
 
-Error: reading Lambda Function (rach-receive): operation error Lambda: GetFunction, https response error StatusCode: 403, RequestID: 7d6cb4ba-14b0-46f9-b903-9a84a3744c86, api error AccessDeniedException: User: arn:aws:iam::396913734272:user/i2cv2-readonly is not authorized to perform: lambda:GetFunction on resource: arn:aws:lambda:ap-southeast-1:396913734272:function:rach-receive because no identity-based policy allows the lambda:GetFunction action
+Error: reading Lambda Function (rach-receive): operation error Lambda: GetFunction, https response error StatusCode: 403, RequestID: 7d6cb4ba-14b0-46f9-b903-9a84a3744c86, api error AccessDeniedException: User: arn:aws:iam::396913734272:user/terra-yank-readonly is not authorized to perform: lambda:GetFunction on resource: arn:aws:lambda:ap-southeast-1:396913734272:function:rach-receive because no identity-based policy allows the lambda:GetFunction action
 
 
-Error: reading SES Domain Identity (rachel.sng.2021@scis.smu.edu.sg) verification: operation error SES: GetIdentityVerificationAttributes, https response error StatusCode: 403, RequestID: 2142f8d5-fa77-459b-a954-3736addf6076, api error AccessDenied: User: arn:aws:iam::396913734272:user/i2cv2-readonly is not authorized to perform: ses:GetIdentityVerificationAttributes because no identity-based policy allows the ses:GetIdentityVerificationAttributes action
+Error: reading SES Domain Identity (rachel.sng.2021@scis.smu.edu.sg) verification: operation error SES: GetIdentityVerificationAttributes, https response error StatusCode: 403, RequestID: 2142f8d5-fa77-459b-a954-3736addf6076, api error AccessDenied: User: arn:aws:iam::396913734272:user/terra-yank-readonly is not authorized to perform: ses:GetIdentityVerificationAttributes because no identity-based policy allows the ses:GetIdentityVerificationAttributes action
 
 
 Error: Cannot import non-existent remote object
@@ -33857,7 +33857,7 @@ can be imported; check that the id is correct and that it is associated with
 the provider's configured region or endpoint, or use "terraform apply" to
 create a new remote object for this resource.
 
-Error: reading Backup Plan (4ee9dbae-b6c1-4591-9f89-c68796cd60f4): operation error Backup: GetBackupPlan, https response error StatusCode: 403, RequestID: 5eb94a6c-e521-45b6-869c-5c11506b664a, api error AccessDeniedException: User: arn:aws:iam::396913734272:user/i2cv2-readonly is not authorized to perform: backup:GetBackupPlan on resource: arn:aws:backup:ap-southeast-1:396913734272:backup-plan:4ee9dbae-b6c1-4591-9f89-c68796cd60f4 because no identity-based policy allows the backup:GetBackupPlan action
+Error: reading Backup Plan (4ee9dbae-b6c1-4591-9f89-c68796cd60f4): operation error Backup: GetBackupPlan, https response error StatusCode: 403, RequestID: 5eb94a6c-e521-45b6-869c-5c11506b664a, api error AccessDeniedException: User: arn:aws:iam::396913734272:user/terra-yank-readonly is not authorized to perform: backup:GetBackupPlan on resource: arn:aws:backup:ap-southeast-1:396913734272:backup-plan:4ee9dbae-b6c1-4591-9f89-c68796cd60f4 because no identity-based policy allows the backup:GetBackupPlan action
 
 
 Error: Cannot import non-existent remote object
@@ -33878,7 +33878,7 @@ can be imported; check that the id is correct and that it is associated with
 the provider's configured region or endpoint, or use "terraform apply" to
 create a new remote object for this resource.
 
-Error: reading Lambda Function (prd-lf-cft-omp-ag-linux-upld-file): operation error Lambda: GetFunction, https response error StatusCode: 403, RequestID: 56d08443-59a0-4656-b55c-3352e3a69e4c, api error AccessDeniedException: User: arn:aws:iam::396913734272:user/i2cv2-readonly is not authorized to perform: lambda:GetFunction on resource: arn:aws:lambda:ap-southeast-1:396913734272:function:prd-lf-cft-omp-ag-linux-upld-file because no identity-based policy allows the lambda:GetFunction action
+Error: reading Lambda Function (prd-lf-cft-omp-ag-linux-upld-file): operation error Lambda: GetFunction, https response error StatusCode: 403, RequestID: 56d08443-59a0-4656-b55c-3352e3a69e4c, api error AccessDeniedException: User: arn:aws:iam::396913734272:user/terra-yank-readonly is not authorized to perform: lambda:GetFunction on resource: arn:aws:lambda:ap-southeast-1:396913734272:function:prd-lf-cft-omp-ag-linux-upld-file because no identity-based policy allows the lambda:GetFunction action
 
 
 Error: Cannot import non-existent remote object
@@ -33890,7 +33890,7 @@ can be imported; check that the id is correct and that it is associated with
 the provider's configured region or endpoint, or use "terraform apply" to
 create a new remote object for this resource.
 
-Error: reading S3 Bucket (tf-state-bucket-396913734272) policy: operation error S3: GetBucketPolicy, https response error StatusCode: 403, RequestID: SS8Q0S1X46CRK5YN, HostID: JFqHvhVUMa3T4ApSRAvqjjNMLKdamcDGaYhTHro0ezFL9L1nb5bG0GmEceRKRhza3D20srQNcdg=, api error AccessDenied: User: arn:aws:iam::396913734272:user/i2cv2-readonly is not authorized to perform: s3:GetBucketPolicy on resource: "arn:aws:s3:::tf-state-bucket-396913734272" because no identity-based policy allows the s3:GetBucketPolicy action
+Error: reading S3 Bucket (tf-state-bucket-396913734272) policy: operation error S3: GetBucketPolicy, https response error StatusCode: 403, RequestID: SS8Q0S1X46CRK5YN, HostID: JFqHvhVUMa3T4ApSRAvqjjNMLKdamcDGaYhTHro0ezFL9L1nb5bG0GmEceRKRhza3D20srQNcdg=, api error AccessDenied: User: arn:aws:iam::396913734272:user/terra-yank-readonly is not authorized to perform: s3:GetBucketPolicy on resource: "arn:aws:s3:::tf-state-bucket-396913734272" because no identity-based policy allows the s3:GetBucketPolicy action
 
 
 Error: Cannot import non-existent remote object
@@ -33902,7 +33902,7 @@ can be imported; check that the id is correct and that it is associated with
 the provider's configured region or endpoint, or use "terraform apply" to
 create a new remote object for this resource.
 
-Error: reading S3 Bucket (prd-s3-ampft-logging) policy: operation error S3: GetBucketPolicy, https response error StatusCode: 403, RequestID: SS8VNJABEM5NQR5T, HostID: XDcbILbo1MQQvSICuGi1L5+Sym1Exbr5l7X5R82j1wFlcLSLDDC8PguCmL0lQzvniU63W3rhVCtJ8/3wYm4h3dLM2U1oDfm0, api error AccessDenied: User: arn:aws:iam::396913734272:user/i2cv2-readonly is not authorized to perform: s3:GetBucketPolicy on resource: "arn:aws:s3:::prd-s3-ampft-logging" because no identity-based policy allows the s3:GetBucketPolicy action
+Error: reading S3 Bucket (prd-s3-ampft-logging) policy: operation error S3: GetBucketPolicy, https response error StatusCode: 403, RequestID: SS8VNJABEM5NQR5T, HostID: XDcbILbo1MQQvSICuGi1L5+Sym1Exbr5l7X5R82j1wFlcLSLDDC8PguCmL0lQzvniU63W3rhVCtJ8/3wYm4h3dLM2U1oDfm0, api error AccessDenied: User: arn:aws:iam::396913734272:user/terra-yank-readonly is not authorized to perform: s3:GetBucketPolicy on resource: "arn:aws:s3:::prd-s3-ampft-logging" because no identity-based policy allows the s3:GetBucketPolicy action
 
 
 Error: Cannot import non-existent remote object
@@ -33959,10 +33959,10 @@ can be imported; check that the id is correct and that it is associated with
 the provider's configured region or endpoint, or use "terraform apply" to
 create a new remote object for this resource.
 
-Error: reading S3 Bucket (prd-s3-ampft) policy: operation error S3: GetBucketPolicy, https response error StatusCode: 403, RequestID: JZVKTDBJ3V7Y2QKG, HostID: /gJmDq5OhCihQRok6+gR0bIb3tAWy/qGccbx0dU9Lu8uCR3LZZsTKaDQLtxeOFKE8VWoevbUoBwR/FQ6OLMWPEwYE6UoBziF, api error AccessDenied: User: arn:aws:iam::396913734272:user/i2cv2-readonly is not authorized to perform: s3:GetBucketPolicy on resource: "arn:aws:s3:::prd-s3-ampft" because no identity-based policy allows the s3:GetBucketPolicy action
+Error: reading S3 Bucket (prd-s3-ampft) policy: operation error S3: GetBucketPolicy, https response error StatusCode: 403, RequestID: JZVKTDBJ3V7Y2QKG, HostID: /gJmDq5OhCihQRok6+gR0bIb3tAWy/qGccbx0dU9Lu8uCR3LZZsTKaDQLtxeOFKE8VWoevbUoBwR/FQ6OLMWPEwYE6UoBziF, api error AccessDenied: User: arn:aws:iam::396913734272:user/terra-yank-readonly is not authorized to perform: s3:GetBucketPolicy on resource: "arn:aws:s3:::prd-s3-ampft" because no identity-based policy allows the s3:GetBucketPolicy action
 
 
-Error: reading Backup Plan (59b097fb-a7d7-4fc3-ae09-dde847438106): operation error Backup: GetBackupPlan, https response error StatusCode: 403, RequestID: e97d08f7-a8ea-4845-b009-a28a0b512c1f, api error AccessDeniedException: User: arn:aws:iam::396913734272:user/i2cv2-readonly is not authorized to perform: backup:GetBackupPlan on resource: arn:aws:backup:ap-southeast-1:396913734272:backup-plan:59b097fb-a7d7-4fc3-ae09-dde847438106 because no identity-based policy allows the backup:GetBackupPlan action
+Error: reading Backup Plan (59b097fb-a7d7-4fc3-ae09-dde847438106): operation error Backup: GetBackupPlan, https response error StatusCode: 403, RequestID: e97d08f7-a8ea-4845-b009-a28a0b512c1f, api error AccessDeniedException: User: arn:aws:iam::396913734272:user/terra-yank-readonly is not authorized to perform: backup:GetBackupPlan on resource: arn:aws:backup:ap-southeast-1:396913734272:backup-plan:59b097fb-a7d7-4fc3-ae09-dde847438106 because no identity-based policy allows the backup:GetBackupPlan action
 
 
 Error: Cannot import non-existent remote object
@@ -33983,7 +33983,7 @@ can be imported; check that the id is correct and that it is associated with
 the provider's configured region or endpoint, or use "terraform apply" to
 create a new remote object for this resource.
 
-Error: reading Lambda Function (prd-lf-cft-upld-file): operation error Lambda: GetFunction, https response error StatusCode: 403, RequestID: c7f05ef0-6751-4879-9fa1-73c575379326, api error AccessDeniedException: User: arn:aws:iam::396913734272:user/i2cv2-readonly is not authorized to perform: lambda:GetFunction on resource: arn:aws:lambda:ap-southeast-1:396913734272:function:prd-lf-cft-upld-file because no identity-based policy allows the lambda:GetFunction action
+Error: reading Lambda Function (prd-lf-cft-upld-file): operation error Lambda: GetFunction, https response error StatusCode: 403, RequestID: c7f05ef0-6751-4879-9fa1-73c575379326, api error AccessDeniedException: User: arn:aws:iam::396913734272:user/terra-yank-readonly is not authorized to perform: lambda:GetFunction on resource: arn:aws:lambda:ap-southeast-1:396913734272:function:prd-lf-cft-upld-file because no identity-based policy allows the lambda:GetFunction action
 
 
 Error: Cannot import non-existent remote object
@@ -34004,7 +34004,7 @@ can be imported; check that the id is correct and that it is associated with
 the provider's configured region or endpoint, or use "terraform apply" to
 create a new remote object for this resource.
 
-Error: reading GuardDuty Detector (6ac9e919acdbfd96662cc9085201d459/filter/CTS-Guardduty-Rule-Testing): operation error GuardDuty: GetDetector, https response error StatusCode: 403, RequestID: 56bdc5df-434d-4a87-bd4d-d8d7335db8e8, api error AccessDeniedException: User: arn:aws:iam::396913734272:user/i2cv2-readonly is not authorized to perform: guardduty:GetDetector on resource: arn:aws:guardduty:ap-southeast-1:396913734272:detector/6ac9e919acdbfd96662cc9085201d459/filter/CTS-Guardduty-Rule-Testing because no identity-based policy allows the guardduty:GetDetector action
+Error: reading GuardDuty Detector (6ac9e919acdbfd96662cc9085201d459/filter/CTS-Guardduty-Rule-Testing): operation error GuardDuty: GetDetector, https response error StatusCode: 403, RequestID: 56bdc5df-434d-4a87-bd4d-d8d7335db8e8, api error AccessDeniedException: User: arn:aws:iam::396913734272:user/terra-yank-readonly is not authorized to perform: guardduty:GetDetector on resource: arn:aws:guardduty:ap-southeast-1:396913734272:detector/6ac9e919acdbfd96662cc9085201d459/filter/CTS-Guardduty-Rule-Testing because no identity-based policy allows the guardduty:GetDetector action
 
 
 Error: Cannot import non-existent remote object
@@ -34043,7 +34043,7 @@ can be imported; check that the id is correct and that it is associated with
 the provider's configured region or endpoint, or use "terraform apply" to
 create a new remote object for this resource.
 
-Error: reading MemoryDB Parameter Group (default.memorydb-redis6): operation error MemoryDB: DescribeParameterGroups, https response error StatusCode: 400, RequestID: 460bc5cc-1d0d-402c-be34-f5bf67e1fc4a, api error AccessDeniedException: User: arn:aws:iam::396913734272:user/i2cv2-readonly is not authorized to perform: memorydb:DescribeParameterGroups on resource: arn:aws:memorydb:ap-southeast-1:396913734272:parametergroup/default.memorydb-redis6 because no identity-based policy allows the memorydb:DescribeParameterGroups action
+Error: reading MemoryDB Parameter Group (default.memorydb-redis6): operation error MemoryDB: DescribeParameterGroups, https response error StatusCode: 400, RequestID: 460bc5cc-1d0d-402c-be34-f5bf67e1fc4a, api error AccessDeniedException: User: arn:aws:iam::396913734272:user/terra-yank-readonly is not authorized to perform: memorydb:DescribeParameterGroups on resource: arn:aws:memorydb:ap-southeast-1:396913734272:parametergroup/default.memorydb-redis6 because no identity-based policy allows the memorydb:DescribeParameterGroups action
 
 
 Error: Cannot import non-existent remote object
@@ -34064,7 +34064,7 @@ can be imported; check that the id is correct and that it is associated with
 the provider's configured region or endpoint, or use "terraform apply" to
 create a new remote object for this resource.
 
-Error: reading MemoryDB Parameter Group (default.memorydb-redis7): operation error MemoryDB: DescribeParameterGroups, https response error StatusCode: 400, RequestID: 8680d63d-6525-4e33-8e11-5281dc30599b, api error AccessDeniedException: User: arn:aws:iam::396913734272:user/i2cv2-readonly is not authorized to perform: memorydb:DescribeParameterGroups on resource: arn:aws:memorydb:ap-southeast-1:396913734272:parametergroup/default.memorydb-redis7 because no identity-based policy allows the memorydb:DescribeParameterGroups action
+Error: reading MemoryDB Parameter Group (default.memorydb-redis7): operation error MemoryDB: DescribeParameterGroups, https response error StatusCode: 400, RequestID: 8680d63d-6525-4e33-8e11-5281dc30599b, api error AccessDeniedException: User: arn:aws:iam::396913734272:user/terra-yank-readonly is not authorized to perform: memorydb:DescribeParameterGroups on resource: arn:aws:memorydb:ap-southeast-1:396913734272:parametergroup/default.memorydb-redis7 because no identity-based policy allows the memorydb:DescribeParameterGroups action
 
 
 Error: Cannot import non-existent remote object
@@ -34166,7 +34166,7 @@ can be imported; check that the id is correct and that it is associated with
 the provider's configured region or endpoint, or use "terraform apply" to
 create a new remote object for this resource.
 
-Error: reading ELBv2 Listener (arn:aws:elasticloadbalancing:ap-southeast-1:396913734272:listener/net/amp-aap-prd-nlb/268c58579dd0d62c/a8d9e5103aac9543) attributes: operation error Elastic Load Balancing v2: DescribeListenerAttributes, https response error StatusCode: 403, RequestID: e5437d29-239c-4be2-ab38-06d927e0a777, api error AccessDenied: User: arn:aws:iam::396913734272:user/i2cv2-readonly is not authorized to perform: elasticloadbalancing:DescribeListenerAttributes because no identity-based policy allows the elasticloadbalancing:DescribeListenerAttributes action
+Error: reading ELBv2 Listener (arn:aws:elasticloadbalancing:ap-southeast-1:396913734272:listener/net/amp-aap-prd-nlb/268c58579dd0d62c/a8d9e5103aac9543) attributes: operation error Elastic Load Balancing v2: DescribeListenerAttributes, https response error StatusCode: 403, RequestID: e5437d29-239c-4be2-ab38-06d927e0a777, api error AccessDenied: User: arn:aws:iam::396913734272:user/terra-yank-readonly is not authorized to perform: elasticloadbalancing:DescribeListenerAttributes because no identity-based policy allows the elasticloadbalancing:DescribeListenerAttributes action
 
 
 Error: Cannot import non-existent remote object
@@ -34196,7 +34196,7 @@ can be imported; check that the id is correct and that it is associated with
 the provider's configured region or endpoint, or use "terraform apply" to
 create a new remote object for this resource.
 
-Error: reading ELBv2 Listener (arn:aws:elasticloadbalancing:ap-southeast-1:396913734272:listener/app/amp-aap-prd-alb/24550071def2f6fd/008ceb650e2757dc) attributes: operation error Elastic Load Balancing v2: DescribeListenerAttributes, https response error StatusCode: 403, RequestID: 4e873f64-2517-4133-ab9c-4d0ef48f9e35, api error AccessDenied: User: arn:aws:iam::396913734272:user/i2cv2-readonly is not authorized to perform: elasticloadbalancing:DescribeListenerAttributes because no identity-based policy allows the elasticloadbalancing:DescribeListenerAttributes action
+Error: reading ELBv2 Listener (arn:aws:elasticloadbalancing:ap-southeast-1:396913734272:listener/app/amp-aap-prd-alb/24550071def2f6fd/008ceb650e2757dc) attributes: operation error Elastic Load Balancing v2: DescribeListenerAttributes, https response error StatusCode: 403, RequestID: 4e873f64-2517-4133-ab9c-4d0ef48f9e35, api error AccessDenied: User: arn:aws:iam::396913734272:user/terra-yank-readonly is not authorized to perform: elasticloadbalancing:DescribeListenerAttributes because no identity-based policy allows the elasticloadbalancing:DescribeListenerAttributes action
 
 
 Error: Cannot import non-existent remote object
@@ -34217,7 +34217,7 @@ can be imported; check that the id is correct and that it is associated with
 the provider's configured region or endpoint, or use "terraform apply" to
 create a new remote object for this resource.
 
-Error: reading S3 Bucket (aap-hub-396913734272) policy: operation error S3: GetBucketPolicy, https response error StatusCode: 403, RequestID: ZMRE823CT2QV6YRC, HostID: gxDy/YKZdAU+vccNYag+bwkELvUENWIKDVAsNuOJzHFPl09dMUVhWxFk5BZsUl1MNzwi+FWdJ/c=, api error AccessDenied: User: arn:aws:iam::396913734272:user/i2cv2-readonly is not authorized to perform: s3:GetBucketPolicy on resource: "arn:aws:s3:::aap-hub-396913734272" because no identity-based policy allows the s3:GetBucketPolicy action
+Error: reading S3 Bucket (aap-hub-396913734272) policy: operation error S3: GetBucketPolicy, https response error StatusCode: 403, RequestID: ZMRE823CT2QV6YRC, HostID: gxDy/YKZdAU+vccNYag+bwkELvUENWIKDVAsNuOJzHFPl09dMUVhWxFk5BZsUl1MNzwi+FWdJ/c=, api error AccessDenied: User: arn:aws:iam::396913734272:user/terra-yank-readonly is not authorized to perform: s3:GetBucketPolicy on resource: "arn:aws:s3:::aap-hub-396913734272" because no identity-based policy allows the s3:GetBucketPolicy action
 
 
 Error: Cannot import non-existent remote object
@@ -34364,7 +34364,7 @@ can be imported; check that the id is correct and that it is associated with
 the provider's configured region or endpoint, or use "terraform apply" to
 create a new remote object for this resource.
 
-Error: reading SSM Association (598eca14-4c33-42fb-8b23-87a18918c85b): operation error SSM: DescribeAssociation, https response error StatusCode: 400, RequestID: 4138aec1-3007-4436-82a9-221918c096b6, api error AccessDeniedException: User: arn:aws:iam::396913734272:user/i2cv2-readonly is not authorized to perform: ssm:DescribeAssociation on resource: arn:aws:ssm:ap-southeast-1:396913734272:association/598eca14-4c33-42fb-8b23-87a18918c85b because no identity-based policy allows the ssm:DescribeAssociation action
+Error: reading SSM Association (598eca14-4c33-42fb-8b23-87a18918c85b): operation error SSM: DescribeAssociation, https response error StatusCode: 400, RequestID: 4138aec1-3007-4436-82a9-221918c096b6, api error AccessDeniedException: User: arn:aws:iam::396913734272:user/terra-yank-readonly is not authorized to perform: ssm:DescribeAssociation on resource: arn:aws:ssm:ap-southeast-1:396913734272:association/598eca14-4c33-42fb-8b23-87a18918c85b because no identity-based policy allows the ssm:DescribeAssociation action
 
 
 Error: Cannot import non-existent remote object
@@ -34385,10 +34385,10 @@ can be imported; check that the id is correct and that it is associated with
 the provider's configured region or endpoint, or use "terraform apply" to
 create a new remote object for this resource.
 
-Error: reading EventBridge Rule (DO-NOT-DELETE-AmazonInspectorEcrManagedRule): operation error EventBridge: DescribeRule, https response error StatusCode: 400, RequestID: 5b8d9ea5-46e9-4d45-8bea-61105c5e6380, api error AccessDeniedException: User: arn:aws:iam::396913734272:user/i2cv2-readonly is not authorized to perform: events:DescribeRule on resource: arn:aws:events:ap-southeast-1:396913734272:rule/DO-NOT-DELETE-AmazonInspectorEcrManagedRule because no identity-based policy allows the events:DescribeRule action
+Error: reading EventBridge Rule (DO-NOT-DELETE-AmazonInspectorEcrManagedRule): operation error EventBridge: DescribeRule, https response error StatusCode: 400, RequestID: 5b8d9ea5-46e9-4d45-8bea-61105c5e6380, api error AccessDeniedException: User: arn:aws:iam::396913734272:user/terra-yank-readonly is not authorized to perform: events:DescribeRule on resource: arn:aws:events:ap-southeast-1:396913734272:rule/DO-NOT-DELETE-AmazonInspectorEcrManagedRule because no identity-based policy allows the events:DescribeRule action
 
 
-Error: reading SES Domain Identity (mike_how@tech.gov.sg) verification: operation error SES: GetIdentityVerificationAttributes, https response error StatusCode: 403, RequestID: 4a76d8f7-a480-4707-abad-d8b240a0646f, api error AccessDenied: User: arn:aws:iam::396913734272:user/i2cv2-readonly is not authorized to perform: ses:GetIdentityVerificationAttributes because no identity-based policy allows the ses:GetIdentityVerificationAttributes action
+Error: reading SES Domain Identity (mike_how@tech.gov.sg) verification: operation error SES: GetIdentityVerificationAttributes, https response error StatusCode: 403, RequestID: 4a76d8f7-a480-4707-abad-d8b240a0646f, api error AccessDenied: User: arn:aws:iam::396913734272:user/terra-yank-readonly is not authorized to perform: ses:GetIdentityVerificationAttributes because no identity-based policy allows the ses:GetIdentityVerificationAttributes action
 
 
 Error: Cannot import non-existent remote object
@@ -34409,7 +34409,7 @@ can be imported; check that the id is correct and that it is associated with
 the provider's configured region or endpoint, or use "terraform apply" to
 create a new remote object for this resource.
 
-Error: listing tags for RDS (Relational Database) DB Parameter Group (arn:aws:rds:ap-southeast-1:396913734272:pg:default.postgres16): operation error RDS: ListTagsForResource, https response error StatusCode: 403, RequestID: 6e7f76fd-bdcc-4150-a744-461121f70f68, api error AccessDenied: User: arn:aws:iam::396913734272:user/i2cv2-readonly is not authorized to perform: rds:ListTagsForResource on resource: arn:aws:rds:ap-southeast-1:396913734272:pg:default.postgres16 because no identity-based policy allows the rds:ListTagsForResource action
+Error: listing tags for RDS (Relational Database) DB Parameter Group (arn:aws:rds:ap-southeast-1:396913734272:pg:default.postgres16): operation error RDS: ListTagsForResource, https response error StatusCode: 403, RequestID: 6e7f76fd-bdcc-4150-a744-461121f70f68, api error AccessDenied: User: arn:aws:iam::396913734272:user/terra-yank-readonly is not authorized to perform: rds:ListTagsForResource on resource: arn:aws:rds:ap-southeast-1:396913734272:pg:default.postgres16 because no identity-based policy allows the rds:ListTagsForResource action
 
 
 Error: Cannot import non-existent remote object
@@ -34520,16 +34520,16 @@ can be imported; check that the id is correct and that it is associated with
 the provider's configured region or endpoint, or use "terraform apply" to
 create a new remote object for this resource.
 
-Error: reading SSM Document (AAP-Component-CreateUser-InstallSSHKey): operation error SSM: DescribeDocument, https response error StatusCode: 400, RequestID: 38ea223a-5ba3-4102-b98c-907a5e3fd88a, api error AccessDeniedException: User: arn:aws:iam::396913734272:user/i2cv2-readonly is not authorized to perform: ssm:DescribeDocument on resource: arn:aws:ssm:ap-southeast-1:396913734272:document/AAP-Component-CreateUser-InstallSSHKey because no identity-based policy allows the ssm:DescribeDocument action
+Error: reading SSM Document (AAP-Component-CreateUser-InstallSSHKey): operation error SSM: DescribeDocument, https response error StatusCode: 400, RequestID: 38ea223a-5ba3-4102-b98c-907a5e3fd88a, api error AccessDeniedException: User: arn:aws:iam::396913734272:user/terra-yank-readonly is not authorized to perform: ssm:DescribeDocument on resource: arn:aws:ssm:ap-southeast-1:396913734272:document/AAP-Component-CreateUser-InstallSSHKey because no identity-based policy allows the ssm:DescribeDocument action
 
 
-Error: reading S3 Bucket (cft-storage-bucket) policy: operation error S3: GetBucketPolicy, https response error StatusCode: 403, RequestID: 9Y62Q2SC836HJ1RD, HostID: 5vjOQDlb9s1DMRKighRd6f8Srd/YIHFaQTW9nOM/Ty2cIedMDCE8k59Cv5e4JBWlfmF/POZddfw=, api error AccessDenied: User: arn:aws:iam::396913734272:user/i2cv2-readonly is not authorized to perform: s3:GetBucketPolicy on resource: "arn:aws:s3:::cft-storage-bucket" because no identity-based policy allows the s3:GetBucketPolicy action
+Error: reading S3 Bucket (cft-storage-bucket) policy: operation error S3: GetBucketPolicy, https response error StatusCode: 403, RequestID: 9Y62Q2SC836HJ1RD, HostID: 5vjOQDlb9s1DMRKighRd6f8Srd/YIHFaQTW9nOM/Ty2cIedMDCE8k59Cv5e4JBWlfmF/POZddfw=, api error AccessDenied: User: arn:aws:iam::396913734272:user/terra-yank-readonly is not authorized to perform: s3:GetBucketPolicy on resource: "arn:aws:s3:::cft-storage-bucket" because no identity-based policy allows the s3:GetBucketPolicy action
 
 
-Error: reading Lambda Function (prd-lf-cft-lmp-agent-rpm-upld-file): operation error Lambda: GetFunction, https response error StatusCode: 403, RequestID: b6dff012-54fe-488b-88e8-4d46ecb09569, api error AccessDeniedException: User: arn:aws:iam::396913734272:user/i2cv2-readonly is not authorized to perform: lambda:GetFunction on resource: arn:aws:lambda:ap-southeast-1:396913734272:function:prd-lf-cft-lmp-agent-rpm-upld-file because no identity-based policy allows the lambda:GetFunction action
+Error: reading Lambda Function (prd-lf-cft-lmp-agent-rpm-upld-file): operation error Lambda: GetFunction, https response error StatusCode: 403, RequestID: b6dff012-54fe-488b-88e8-4d46ecb09569, api error AccessDeniedException: User: arn:aws:iam::396913734272:user/terra-yank-readonly is not authorized to perform: lambda:GetFunction on resource: arn:aws:lambda:ap-southeast-1:396913734272:function:prd-lf-cft-lmp-agent-rpm-upld-file because no identity-based policy allows the lambda:GetFunction action
 
 
-Error: reading Secrets Manager Secret (arn:aws:secretsmanager:ap-southeast-1:396913734272:secret:vm-amp-prdizctl-aap-1a-secret-lx5NAX): operation error Secrets Manager: DescribeSecret, https response error StatusCode: 400, RequestID: 23709dbb-5c06-4e34-8d5a-55fddd5e1778, api error AccessDeniedException: User: arn:aws:iam::396913734272:user/i2cv2-readonly is not authorized to perform: secretsmanager:DescribeSecret on resource: arn:aws:secretsmanager:ap-southeast-1:396913734272:secret:vm-amp-prdizctl-aap-1a-secret-lx5NAX because no identity-based policy allows the secretsmanager:DescribeSecret action
+Error: reading Secrets Manager Secret (arn:aws:secretsmanager:ap-southeast-1:396913734272:secret:vm-amp-prdizctl-aap-1a-secret-lx5NAX): operation error Secrets Manager: DescribeSecret, https response error StatusCode: 400, RequestID: 23709dbb-5c06-4e34-8d5a-55fddd5e1778, api error AccessDeniedException: User: arn:aws:iam::396913734272:user/terra-yank-readonly is not authorized to perform: secretsmanager:DescribeSecret on resource: arn:aws:secretsmanager:ap-southeast-1:396913734272:secret:vm-amp-prdizctl-aap-1a-secret-lx5NAX because no identity-based policy allows the secretsmanager:DescribeSecret action
 
 
 Error: Cannot import non-existent remote object
@@ -34550,13 +34550,13 @@ can be imported; check that the id is correct and that it is associated with
 the provider's configured region or endpoint, or use "terraform apply" to
 create a new remote object for this resource.
 
-Error: listing tags for RDS (Relational Database) DB Parameter Group (arn:aws:rds:ap-southeast-1:396913734272:pg:amp-aap-prd-pgrds-params): operation error RDS: ListTagsForResource, https response error StatusCode: 403, RequestID: 0cd19fd6-d3a9-45d5-a99e-a1749b6e7513, api error AccessDenied: User: arn:aws:iam::396913734272:user/i2cv2-readonly is not authorized to perform: rds:ListTagsForResource on resource: arn:aws:rds:ap-southeast-1:396913734272:pg:amp-aap-prd-pgrds-params because no identity-based policy allows the rds:ListTagsForResource action
+Error: listing tags for RDS (Relational Database) DB Parameter Group (arn:aws:rds:ap-southeast-1:396913734272:pg:amp-aap-prd-pgrds-params): operation error RDS: ListTagsForResource, https response error StatusCode: 403, RequestID: 0cd19fd6-d3a9-45d5-a99e-a1749b6e7513, api error AccessDenied: User: arn:aws:iam::396913734272:user/terra-yank-readonly is not authorized to perform: rds:ListTagsForResource on resource: arn:aws:rds:ap-southeast-1:396913734272:pg:amp-aap-prd-pgrds-params because no identity-based policy allows the rds:ListTagsForResource action
 
 
-Error: reading MemoryDB Parameter Group (default.memorydb-redis7.search): operation error MemoryDB: DescribeParameterGroups, https response error StatusCode: 400, RequestID: 5cac1e31-44cd-410e-bfc0-be6e85266fe0, api error AccessDeniedException: User: arn:aws:iam::396913734272:user/i2cv2-readonly is not authorized to perform: memorydb:DescribeParameterGroups on resource: arn:aws:memorydb:ap-southeast-1:396913734272:parametergroup/default.memorydb-redis7.search because no identity-based policy allows the memorydb:DescribeParameterGroups action
+Error: reading MemoryDB Parameter Group (default.memorydb-redis7.search): operation error MemoryDB: DescribeParameterGroups, https response error StatusCode: 400, RequestID: 5cac1e31-44cd-410e-bfc0-be6e85266fe0, api error AccessDeniedException: User: arn:aws:iam::396913734272:user/terra-yank-readonly is not authorized to perform: memorydb:DescribeParameterGroups on resource: arn:aws:memorydb:ap-southeast-1:396913734272:parametergroup/default.memorydb-redis7.search because no identity-based policy allows the memorydb:DescribeParameterGroups action
 
 
-Error: reading Lambda Function (prd-lf-cft-rec-file): operation error Lambda: GetFunction, https response error StatusCode: 403, RequestID: afeefc75-9713-4322-a09a-e7f388c59ee8, api error AccessDeniedException: User: arn:aws:iam::396913734272:user/i2cv2-readonly is not authorized to perform: lambda:GetFunction on resource: arn:aws:lambda:ap-southeast-1:396913734272:function:prd-lf-cft-rec-file because no identity-based policy allows the lambda:GetFunction action
+Error: reading Lambda Function (prd-lf-cft-rec-file): operation error Lambda: GetFunction, https response error StatusCode: 403, RequestID: afeefc75-9713-4322-a09a-e7f388c59ee8, api error AccessDeniedException: User: arn:aws:iam::396913734272:user/terra-yank-readonly is not authorized to perform: lambda:GetFunction on resource: arn:aws:lambda:ap-southeast-1:396913734272:function:prd-lf-cft-rec-file because no identity-based policy allows the lambda:GetFunction action
 
 
 Error: Cannot import non-existent remote object
@@ -34568,7 +34568,7 @@ can be imported; check that the id is correct and that it is associated with
 the provider's configured region or endpoint, or use "terraform apply" to
 create a new remote object for this resource.
 
-Error: reading ELBv2 Listener (arn:aws:elasticloadbalancing:ap-southeast-1:396913734272:listener/net/registry-sgts-gitlab-dedicated/1f96ab3e139f8589/045350f592956551) attributes: operation error Elastic Load Balancing v2: DescribeListenerAttributes, https response error StatusCode: 403, RequestID: 65b18d62-929a-4c95-91a9-dae8e0a154ce, api error AccessDenied: User: arn:aws:iam::396913734272:user/i2cv2-readonly is not authorized to perform: elasticloadbalancing:DescribeListenerAttributes because no identity-based policy allows the elasticloadbalancing:DescribeListenerAttributes action
+Error: reading ELBv2 Listener (arn:aws:elasticloadbalancing:ap-southeast-1:396913734272:listener/net/registry-sgts-gitlab-dedicated/1f96ab3e139f8589/045350f592956551) attributes: operation error Elastic Load Balancing v2: DescribeListenerAttributes, https response error StatusCode: 403, RequestID: 65b18d62-929a-4c95-91a9-dae8e0a154ce, api error AccessDenied: User: arn:aws:iam::396913734272:user/terra-yank-readonly is not authorized to perform: elasticloadbalancing:DescribeListenerAttributes because no identity-based policy allows the elasticloadbalancing:DescribeListenerAttributes action
 
 
 Error: Cannot import non-existent remote object
@@ -34655,7 +34655,7 @@ can be imported; check that the id is correct and that it is associated with
 the provider's configured region or endpoint, or use "terraform apply" to
 create a new remote object for this resource.
 
-Error: reading KMS Key (8842b215-1564-44aa-bade-fe7ca5676640): reading KMS Key (8842b215-1564-44aa-bade-fe7ca5676640): operation error KMS: DescribeKey, https response error StatusCode: 400, RequestID: 9c826475-7f2f-4dde-b224-93c5b12a72fa, api error AccessDeniedException: User: arn:aws:iam::396913734272:user/i2cv2-readonly is not authorized to perform: kms:DescribeKey on resource: arn:aws:kms:ap-southeast-1:396913734272:key/8842b215-1564-44aa-bade-fe7ca5676640 because no identity-based policy allows the kms:DescribeKey action
+Error: reading KMS Key (8842b215-1564-44aa-bade-fe7ca5676640): reading KMS Key (8842b215-1564-44aa-bade-fe7ca5676640): operation error KMS: DescribeKey, https response error StatusCode: 400, RequestID: 9c826475-7f2f-4dde-b224-93c5b12a72fa, api error AccessDeniedException: User: arn:aws:iam::396913734272:user/terra-yank-readonly is not authorized to perform: kms:DescribeKey on resource: arn:aws:kms:ap-southeast-1:396913734272:key/8842b215-1564-44aa-bade-fe7ca5676640 because no identity-based policy allows the kms:DescribeKey action
 
 
 Error: Cannot import non-existent remote object
@@ -34667,7 +34667,7 @@ can be imported; check that the id is correct and that it is associated with
 the provider's configured region or endpoint, or use "terraform apply" to
 create a new remote object for this resource.
 
-Error: reading Lambda Function (rach-download): operation error Lambda: GetFunction, https response error StatusCode: 403, RequestID: 811865b0-5a90-4f32-98c3-04e8df6eb8e6, api error AccessDeniedException: User: arn:aws:iam::396913734272:user/i2cv2-readonly is not authorized to perform: lambda:GetFunction on resource: arn:aws:lambda:ap-southeast-1:396913734272:function:rach-download because no identity-based policy allows the lambda:GetFunction action
+Error: reading Lambda Function (rach-download): operation error Lambda: GetFunction, https response error StatusCode: 403, RequestID: 811865b0-5a90-4f32-98c3-04e8df6eb8e6, api error AccessDeniedException: User: arn:aws:iam::396913734272:user/terra-yank-readonly is not authorized to perform: lambda:GetFunction on resource: arn:aws:lambda:ap-southeast-1:396913734272:function:rach-download because no identity-based policy allows the lambda:GetFunction action
 
 
 Error: Cannot import non-existent remote object
@@ -34724,7 +34724,7 @@ can be imported; check that the id is correct and that it is associated with
 the provider's configured region or endpoint, or use "terraform apply" to
 create a new remote object for this resource.
 
-Error: reading KMS Key (120e3596-78ef-4776-8a9f-b5d97209eb5a): reading KMS Key (120e3596-78ef-4776-8a9f-b5d97209eb5a) rotation enabled: operation error KMS: GetKeyRotationStatus, https response error StatusCode: 400, RequestID: 42ba3e6b-4a5c-481c-b9cd-441d9c187738, api error AccessDeniedException: User: arn:aws:iam::396913734272:user/i2cv2-readonly is not authorized to perform: kms:GetKeyRotationStatus on resource: arn:aws:kms:ap-southeast-1:396913734272:key/120e3596-78ef-4776-8a9f-b5d97209eb5a because no resource-based policy allows the kms:GetKeyRotationStatus action
+Error: reading KMS Key (120e3596-78ef-4776-8a9f-b5d97209eb5a): reading KMS Key (120e3596-78ef-4776-8a9f-b5d97209eb5a) rotation enabled: operation error KMS: GetKeyRotationStatus, https response error StatusCode: 400, RequestID: 42ba3e6b-4a5c-481c-b9cd-441d9c187738, api error AccessDeniedException: User: arn:aws:iam::396913734272:user/terra-yank-readonly is not authorized to perform: kms:GetKeyRotationStatus on resource: arn:aws:kms:ap-southeast-1:396913734272:key/120e3596-78ef-4776-8a9f-b5d97209eb5a because no resource-based policy allows the kms:GetKeyRotationStatus action
 
 
 Error: Cannot import non-existent remote object
@@ -34844,7 +34844,7 @@ can be imported; check that the id is correct and that it is associated with
 the provider's configured region or endpoint, or use "terraform apply" to
 create a new remote object for this resource.
 
-Error: reading S3 Bucket (s3-amp-prd-workato-audit-logger) policy: operation error S3: GetBucketPolicy, https response error StatusCode: 403, RequestID: GJAWRNEM6R5S4BFV, HostID: NW7OgDKZ0Upmvi68tX/24mg2Gtn3hH/Nb83LqP9oADXYK+exOhit4aBOPidL1IOefYqe4n0rmZI=, api error AccessDenied: User: arn:aws:iam::396913734272:user/i2cv2-readonly is not authorized to perform: s3:GetBucketPolicy on resource: "arn:aws:s3:::s3-amp-prd-workato-audit-logger" because no identity-based policy allows the s3:GetBucketPolicy action
+Error: reading S3 Bucket (s3-amp-prd-workato-audit-logger) policy: operation error S3: GetBucketPolicy, https response error StatusCode: 403, RequestID: GJAWRNEM6R5S4BFV, HostID: NW7OgDKZ0Upmvi68tX/24mg2Gtn3hH/Nb83LqP9oADXYK+exOhit4aBOPidL1IOefYqe4n0rmZI=, api error AccessDenied: User: arn:aws:iam::396913734272:user/terra-yank-readonly is not authorized to perform: s3:GetBucketPolicy on resource: "arn:aws:s3:::s3-amp-prd-workato-audit-logger" because no identity-based policy allows the s3:GetBucketPolicy action
 
 
 Error: Cannot import non-existent remote object
@@ -34856,10 +34856,10 @@ pre-existing objects can be imported; check that the id is correct and that
 it is associated with the provider's configured region or endpoint, or use
 "terraform apply" to create a new remote object for this resource.
 
-Error: reading MemoryDB ACL (open-access): operation error MemoryDB: DescribeACLs, https response error StatusCode: 400, RequestID: 98b06d29-6513-42a4-ae2d-cfab9d52f2fc, api error AccessDeniedException: User: arn:aws:iam::396913734272:user/i2cv2-readonly is not authorized to perform: memorydb:DescribeACLs on resource: arn:aws:memorydb:ap-southeast-1:396913734272:acl/open-access because no identity-based policy allows the memorydb:DescribeACLs action
+Error: reading MemoryDB ACL (open-access): operation error MemoryDB: DescribeACLs, https response error StatusCode: 400, RequestID: 98b06d29-6513-42a4-ae2d-cfab9d52f2fc, api error AccessDeniedException: User: arn:aws:iam::396913734272:user/terra-yank-readonly is not authorized to perform: memorydb:DescribeACLs on resource: arn:aws:memorydb:ap-southeast-1:396913734272:acl/open-access because no identity-based policy allows the memorydb:DescribeACLs action
 
 
-Error: reading ELBv2 Listener Rule (arn:aws:elasticloadbalancing:ap-southeast-1:396913734272:listener-rule/app/amp-aap-prd-alb/24550071def2f6fd/008ceb650e2757dc/630e923e6058dbd0): operation error Elastic Load Balancing v2: DescribeRules, https response error StatusCode: 403, RequestID: 2ccb1d35-19f3-4ae1-a3d5-771153bda681, api error AccessDenied: User: arn:aws:iam::396913734272:user/i2cv2-readonly is not authorized to perform: elasticloadbalancing:DescribeRules because no identity-based policy allows the elasticloadbalancing:DescribeRules action
+Error: reading ELBv2 Listener Rule (arn:aws:elasticloadbalancing:ap-southeast-1:396913734272:listener-rule/app/amp-aap-prd-alb/24550071def2f6fd/008ceb650e2757dc/630e923e6058dbd0): operation error Elastic Load Balancing v2: DescribeRules, https response error StatusCode: 403, RequestID: 2ccb1d35-19f3-4ae1-a3d5-771153bda681, api error AccessDenied: User: arn:aws:iam::396913734272:user/terra-yank-readonly is not authorized to perform: elasticloadbalancing:DescribeRules because no identity-based policy allows the elasticloadbalancing:DescribeRules action
 
 
 Error: Cannot import non-existent remote object
@@ -34880,7 +34880,7 @@ can be imported; check that the id is correct and that it is associated with
 the provider's configured region or endpoint, or use "terraform apply" to
 create a new remote object for this resource.
 
-Error: reading MemoryDB Parameter Group (default.memorydb-valkey7.search): operation error MemoryDB: DescribeParameterGroups, https response error StatusCode: 400, RequestID: 85c45cf6-bd8f-49aa-92b1-a74a3a6246c1, api error AccessDeniedException: User: arn:aws:iam::396913734272:user/i2cv2-readonly is not authorized to perform: memorydb:DescribeParameterGroups on resource: arn:aws:memorydb:ap-southeast-1:396913734272:parametergroup/default.memorydb-valkey7.search because no identity-based policy allows the memorydb:DescribeParameterGroups action
+Error: reading MemoryDB Parameter Group (default.memorydb-valkey7.search): operation error MemoryDB: DescribeParameterGroups, https response error StatusCode: 400, RequestID: 85c45cf6-bd8f-49aa-92b1-a74a3a6246c1, api error AccessDeniedException: User: arn:aws:iam::396913734272:user/terra-yank-readonly is not authorized to perform: memorydb:DescribeParameterGroups on resource: arn:aws:memorydb:ap-southeast-1:396913734272:parametergroup/default.memorydb-valkey7.search because no identity-based policy allows the memorydb:DescribeParameterGroups action
 
 
 Error: Cannot import non-existent remote object

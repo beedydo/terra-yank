@@ -6,7 +6,7 @@
 terraform {
   backend "s3" {
     bucket       = "gcci-managed-pipeline-states-826696545629"
-    key          = "i2cv2-acbe0e74-0bf5-439c-b18d-8478e6a6c489"
+    key          = "terra-yank-acbe0e74-0bf5-439c-b18d-8478e6a6c489"
     use_lockfile = true
     encrypt      = true
   }

@@ -1,18 +1,18 @@
-# i2cv2 Hackathon Workspace
+# terra-yank Hackathon Workspace
 
 ## What This Is
 
-i2cv2 (Infrastructure to Code v2) — web app for Singapore Government GCC cloud engineers.
+terra-yank (TerraYank) — web app for Singapore Government GCC cloud engineers.
 Discovers unmanaged AWS resources, classifies them against Terraform state, and uses Claude AI
 to auto-generate production-ready Terraform code committed to GitLab.
 
-Repo contains one zip: `i2cv2-i2cv2.v1.zip` — extracted to `extracted/i2cv2-i2cv2.v1/`.
+Repo contains one zip: `terra-yank-v1.zip` — extracted to `extracted/terra-yank-v1/`.
 
 ## Repo Structure
 
 ```
-i2cv2-i2cv2.v1.zip              # source archive
-extracted/i2cv2-i2cv2.v1/       # extracted contents
+terra-yank-v1.zip              # source archive
+extracted/terra-yank-v1/       # extracted contents
   src/server.js                 # entrypoint (Express, port 4000)
   src/server/app.js             # all API routes
   src/server/agent.js           # Claude LLM agent loop (Terraform refinement)
@@ -32,19 +32,19 @@ extracted/i2cv2-i2cv2.v1/       # extracted contents
   backend.tf                    # S3 backend for Terraform state
   providers.tf                  # AWS + archive providers, TF 1.12.1
   test-resources.tf             # sample AWS resources for testing
-i2cv2-sticker-prompt.txt        # sticker image generation prompt (3560 chars)
+terra-yank-sticker-prompt.txt        # sticker image generation prompt (3560 chars)
 ```
 
 ## Key Technical Facts
 
 - **Runtime**: Node.js 20, Express 5.2.1, CommonJS
 - **Auth**: TechPass OIDC via `better-auth` + `genericOAuth`. Dev mode bypasses auth (`NODE_ENV=development`)
-- **DB**: LibSQL SQLite (`i2cv2-auth.db`) — stores sessions + `user_settings` (GitLab token encrypted, per-user settings)
+- **DB**: LibSQL SQLite (`terra-yank-auth.db`) — stores sessions + `user_settings` (GitLab token encrypted, per-user settings)
 - **CRITICAL**: DB is ephemeral on Airbase (no persistent volumes). Wiped on every redeploy. Users must re-enter GitLab token after each deploy.
 - **LLM**: Anthropic Claude (BYOK key via `X-Anthropic-Key` header, never stored server-side). Default model: `bedrock.claude-sonnet-4-6`
 - **Terraform**: v1.12.1 bundled in Docker container
-- **Deployed at**: `https://i2cv2-demo.app.tc1.airbase.sg`
-- **Airbase instance**: `f.small`, handle `i2cv2/i2cv2-demo`
+- **Deployed at**: `https://terra-yank-demo.app.tc1.airbase.sg`
+- **Airbase instance**: `f.small`, handle `terra-yank/terra-yank-demo`
 - **Terraform state**: S3 bucket `gcci-managed-pipeline-states-826696545629`
 
 ## Required Env Vars
@@ -63,7 +63,7 @@ i2cv2-sticker-prompt.txt        # sticker image generation prompt (3560 chars)
 
 1. Extracted and fully analysed the zip — all source files read
 2. Identified ephemeral DB issue (Airbase has no persistent volumes yet — confirmed in docs)
-3. Created `i2cv2-sticker-prompt.txt` — comprehensive sticker image generation prompt
+3. Created `terra-yank-sticker-prompt.txt` — comprehensive sticker image generation prompt
 4. Drafted problem statement copy with quantified evidence:
    - Ministry of Law + 1 neighbouring department (~20 engineers) confirmed facing this problem
    - "Two agencies surfaced this in a single hackathon — the problem is not isolated"

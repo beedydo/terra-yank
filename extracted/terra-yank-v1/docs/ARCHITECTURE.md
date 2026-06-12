@@ -279,7 +279,7 @@ State entries are filtered by the user's selected discovery region. Entries for 
 
 ### Discovery Exclusion Policy
 
-- Exclude resources with tag key `I2CV2` (any value).
+- Exclude resources with tag key `TerraYank` (any value).
 - Exclude resources with GCCI ownership tags (`gcci`, `gcc:team=gcci`, `gcc_team=gcci`, `team=gcci`).
 - Keep an audit log entry for every excluded resource with exclusion reason.
 
@@ -323,7 +323,7 @@ LLM-assisted import generation.
 ## Important Edge Cases
 
 - Resources tagged as IaC-managed but absent from Terraform state.
-- Resources carrying `I2CV2` or `gcci` tags should be excluded from discovery candidates.
+- Resources carrying `TerraYank` or `gcci` tags should be excluded from discovery candidates.
 - Resources with stale IaC tags but no Terraform ownership (`orphaned_tagged`).
 - Resources in Terraform state but deleted from AWS.
 - Untagged baseline infrastructure.

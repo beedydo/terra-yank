@@ -36,7 +36,7 @@ Acceptance criteria:
 
 - User can run a discovery scan.
 - User can see candidate unmanaged resources.
-- User can exclude GCCI or I2CV2-tagged resources.
+- User can exclude GCCI or TerraYank-tagged resources.
 - User can select a subset of resources.
 - User can export a machine-readable import selection.
 

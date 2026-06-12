@@ -129,8 +129,8 @@ AWS credentials for the Terraform workspace come from the same credentials the u
 ## Tagging Rules
 
 ```text
-I2CV2Status=excluded
-I2CV2Managed=true
+TerraYankStatus=excluded
+TerraYankManaged=true
 GCCIManaged=true
 Environment=dev|staging|prod
 Application=<app-name>

@@ -1,6 +1,6 @@
-# I2CV2 - Infrastructure to Code v2
+# TerraYank - TerraYank
 
-I2CV2 helps GCC cloud engineers discover AWS resources that are not managed by Terraform, select resources to bring under IaC, generate/import Terraform, and iteratively refactor the result into a governed GitLab workflow.
+TerraYank helps GCC cloud engineers discover AWS resources that are not managed by Terraform, select resources to bring under IaC, generate/import Terraform, and iteratively refactor the result into a governed GitLab workflow.
 
 ## Problem
 
@@ -12,7 +12,7 @@ Cloud and DevOps engineers in Singapore government agencies who manage GCC cloud
 
 ## Product Goal
 
-I2CV2 is a full import-to-code workflow that uses LLM agents to produce production-ready Terraform from unmanaged cloud resources. The application flow is:
+TerraYank is a full import-to-code workflow that uses LLM agents to produce production-ready Terraform from unmanaged cloud resources. The application flow is:
 
 1. Configure integrations: GitLab (personal access token) and LLM provider (BYOK API key).
 2. Load accessible GitLab repositories or create a new repository.
@@ -89,7 +89,7 @@ For local trusted internal environments, the GitLab integration screen also supp
 ```text
 Browser UI
   │
-  ├─► I2CV2 API
+  ├─► TerraYank API
   │     ├─► AWS Resource Explorer (regional + global discovery)
   │     ├─► resource-map.json (RE type → Terraform type mapping)
   │     ├─► IaC/state detector (tfstate upload + comparison)
@@ -154,8 +154,8 @@ For full Docker deployment steps, including GitLab push, image build, registry p
 ### Run locally in Docker
 
 ```bash
-docker build -t i2cv2:local .
-docker run --rm -p 4000:4000 i2cv2:local
+docker build -t terra-yank:local .
+docker run --rm -p 4000:4000 terra-yank:local
 ```
 
 Verify:
@@ -189,7 +189,7 @@ airbase container build
 airbase container deploy --yes
 ```
 
-The app will be available at `https://i2cv2-demo.app.tc1.airbase.sg`.
+The app will be available at `https://terra-yank-demo.app.tc1.airbase.sg`.
 
 ### Iterative Testing on Airbase
 
@@ -251,4 +251,4 @@ AWS_SECRET_ACCESS_KEY=...
 
 Do not commit `.env` files to git. Do not use production credentials in test environments. Do not leave on-demand environments running indefinitely.
 
-# i2c-v2
+# terra-yank

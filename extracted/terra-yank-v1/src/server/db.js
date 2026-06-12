@@ -3,7 +3,7 @@ const { createClient } = require("@libsql/client");
 let client;
 
 function initDb() {
-  client = createClient({ url: "file:./i2cv2-auth.db" });
+  client = createClient({ url: "file:./terra-yank-auth.db" });
   return client.execute(`
     CREATE TABLE IF NOT EXISTS user_settings (
       user_id TEXT NOT NULL,

@@ -55,7 +55,7 @@ This directory contains three approaches to organizing Terraform resources into 
 - Standard GCC team size (5–20 engineers)
 - Moderate resource count (200–1000 managed resources)
 - You want structure without excessive file proliferation
-- **This is the default in i2cv2**
+- **This is the default in terra-yank**
 
 ---
 
@@ -85,9 +85,9 @@ This directory contains three approaches to organizing Terraform resources into 
 
 ---
 
-## How i2cv2 Uses This
+## How terra-yank Uses This
 
-i2cv2 uses the **medium** grouping as the default. After auto-generating Terraform from discovered resources, the tool splits the monolithic output into grouped files using `src/server/file-groups.json`.
+terra-yank uses the **medium** grouping as the default. After auto-generating Terraform from discovered resources, the tool splits the monolithic output into grouped files using `src/server/file-groups.json`.
 
 The mapping is deterministic: each `aws_*` resource type maps to exactly one target file. Resources not in the map go to `misc.tf`.
 

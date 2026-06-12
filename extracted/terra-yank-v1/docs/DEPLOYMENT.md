@@ -1,15 +1,15 @@
-# I2CV2 Docker Deployment
+# TerraYank Docker Deployment
 
-This guide explains how to push I2CV2 to GitLab and run it as a Docker container.
+This guide explains how to push TerraYank to GitLab and run it as a Docker container.
 
 ## Prerequisites
 
 - Docker installed locally or on the target host.
 - Access to the target GitLab repository.
 - AWS credentials available to the container at runtime.
-- GitLab personal/project access token for the I2CV2 integration screen.
+- GitLab personal/project access token for the TerraYank integration screen.
 
-I2CV2 listens on port `4000` inside the container.
+TerraYank listens on port `4000` inside the container.
 
 ## Push This Repository To GitLab
 
@@ -18,7 +18,7 @@ If this folder is not already a Git repository:
 ```bash
 git init
 git add .
-git commit -m "Initial i2cv2 application"
+git commit -m "Initial terra-yank application"
 git branch -M main
 git remote add origin https://sgts.gitlab-dedicated.com/<group>/<project>.git
 git push -u origin main
@@ -29,7 +29,7 @@ If the repository already has a Git remote:
 ```bash
 git remote -v
 git add .
-git commit -m "Prepare i2cv2 Docker deployment"
+git commit -m "Prepare terra-yank Docker deployment"
 git push
 ```
 
@@ -38,7 +38,7 @@ git push
 From the repository root:
 
 ```bash
-docker build -t i2cv2:local .
+docker build -t terra-yank:local .
 ```
 
 ## Run Locally
@@ -47,9 +47,9 @@ Basic run:
 
 ```bash
 docker run --rm \
-  --name i2cv2 \
+  --name terra-yank \
   -p 4000:4000 \
-  i2cv2:local
+  terra-yank:local
 ```
 
 Open:
@@ -67,21 +67,21 @@ curl http://localhost:4000/health
 Expected response:
 
 ```json
-{"ok":true,"service":"i2cv2"}
+{"ok":true,"service":"terra-yank"}
 ```
 
 ## Run With AWS Credentials
 
-I2CV2 uses the AWS SDK default credential chain. For local Docker runs, mount your AWS credentials:
+TerraYank uses the AWS SDK default credential chain. For local Docker runs, mount your AWS credentials:
 
 ```bash
 docker run --rm \
-  --name i2cv2 \
+  --name terra-yank \
   -p 4000:4000 \
   -e AWS_PROFILE=default \
   -e AWS_REGION=ap-southeast-1 \
   -v "$HOME/.aws:/root/.aws:ro" \
-  i2cv2:local
+  terra-yank:local
 ```
 
 For cloud/container-platform deployment, prefer IAM roles or workload identity instead of mounting static credentials.
@@ -92,11 +92,11 @@ For production, mount your internal CA bundle and set `NODE_EXTRA_CA_CERTS`:
 
 ```bash
 docker run --rm \
-  --name i2cv2 \
+  --name terra-yank \
   -p 4000:4000 \
   -e NODE_EXTRA_CA_CERTS=/etc/ssl/certs/company-ca.pem \
   -v /path/to/company-ca.pem:/etc/ssl/certs/company-ca.pem:ro \
-  i2cv2:local
+  terra-yank:local
 ```
 
 For temporary internal testing, the GitLab integration screen currently allows SSL verification to be disabled for the GitLab connection.
@@ -108,7 +108,7 @@ Set variables:
 ```bash
 export GITLAB_REGISTRY=sgts.gitlab-dedicated.com:5050
 export GITLAB_PROJECT=<group>/<project>
-export IMAGE="$GITLAB_REGISTRY/$GITLAB_PROJECT/i2cv2:latest"
+export IMAGE="$GITLAB_REGISTRY/$GITLAB_PROJECT/terra-yank:latest"
 ```
 
 Login:
@@ -128,7 +128,7 @@ Run from registry:
 
 ```bash
 docker run --rm \
-  --name i2cv2 \
+  --name terra-yank \
   -p 4000:4000 \
   "$IMAGE"
 ```
@@ -149,9 +149,9 @@ GitLab token and base URL are configured from the web UI under `Integrations`.
 
 ```yaml
 services:
-  i2cv2:
-    image: i2cv2:local
-    container_name: i2cv2
+  terra-yank:
+    image: terra-yank:local
+    container_name: terra-yank
     ports:
       - "4000:4000"
     environment:
@@ -166,7 +166,7 @@ Start:
 
 ```bash
 docker compose up -d
-docker compose logs -f i2cv2
+docker compose logs -f terra-yank
 ```
 
 ## Operational Checks
@@ -180,19 +180,19 @@ docker ps
 Logs:
 
 ```bash
-docker logs --tail 200 i2cv2
+docker logs --tail 200 terra-yank
 ```
 
 Shell into the container:
 
 ```bash
-docker exec -it i2cv2 sh
+docker exec -it terra-yank sh
 ```
 
 Health from inside the container:
 
 ```bash
-docker exec i2cv2 node -e "fetch('http://127.0.0.1:4000/health').then(r=>r.text()).then(console.log)"
+docker exec terra-yank node -e "fetch('http://127.0.0.1:4000/health').then(r=>r.text()).then(console.log)"
 ```
 
 ## Troubleshooting
@@ -244,7 +244,7 @@ docker run --rm \
   -e AWS_PROFILE=default \
   -e AWS_REGION=ap-southeast-1 \
   -v "$HOME/.aws:/root/.aws:ro" \
-  i2cv2:local
+  terra-yank:local
 ```
 
 ### Port already in use
@@ -252,7 +252,7 @@ docker run --rm \
 Map a different host port:
 
 ```bash
-docker run --rm -p 4010:4000 i2cv2:local
+docker run --rm -p 4010:4000 terra-yank:local
 ```
 
 Open:

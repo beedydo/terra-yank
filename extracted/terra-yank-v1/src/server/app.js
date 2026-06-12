@@ -113,7 +113,7 @@ async function createApp() {
   app.use(express.static(publicDir));
 
   app.get("/health", (_req, res) => {
-    res.json({ ok: true, service: "i2cv2" });
+    res.json({ ok: true, service: "terra-yank" });
   });
 
   app.get("/api/me", (_req, res) => {

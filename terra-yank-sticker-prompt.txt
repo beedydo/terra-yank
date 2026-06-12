@@ -1,10 +1,10 @@
-STICKER IMAGE GENERATION PROMPT — i2cv2
+STICKER IMAGE GENERATION PROMPT — terra-yank
 =======================================
 
 PROJECT CONTEXT
 ---------------
-This sticker is for a developer tool called "i2cv2" (pronounced "I to C V2", short for
-"Infrastructure to Code v2"). It is a web application built for Singapore Government cloud
+This sticker is for a developer tool called "terra-yank" (pronounced "I to C V2", short for
+"TerraYank"). It is a web application built for Singapore Government cloud
 engineers who manage cloud infrastructure on GCC (Government Commercial Cloud) — Singapore's
 sovereign cloud environment built on AWS.
 
@@ -12,7 +12,7 @@ THE CORE PROBLEM IT SOLVES
 ---------------------------
 Government engineers often build AWS cloud infrastructure manually (clicking around in the AWS
 Console) instead of writing code. This "ClickOps" approach leaves infrastructure ungoverned,
-undocumented, and impossible to audit or replicate. i2cv2 fixes this: it scans your AWS account,
+undocumented, and impossible to audit or replicate. terra-yank fixes this: it scans your AWS account,
 finds everything that isn't tracked in code, and uses an AI agent to automatically write the
 Terraform code that describes those resources — so engineers can finally bring their infrastructure
 under version control in GitLab.
@@ -48,7 +48,7 @@ KEY TECHNOLOGIES IN THE STACK
 
 THE BRAND / TOOL NAME
 ---------------------
-- Full name: i2cv2
+- Full name: terra-yank
 - Subtitle options: "Infrastructure to Code", "ClickOps to GitOps", "Tame your cloud"
 - Version badge: v2
 - Made for: Singapore Government GCC engineers
@@ -83,7 +83,7 @@ OPTION C — "ClickOps to GitOps transformation":
   resources floating everywhere, no order. A bold "BEFORE" label or "ClickOps" tag.
   RIGHT SIDE: clean Terraform (.tf) files, a GitLab logo, organized and structured.
   A bold "AFTER" label or "GitOps" tag. A lightning bolt or arrow in the center representing
-  the transformation. The i2cv2 logo sits prominently in the center.
+  the transformation. The terra-yank logo sits prominently in the center.
   Colors: red/orange chaos on left, clean green/blue order on right.
 
 OPTION D — "The Terraform Whisperer":
@@ -95,14 +95,14 @@ OPTION D — "The Terraform Whisperer":
 OPTION E — "Clean Plan" (developer in-joke):
   Giant terminal output showing "Plan: 0 to add, 0 to change, 0 to destroy." with green
   checkmarks. This is the holy grail output every Terraform user wants to see.
-  Small text beneath: "Made possible by i2cv2".
-  The i2cv2 logo in the corner. Very programmer-culture sticker energy.
+  Small text beneath: "Made possible by terra-yank".
+  The terra-yank logo in the corner. Very programmer-culture sticker energy.
   Colors: dark terminal black, bright green text, red "before" vs green "after" contrast.
 
 TEXT TO INCLUDE ON STICKER
 ---------------------------
 REQUIRED:
-  - "i2cv2"  (the tool name — this must be prominent)
+  - "terra-yank"  (the tool name — this must be prominent)
 
 CHOOSE ONE tagline:
   - "Infrastructure to Code"
@@ -156,12 +156,12 @@ WHAT TO AVOID
 
 FINAL SUMMARY SENTENCE FOR THE AI
 -----------------------------------
-Generate a bold, dark-background developer sticker for a tool called "i2cv2"
-(Infrastructure to Code v2) — a Singapore Government cloud tool that uses AI (Claude)
+Generate a bold, dark-background developer sticker for a tool called "terra-yank"
+(TerraYank) — a Singapore Government cloud tool that uses AI (Claude)
 to automatically scan AWS accounts, find unmanaged infrastructure, and write production-ready
 Terraform code to bring everything under GitLab version control. The sticker should feel
 like a proud badge for a cloud engineer who has finally tamed their AWS environment.
 The visual should convey transformation: chaos (manual ClickOps) becoming order (clean Terraform code).
-Include the text "i2cv2" prominently and one of these taglines: "Infrastructure to Code"
+Include the text "terra-yank" prominently and one of these taglines: "Infrastructure to Code"
 or "ClickOps → GitOps". Dark background, neon green + electric blue palette,
 flat vector style, die-cut or hexagon shape.

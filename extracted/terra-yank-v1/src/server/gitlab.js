@@ -111,7 +111,7 @@ async function upsertGitlabIntegration(token, input, existing) {
     encryptedToken: encrypt(token),
     defaultProject: input.defaultProject || existing?.defaultProject || "",
     defaultBranch: input.defaultBranch || existing?.defaultBranch || "main",
-    filePrefix: input.filePrefix || existing?.filePrefix || "i2cv2",
+    filePrefix: input.filePrefix || existing?.filePrefix || "terra-yank",
     allowSelfSignedCert: input.allowSelfSignedCert !== false,
     connected: true,
     user: {
@@ -239,7 +239,7 @@ async function commitImportArtifact({ gitlabSetting, project, branch, filePrefix
   if (!artifact?.files?.length) throw new Error("Generate an import report before exporting.");
 
   const targetBranch = branch || integration.defaultBranch || "main";
-  const prefix = slugify(filePrefix || integration.filePrefix || "i2cv2");
+  const prefix = slugify(filePrefix || integration.filePrefix || "terra-yank");
   const actions = [];
 
   for (const file of artifact.files) {
@@ -268,7 +268,7 @@ async function commitImportArtifact({ gitlabSetting, project, branch, filePrefix
       branch: targetBranch,
       filePath: action.filePath,
       content: action.content,
-      message: `i2cv2 export: ${prefix}`,
+      message: `terra-yank export: ${prefix}`,
     });
     results.push({ path: action.filePath, result });
   }
@@ -288,14 +288,14 @@ async function commitWorkspaceFiles({ gitlabSetting, project, branch, filePrefix
   if (!files || !Object.keys(files).length) throw new Error("No files to commit.");
 
   const targetBranch = branch || integration.defaultBranch || "main";
-  const prefix = slugify(filePrefix || integration.filePrefix || "i2cv2");
+  const prefix = slugify(filePrefix || integration.filePrefix || "terra-yank");
   const results = [];
 
   for (const [name, content] of Object.entries(files)) {
     const filePath = `${prefix}/${name}`;
     const result = await putRepositoryFile({
       token, integration, project, branch: targetBranch,
-      filePath, content, message: `i2cv2: update ${name}`,
+      filePath, content, message: `terra-yank: update ${name}`,
     });
     results.push(filePath);
   }

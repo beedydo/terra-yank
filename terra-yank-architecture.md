@@ -1,10 +1,10 @@
-# i2cv2 — Architecture & Workflow Diagram
+# terra-yank — Architecture & Workflow Diagram
 
 ## System Overview
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────────────┐
-│                              i2cv2 Web Application                               │
+│                              terra-yank Web Application                               │
 │                                                                                 │
 │  ┌──────────────┐    ┌──────────────────────────────────────────────────────┐   │
 │  │   Frontend   │    │                   Backend (Express)                   │   │
@@ -240,7 +240,7 @@ src/
  │  User selects:                                                  │
  │  • Target GitLab project (from namespace browser)               │
  │  • Target branch (default: main)                                │
- │  • File prefix/folder (default: "i2cv2")                        │
+ │  • File prefix/folder (default: "terra-yank")                        │
  │                                                                 │
  │  Commits refined .tf files via GitLab Repository Files API.     │
  │  PUT first, fallback POST if file doesn't exist.                │
@@ -478,7 +478,7 @@ POST /api/workspace (SSE)
 ┌─────────────────────────────────────────────────────────────────┐
 │                    Airbase Platform (GCC)                         │
 │                    Instance: f.small                              │
-│                    Handle: i2cv2/i2cv2-demo                       │
+│                    Handle: terra-yank/terra-yank-demo                       │
 ├─────────────────────────────────────────────────────────────────┤
 │                                                                 │
 │  ┌───────────────────────────────────────────────────────────┐  │
@@ -492,7 +492,7 @@ POST /api/workspace (SSE)
 │  │  ┌─────────────────────────────────────────────────────┐  │  │
 │  │  │ /app/src/     Application code                      │  │  │
 │  │  │ /tmp/         Ephemeral Terraform workspaces        │  │  │
-│  │  │ i2cv2-auth.db SQLite (EPHEMERAL - wiped on deploy) │  │  │
+│  │  │ terra-yank-auth.db SQLite (EPHEMERAL - wiped on deploy) │  │  │
 │  │  └─────────────────────────────────────────────────────┘  │  │
 │  │                                                           │  │
 │  └───────────────────────────────────────────────────────────┘  │
@@ -571,7 +571,7 @@ POST /api/workspace (SSE)
 │                                                                        │
 │  Persistent (survives requests, NOT deploys):                          │
 │  ┌──────────────────────────────────────────────────────────────────┐  │
-│  │ SQLite: i2cv2-auth.db                                            │  │
+│  │ SQLite: terra-yank-auth.db                                            │  │
 │  │ ┌────────────────────────────────────────────────────────────┐   │  │
 │  │ │ user_settings (user_id, key, value, updated_at)            │   │  │
 │  │ │   Keys: aws | llm | gitlab | projects                     │   │  │

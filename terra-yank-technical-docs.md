@@ -1,4 +1,4 @@
-# i2cv2 Technical Documentation
+# terra-yank Technical Documentation
 
 ## Tool Workflow
 
@@ -255,7 +255,7 @@ UI Form → POST /api/credentials/aws → encrypt(accessKeyId, secretAccessKey, 
 ### Local Development
 
 ```bash
-cd extracted/i2cv2-i2cv2.v1
+cd extracted/terra-yank-v1
 ENCRYPTION_KEY=supersecret NODE_ENV=development node src/server.js
 # → http://localhost:4000
 ```
@@ -263,7 +263,7 @@ ENCRYPTION_KEY=supersecret NODE_ENV=development node src/server.js
 ### Known Deployment Issues
 
 - **Ephemeral DB**: SQLite wiped on every Airbase deploy (no persistent volumes). Users must re-enter credentials after each deploy.
-- **DB path is relative**: `file:./i2cv2-auth.db` — must start server from project root.
+- **DB path is relative**: `file:./terra-yank-auth.db` — must start server from project root.
 - **Resource Explorer index**: Must be enabled in `ap-southeast-1`. If results say "incomplete", the index may need to be an aggregator type to cover cross-region resources.
 
 ---

@@ -1,7 +1,7 @@
-# i2cv2 Test Account — ClickOps Resource Setup
+# terra-yank Test Account — ClickOps Resource Setup
 
 Test resources to create manually in the AWS Console (ap-southeast-1) for
-validating the i2cv2 discovery-and-import workflow.
+validating the terra-yank discovery-and-import workflow.
 
 **Important:** The app uses AWS Resource Explorer for discovery. Resources are
 discovered by type, not by tags — but tags are used to classify GCCI ownership.
@@ -131,7 +131,7 @@ Tag every resource with:
 
 ---
 
-## Expected i2cv2 Discovery Results
+## Expected terra-yank Discovery Results
 
 After creating these resources, the app should discover **~16 resources**
 (14 created + auto-created route table and network ACL) across these categories:
