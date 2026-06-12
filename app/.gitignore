@@ -1,7 +1,0 @@
-node_modules/
-dist/
-.env
-.terraform.lock.hcl
-.terraform/
-.i2cv2-store.json
-i2cv2-auth.db
