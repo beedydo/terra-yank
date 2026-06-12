@@ -1,0 +1,6 @@
+{
+  "framework": "container",
+  "handle": "i2cv2/i2cv2-demo",
+  "port": 4000,
+  "instanceType": "f.small"
+}

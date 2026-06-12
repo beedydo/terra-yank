@@ -1,0 +1,2630 @@
+[
+  {
+    "Service": "access-analyzer",
+    "ResourceType": "access-analyzer:analyzer"
+  },
+  {
+    "Service": "acm-pca",
+    "ResourceType": "acm-pca:certificate-authority"
+  },
+  {
+    "Service": "acm",
+    "ResourceType": "acm:certificate"
+  },
+  {
+    "Service": "airflow",
+    "ResourceType": "airflow:environment"
+  },
+  {
+    "Service": "amplify",
+    "ResourceType": "amplify:apps"
+  },
+  {
+    "Service": "amplify",
+    "ResourceType": "amplify:apps/branches"
+  },
+  {
+    "Service": "amplify",
+    "ResourceType": "amplify:apps/domains"
+  },
+  {
+    "Service": "aoss",
+    "ResourceType": "aoss:collection"
+  },
+  {
+    "Service": "apigateway",
+    "ResourceType": "apigateway:apis"
+  },
+  {
+    "Service": "apigateway",
+    "ResourceType": "apigateway:apis/integrations"
+  },
+  {
+    "Service": "apigateway",
+    "ResourceType": "apigateway:apis/routes"
+  },
+  {
+    "Service": "apigateway",
+    "ResourceType": "apigateway:apis/stages"
+  },
+  {
+    "Service": "apigateway",
+    "ResourceType": "apigateway:restapis"
+  },
+  {
+    "Service": "apigateway",
+    "ResourceType": "apigateway:restapis/deployments"
+  },
+  {
+    "Service": "apigateway",
+    "ResourceType": "apigateway:restapis/resources"
+  },
+  {
+    "Service": "apigateway",
+    "ResourceType": "apigateway:restapis/resources/methods"
+  },
+  {
+    "Service": "apigateway",
+    "ResourceType": "apigateway:restapis/stages"
+  },
+  {
+    "Service": "apigateway",
+    "ResourceType": "apigateway:vpclinks"
+  },
+  {
+    "Service": "app-integrations",
+    "ResourceType": "app-integrations:application"
+  },
+  {
+    "Service": "app-integrations",
+    "ResourceType": "app-integrations:event-integration"
+  },
+  {
+    "Service": "appconfig",
+    "ResourceType": "appconfig:application"
+  },
+  {
+    "Service": "appconfig",
+    "ResourceType": "appconfig:application/environment"
+  },
+  {
+    "Service": "appconfig",
+    "ResourceType": "appconfig:deploymentstrategy"
+  },
+  {
+    "Service": "appconfig",
+    "ResourceType": "appconfig:extensionassociation"
+  },
+  {
+    "Service": "appflow",
+    "ResourceType": "appflow:flow"
+  },
+  {
+    "Service": "appmesh",
+    "ResourceType": "appmesh:mesh"
+  },
+  {
+    "Service": "appmesh",
+    "ResourceType": "appmesh:mesh/virtualGateway"
+  },
+  {
+    "Service": "appmesh",
+    "ResourceType": "appmesh:mesh/virtualGateway/gatewayRoute"
+  },
+  {
+    "Service": "appmesh",
+    "ResourceType": "appmesh:mesh/virtualNode"
+  },
+  {
+    "Service": "appmesh",
+    "ResourceType": "appmesh:mesh/virtualRouter"
+  },
+  {
+    "Service": "appmesh",
+    "ResourceType": "appmesh:mesh/virtualRouter/route"
+  },
+  {
+    "Service": "appmesh",
+    "ResourceType": "appmesh:mesh/virtualService"
+  },
+  {
+    "Service": "apprunner",
+    "ResourceType": "apprunner:autoscalingconfiguration"
+  },
+  {
+    "Service": "apprunner",
+    "ResourceType": "apprunner:connection"
+  },
+  {
+    "Service": "apprunner",
+    "ResourceType": "apprunner:service"
+  },
+  {
+    "Service": "apprunner",
+    "ResourceType": "apprunner:vpcconnector"
+  },
+  {
+    "Service": "appstream",
+    "ResourceType": "appstream:app-block"
+  },
+  {
+    "Service": "appstream",
+    "ResourceType": "appstream:application"
+  },
+  {
+    "Service": "appstream",
+    "ResourceType": "appstream:fleet"
+  },
+  {
+    "Service": "appstream",
+    "ResourceType": "appstream:image-builder"
+  },
+  {
+    "Service": "appstream",
+    "ResourceType": "appstream:stack"
+  },
+  {
+    "Service": "appsync",
+    "ResourceType": "appsync:apis"
+  },
+  {
+    "Service": "aps",
+    "ResourceType": "aps:rulegroupsnamespace"
+  },
+  {
+    "Service": "aps",
+    "ResourceType": "aps:workspace"
+  },
+  {
+    "Service": "athena",
+    "ResourceType": "athena:datacatalog"
+  },
+  {
+    "Service": "athena",
+    "ResourceType": "athena:workgroup"
+  },
+  {
+    "Service": "auditmanager",
+    "ResourceType": "auditmanager:assessment"
+  },
+  {
+    "Service": "autoscaling",
+    "ResourceType": "autoscaling:autoScalingGroup"
+  },
+  {
+    "Service": "backup-gateway",
+    "ResourceType": "backup-gateway:hypervisor"
+  },
+  {
+    "Service": "backup",
+    "ResourceType": "backup:backup-plan"
+  },
+  {
+    "Service": "backup",
+    "ResourceType": "backup:backup-vault"
+  },
+  {
+    "Service": "backup",
+    "ResourceType": "backup:report-plan"
+  },
+  {
+    "Service": "batch",
+    "ResourceType": "batch:compute-environment"
+  },
+  {
+    "Service": "batch",
+    "ResourceType": "batch:job-definition"
+  },
+  {
+    "Service": "batch",
+    "ResourceType": "batch:job-queue"
+  },
+  {
+    "Service": "batch",
+    "ResourceType": "batch:scheduling-policy"
+  },
+  {
+    "Service": "bedrock-agentcore",
+    "ResourceType": "bedrock-agentcore:runtime"
+  },
+  {
+    "Service": "bedrock",
+    "ResourceType": "bedrock:agent"
+  },
+  {
+    "Service": "bedrock",
+    "ResourceType": "bedrock:agent-alias"
+  },
+  {
+    "Service": "bedrock",
+    "ResourceType": "bedrock:application-inference-profile"
+  },
+  {
+    "Service": "bedrock",
+    "ResourceType": "bedrock:data-automation-project"
+  },
+  {
+    "Service": "bedrock",
+    "ResourceType": "bedrock:flow"
+  },
+  {
+    "Service": "bedrock",
+    "ResourceType": "bedrock:flow/alias"
+  },
+  {
+    "Service": "bedrock",
+    "ResourceType": "bedrock:guardrail"
+  },
+  {
+    "Service": "bedrock",
+    "ResourceType": "bedrock:knowledge-base"
+  },
+  {
+    "Service": "bedrock",
+    "ResourceType": "bedrock:prompt"
+  },
+  {
+    "Service": "bedrock",
+    "ResourceType": "bedrock:prompt-router"
+  },
+  {
+    "Service": "budgets",
+    "ResourceType": "budgets:budget"
+  },
+  {
+    "Service": "budgets",
+    "ResourceType": "budgets:budget/action"
+  },
+  {
+    "Service": "ce",
+    "ResourceType": "ce:anomalymonitor"
+  },
+  {
+    "Service": "ce",
+    "ResourceType": "ce:anomalysubscription"
+  },
+  {
+    "Service": "chime",
+    "ResourceType": "chime:app-instance"
+  },
+  {
+    "Service": "chime",
+    "ResourceType": "chime:app-instance/bot"
+  },
+  {
+    "Service": "chime",
+    "ResourceType": "chime:app-instance/user"
+  },
+  {
+    "Service": "chime",
+    "ResourceType": "chime:media-insights-pipeline-configuration"
+  },
+  {
+    "Service": "chime",
+    "ResourceType": "chime:media-pipeline-kinesis-video-stream-pool"
+  },
+  {
+    "Service": "chime",
+    "ResourceType": "chime:sma"
+  },
+  {
+    "Service": "chime",
+    "ResourceType": "chime:vc"
+  },
+  {
+    "Service": "cleanrooms",
+    "ResourceType": "cleanrooms:collaboration"
+  },
+  {
+    "Service": "cloud9",
+    "ResourceType": "cloud9:environment"
+  },
+  {
+    "Service": "cloudformation",
+    "ResourceType": "cloudformation:stack"
+  },
+  {
+    "Service": "cloudformation",
+    "ResourceType": "cloudformation:stackset"
+  },
+  {
+    "Service": "cloudfront",
+    "ResourceType": "cloudfront:cache-policy"
+  },
+  {
+    "Service": "cloudfront",
+    "ResourceType": "cloudfront:continuous-deployment-policy"
+  },
+  {
+    "Service": "cloudfront",
+    "ResourceType": "cloudfront:distribution"
+  },
+  {
+    "Service": "cloudfront",
+    "ResourceType": "cloudfront:field-level-encryption-config"
+  },
+  {
+    "Service": "cloudfront",
+    "ResourceType": "cloudfront:field-level-encryption-profile"
+  },
+  {
+    "Service": "cloudfront",
+    "ResourceType": "cloudfront:function"
+  },
+  {
+    "Service": "cloudfront",
+    "ResourceType": "cloudfront:origin-access-control"
+  },
+  {
+    "Service": "cloudfront",
+    "ResourceType": "cloudfront:origin-access-identity"
+  },
+  {
+    "Service": "cloudfront",
+    "ResourceType": "cloudfront:origin-request-policy"
+  },
+  {
+    "Service": "cloudfront",
+    "ResourceType": "cloudfront:realtime-log-config"
+  },
+  {
+    "Service": "cloudfront",
+    "ResourceType": "cloudfront:response-headers-policy"
+  },
+  {
+    "Service": "cloudtrail",
+    "ResourceType": "cloudtrail:channel"
+  },
+  {
+    "Service": "cloudtrail",
+    "ResourceType": "cloudtrail:dashboard"
+  },
+  {
+    "Service": "cloudtrail",
+    "ResourceType": "cloudtrail:eventdatastore"
+  },
+  {
+    "Service": "cloudtrail",
+    "ResourceType": "cloudtrail:trail"
+  },
+  {
+    "Service": "cloudwatch",
+    "ResourceType": "cloudwatch:alarm"
+  },
+  {
+    "Service": "cloudwatch",
+    "ResourceType": "cloudwatch:dashboard"
+  },
+  {
+    "Service": "cloudwatch",
+    "ResourceType": "cloudwatch:insight-rule"
+  },
+  {
+    "Service": "cloudwatch",
+    "ResourceType": "cloudwatch:metric-stream"
+  },
+  {
+    "Service": "codeartifact",
+    "ResourceType": "codeartifact:domain"
+  },
+  {
+    "Service": "codeartifact",
+    "ResourceType": "codeartifact:repository"
+  },
+  {
+    "Service": "codebuild",
+    "ResourceType": "codebuild:project"
+  },
+  {
+    "Service": "codecommit",
+    "ResourceType": "codecommit:repository"
+  },
+  {
+    "Service": "codeconnections",
+    "ResourceType": "codeconnections:connection"
+  },
+  {
+    "Service": "codedeploy",
+    "ResourceType": "codedeploy:application"
+  },
+  {
+    "Service": "codedeploy",
+    "ResourceType": "codedeploy:deploymentconfig"
+  },
+  {
+    "Service": "codeguru-profiler",
+    "ResourceType": "codeguru-profiler:profilingGroup"
+  },
+  {
+    "Service": "codeguru-reviewer",
+    "ResourceType": "codeguru-reviewer:association"
+  },
+  {
+    "Service": "codepipeline",
+    "ResourceType": "codepipeline:pipeline"
+  },
+  {
+    "Service": "codepipeline",
+    "ResourceType": "codepipeline:webhook"
+  },
+  {
+    "Service": "codestar-connections",
+    "ResourceType": "codestar-connections:connection"
+  },
+  {
+    "Service": "codestar-connections",
+    "ResourceType": "codestar-connections:host"
+  },
+  {
+    "Service": "cognito-identity",
+    "ResourceType": "cognito-identity:identitypool"
+  },
+  {
+    "Service": "cognito-idp",
+    "ResourceType": "cognito-idp:userpool"
+  },
+  {
+    "Service": "comprehend",
+    "ResourceType": "comprehend:document-classifier"
+  },
+  {
+    "Service": "comprehend",
+    "ResourceType": "comprehend:entity-recognizer"
+  },
+  {
+    "Service": "comprehend",
+    "ResourceType": "comprehend:flywheel"
+  },
+  {
+    "Service": "config",
+    "ResourceType": "config:config-rule"
+  },
+  {
+    "Service": "connect",
+    "ResourceType": "connect:instance"
+  },
+  {
+    "Service": "connect",
+    "ResourceType": "connect:instance/agent"
+  },
+  {
+    "Service": "connect",
+    "ResourceType": "connect:instance/operating-hours"
+  },
+  {
+    "Service": "connect",
+    "ResourceType": "connect:instance/queue"
+  },
+  {
+    "Service": "connect",
+    "ResourceType": "connect:instance/rule"
+  },
+  {
+    "Service": "connect",
+    "ResourceType": "connect:instance/task-template"
+  },
+  {
+    "Service": "connect",
+    "ResourceType": "connect:instance/transfer-destination"
+  },
+  {
+    "Service": "connect",
+    "ResourceType": "connect:phone-number"
+  },
+  {
+    "Service": "databrew",
+    "ResourceType": "databrew:dataset"
+  },
+  {
+    "Service": "databrew",
+    "ResourceType": "databrew:job"
+  },
+  {
+    "Service": "databrew",
+    "ResourceType": "databrew:project"
+  },
+  {
+    "Service": "databrew",
+    "ResourceType": "databrew:recipe"
+  },
+  {
+    "Service": "databrew",
+    "ResourceType": "databrew:ruleset"
+  },
+  {
+    "Service": "databrew",
+    "ResourceType": "databrew:schedule"
+  },
+  {
+    "Service": "dataexchange",
+    "ResourceType": "dataexchange:data-sets"
+  },
+  {
+    "Service": "dataexchange",
+    "ResourceType": "dataexchange:data-sets/revisions"
+  },
+  {
+    "Service": "datapipeline",
+    "ResourceType": "datapipeline:pipeline"
+  },
+  {
+    "Service": "datasync",
+    "ResourceType": "datasync:location"
+  },
+  {
+    "Service": "datasync",
+    "ResourceType": "datasync:task"
+  },
+  {
+    "Service": "dax",
+    "ResourceType": "dax:cache"
+  },
+  {
+    "Service": "detective",
+    "ResourceType": "detective:graph"
+  },
+  {
+    "Service": "devicefarm",
+    "ResourceType": "devicefarm:instanceprofile"
+  },
+  {
+    "Service": "devicefarm",
+    "ResourceType": "devicefarm:project"
+  },
+  {
+    "Service": "devicefarm",
+    "ResourceType": "devicefarm:testgrid-project"
+  },
+  {
+    "Service": "directconnect",
+    "ResourceType": "directconnect:dx-gateway"
+  },
+  {
+    "Service": "dlm",
+    "ResourceType": "dlm:policy"
+  },
+  {
+    "Service": "dms",
+    "ResourceType": "dms:cert"
+  },
+  {
+    "Service": "dms",
+    "ResourceType": "dms:endpoint"
+  },
+  {
+    "Service": "dms",
+    "ResourceType": "dms:es"
+  },
+  {
+    "Service": "dms",
+    "ResourceType": "dms:rep"
+  },
+  {
+    "Service": "dms",
+    "ResourceType": "dms:subgrp"
+  },
+  {
+    "Service": "dms",
+    "ResourceType": "dms:task"
+  },
+  {
+    "Service": "ds",
+    "ResourceType": "ds:directory"
+  },
+  {
+    "Service": "dynamodb",
+    "ResourceType": "dynamodb:table"
+  },
+  {
+    "Service": "ec2",
+    "ResourceType": "ec2:capacity-reservation"
+  },
+  {
+    "Service": "ec2",
+    "ResourceType": "ec2:capacity-reservation-fleet"
+  },
+  {
+    "Service": "ec2",
+    "ResourceType": "ec2:carrier-gateway"
+  },
+  {
+    "Service": "ec2",
+    "ResourceType": "ec2:client-vpn-endpoint"
+  },
+  {
+    "Service": "ec2",
+    "ResourceType": "ec2:customer-gateway"
+  },
+  {
+    "Service": "ec2",
+    "ResourceType": "ec2:dedicated-host"
+  },
+  {
+    "Service": "ec2",
+    "ResourceType": "ec2:dhcp-options"
+  },
+  {
+    "Service": "ec2",
+    "ResourceType": "ec2:egress-only-internet-gateway"
+  },
+  {
+    "Service": "ec2",
+    "ResourceType": "ec2:elastic-ip"
+  },
+  {
+    "Service": "ec2",
+    "ResourceType": "ec2:fleet"
+  },
+  {
+    "Service": "ec2",
+    "ResourceType": "ec2:fpga-image"
+  },
+  {
+    "Service": "ec2",
+    "ResourceType": "ec2:host-reservation"
+  },
+  {
+    "Service": "ec2",
+    "ResourceType": "ec2:image"
+  },
+  {
+    "Service": "ec2",
+    "ResourceType": "ec2:instance"
+  },
+  {
+    "Service": "ec2",
+    "ResourceType": "ec2:instance-event-window"
+  },
+  {
+    "Service": "ec2",
+    "ResourceType": "ec2:internet-gateway"
+  },
+  {
+    "Service": "ec2",
+    "ResourceType": "ec2:ipam"
+  },
+  {
+    "Service": "ec2",
+    "ResourceType": "ec2:ipam-pool"
+  },
+  {
+    "Service": "ec2",
+    "ResourceType": "ec2:ipam-resource-discovery"
+  },
+  {
+    "Service": "ec2",
+    "ResourceType": "ec2:ipam-resource-discovery-association"
+  },
+  {
+    "Service": "ec2",
+    "ResourceType": "ec2:ipam-scope"
+  },
+  {
+    "Service": "ec2",
+    "ResourceType": "ec2:ipv4pool-ec2"
+  },
+  {
+    "Service": "ec2",
+    "ResourceType": "ec2:key-pair"
+  },
+  {
+    "Service": "ec2",
+    "ResourceType": "ec2:launch-template"
+  },
+  {
+    "Service": "ec2",
+    "ResourceType": "ec2:natgateway"
+  },
+  {
+    "Service": "ec2",
+    "ResourceType": "ec2:network-acl"
+  },
+  {
+    "Service": "ec2",
+    "ResourceType": "ec2:network-insights-access-scope"
+  },
+  {
+    "Service": "ec2",
+    "ResourceType": "ec2:network-insights-access-scope-analysis"
+  },
+  {
+    "Service": "ec2",
+    "ResourceType": "ec2:network-insights-analysis"
+  },
+  {
+    "Service": "ec2",
+    "ResourceType": "ec2:network-insights-path"
+  },
+  {
+    "Service": "ec2",
+    "ResourceType": "ec2:network-interface"
+  },
+  {
+    "Service": "ec2",
+    "ResourceType": "ec2:placement-group"
+  },
+  {
+    "Service": "ec2",
+    "ResourceType": "ec2:prefix-list"
+  },
+  {
+    "Service": "ec2",
+    "ResourceType": "ec2:reserved-instances"
+  },
+  {
+    "Service": "ec2",
+    "ResourceType": "ec2:route-table"
+  },
+  {
+    "Service": "ec2",
+    "ResourceType": "ec2:security-group"
+  },
+  {
+    "Service": "ec2",
+    "ResourceType": "ec2:security-group-rule"
+  },
+  {
+    "Service": "ec2",
+    "ResourceType": "ec2:snapshot"
+  },
+  {
+    "Service": "ec2",
+    "ResourceType": "ec2:spot-fleet-request"
+  },
+  {
+    "Service": "ec2",
+    "ResourceType": "ec2:spot-instances-request"
+  },
+  {
+    "Service": "ec2",
+    "ResourceType": "ec2:subnet"
+  },
+  {
+    "Service": "ec2",
+    "ResourceType": "ec2:subnet-cidr-reservation"
+  },
+  {
+    "Service": "ec2",
+    "ResourceType": "ec2:traffic-mirror-filter"
+  },
+  {
+    "Service": "ec2",
+    "ResourceType": "ec2:traffic-mirror-filter-rule"
+  },
+  {
+    "Service": "ec2",
+    "ResourceType": "ec2:traffic-mirror-session"
+  },
+  {
+    "Service": "ec2",
+    "ResourceType": "ec2:traffic-mirror-target"
+  },
+  {
+    "Service": "ec2",
+    "ResourceType": "ec2:transit-gateway"
+  },
+  {
+    "Service": "ec2",
+    "ResourceType": "ec2:transit-gateway-attachment"
+  },
+  {
+    "Service": "ec2",
+    "ResourceType": "ec2:transit-gateway-connect-peer"
+  },
+  {
+    "Service": "ec2",
+    "ResourceType": "ec2:transit-gateway-multicast-domain"
+  },
+  {
+    "Service": "ec2",
+    "ResourceType": "ec2:transit-gateway-policy-table"
+  },
+  {
+    "Service": "ec2",
+    "ResourceType": "ec2:transit-gateway-route-table"
+  },
+  {
+    "Service": "ec2",
+    "ResourceType": "ec2:transit-gateway-route-table-announcement"
+  },
+  {
+    "Service": "ec2",
+    "ResourceType": "ec2:verified-access-endpoint"
+  },
+  {
+    "Service": "ec2",
+    "ResourceType": "ec2:verified-access-group"
+  },
+  {
+    "Service": "ec2",
+    "ResourceType": "ec2:verified-access-instance"
+  },
+  {
+    "Service": "ec2",
+    "ResourceType": "ec2:verified-access-trust-provider"
+  },
+  {
+    "Service": "ec2",
+    "ResourceType": "ec2:volume"
+  },
+  {
+    "Service": "ec2",
+    "ResourceType": "ec2:vpc"
+  },
+  {
+    "Service": "ec2",
+    "ResourceType": "ec2:vpc-endpoint"
+  },
+  {
+    "Service": "ec2",
+    "ResourceType": "ec2:vpc-flow-log"
+  },
+  {
+    "Service": "ec2",
+    "ResourceType": "ec2:vpc-peering-connection"
+  },
+  {
+    "Service": "ec2",
+    "ResourceType": "ec2:vpn-connection"
+  },
+  {
+    "Service": "ec2",
+    "ResourceType": "ec2:vpn-gateway"
+  },
+  {
+    "Service": "ecr-public",
+    "ResourceType": "ecr-public:repository"
+  },
+  {
+    "Service": "ecr",
+    "ResourceType": "ecr:repository"
+  },
+  {
+    "Service": "ecs",
+    "ResourceType": "ecs:capacity-provider"
+  },
+  {
+    "Service": "ecs",
+    "ResourceType": "ecs:cluster"
+  },
+  {
+    "Service": "ecs",
+    "ResourceType": "ecs:container-instance"
+  },
+  {
+    "Service": "ecs",
+    "ResourceType": "ecs:service"
+  },
+  {
+    "Service": "ecs",
+    "ResourceType": "ecs:task-definition"
+  },
+  {
+    "Service": "ecs",
+    "ResourceType": "ecs:task-set"
+  },
+  {
+    "Service": "eks",
+    "ResourceType": "eks:cluster"
+  },
+  {
+    "Service": "eks",
+    "ResourceType": "eks:daemonset"
+  },
+  {
+    "Service": "eks",
+    "ResourceType": "eks:deployment"
+  },
+  {
+    "Service": "eks",
+    "ResourceType": "eks:eks-anywhere-subscription"
+  },
+  {
+    "Service": "eks",
+    "ResourceType": "eks:endpointslice"
+  },
+  {
+    "Service": "eks",
+    "ResourceType": "eks:ingress"
+  },
+  {
+    "Service": "eks",
+    "ResourceType": "eks:namespace"
+  },
+  {
+    "Service": "eks",
+    "ResourceType": "eks:persistentvolume"
+  },
+  {
+    "Service": "eks",
+    "ResourceType": "eks:podidentityassociation"
+  },
+  {
+    "Service": "eks",
+    "ResourceType": "eks:replicaset"
+  },
+  {
+    "Service": "eks",
+    "ResourceType": "eks:service"
+  },
+  {
+    "Service": "eks",
+    "ResourceType": "eks:statefulset"
+  },
+  {
+    "Service": "elasticache",
+    "ResourceType": "elasticache:cluster"
+  },
+  {
+    "Service": "elasticache",
+    "ResourceType": "elasticache:globalreplicationgroup"
+  },
+  {
+    "Service": "elasticache",
+    "ResourceType": "elasticache:parametergroup"
+  },
+  {
+    "Service": "elasticache",
+    "ResourceType": "elasticache:replicationgroup"
+  },
+  {
+    "Service": "elasticache",
+    "ResourceType": "elasticache:reserved-instance"
+  },
+  {
+    "Service": "elasticache",
+    "ResourceType": "elasticache:snapshot"
+  },
+  {
+    "Service": "elasticache",
+    "ResourceType": "elasticache:subnetgroup"
+  },
+  {
+    "Service": "elasticache",
+    "ResourceType": "elasticache:user"
+  },
+  {
+    "Service": "elasticache",
+    "ResourceType": "elasticache:usergroup"
+  },
+  {
+    "Service": "elasticbeanstalk",
+    "ResourceType": "elasticbeanstalk:application"
+  },
+  {
+    "Service": "elasticbeanstalk",
+    "ResourceType": "elasticbeanstalk:applicationversion"
+  },
+  {
+    "Service": "elasticbeanstalk",
+    "ResourceType": "elasticbeanstalk:configurationtemplate"
+  },
+  {
+    "Service": "elasticbeanstalk",
+    "ResourceType": "elasticbeanstalk:environment"
+  },
+  {
+    "Service": "elasticfilesystem",
+    "ResourceType": "elasticfilesystem:access-point"
+  },
+  {
+    "Service": "elasticfilesystem",
+    "ResourceType": "elasticfilesystem:file-system"
+  },
+  {
+    "Service": "elasticloadbalancing",
+    "ResourceType": "elasticloadbalancing:listener-rule/app"
+  },
+  {
+    "Service": "elasticloadbalancing",
+    "ResourceType": "elasticloadbalancing:listener/app"
+  },
+  {
+    "Service": "elasticloadbalancing",
+    "ResourceType": "elasticloadbalancing:listener/gwy"
+  },
+  {
+    "Service": "elasticloadbalancing",
+    "ResourceType": "elasticloadbalancing:listener/net"
+  },
+  {
+    "Service": "elasticloadbalancing",
+    "ResourceType": "elasticloadbalancing:loadbalancer"
+  },
+  {
+    "Service": "elasticloadbalancing",
+    "ResourceType": "elasticloadbalancing:loadbalancer/app"
+  },
+  {
+    "Service": "elasticloadbalancing",
+    "ResourceType": "elasticloadbalancing:loadbalancer/gwy"
+  },
+  {
+    "Service": "elasticloadbalancing",
+    "ResourceType": "elasticloadbalancing:loadbalancer/net"
+  },
+  {
+    "Service": "elasticloadbalancing",
+    "ResourceType": "elasticloadbalancing:targetgroup"
+  },
+  {
+    "Service": "elasticmapreduce",
+    "ResourceType": "elasticmapreduce:cluster"
+  },
+  {
+    "Service": "emr-containers",
+    "ResourceType": "emr-containers:jobtemplates"
+  },
+  {
+    "Service": "emr-containers",
+    "ResourceType": "emr-containers:securityconfigurations"
+  },
+  {
+    "Service": "emr-containers",
+    "ResourceType": "emr-containers:virtualclusters"
+  },
+  {
+    "Service": "emr-containers",
+    "ResourceType": "emr-containers:virtualclusters/endpoints"
+  },
+  {
+    "Service": "emr-serverless",
+    "ResourceType": "emr-serverless:applications"
+  },
+  {
+    "Service": "es",
+    "ResourceType": "es:domain"
+  },
+  {
+    "Service": "events",
+    "ResourceType": "events:api-destination"
+  },
+  {
+    "Service": "events",
+    "ResourceType": "events:archive"
+  },
+  {
+    "Service": "events",
+    "ResourceType": "events:connection"
+  },
+  {
+    "Service": "events",
+    "ResourceType": "events:endpoint"
+  },
+  {
+    "Service": "events",
+    "ResourceType": "events:event-bus"
+  },
+  {
+    "Service": "events",
+    "ResourceType": "events:rule"
+  },
+  {
+    "Service": "finspace",
+    "ResourceType": "finspace:environment"
+  },
+  {
+    "Service": "firehose",
+    "ResourceType": "firehose:deliverystream"
+  },
+  {
+    "Service": "fis",
+    "ResourceType": "fis:experiment"
+  },
+  {
+    "Service": "fis",
+    "ResourceType": "fis:experiment-template"
+  },
+  {
+    "Service": "forecast",
+    "ResourceType": "forecast:dataset"
+  },
+  {
+    "Service": "forecast",
+    "ResourceType": "forecast:dataset-group"
+  },
+  {
+    "Service": "forecast",
+    "ResourceType": "forecast:dataset-import-job"
+  },
+  {
+    "Service": "forecast",
+    "ResourceType": "forecast:forecast"
+  },
+  {
+    "Service": "forecast",
+    "ResourceType": "forecast:forecast-export-job"
+  },
+  {
+    "Service": "forecast",
+    "ResourceType": "forecast:predictor"
+  },
+  {
+    "Service": "forecast",
+    "ResourceType": "forecast:predictor-backtest-export-job"
+  },
+  {
+    "Service": "frauddetector",
+    "ResourceType": "frauddetector:detector"
+  },
+  {
+    "Service": "frauddetector",
+    "ResourceType": "frauddetector:entity-type"
+  },
+  {
+    "Service": "frauddetector",
+    "ResourceType": "frauddetector:event-type"
+  },
+  {
+    "Service": "frauddetector",
+    "ResourceType": "frauddetector:external-model"
+  },
+  {
+    "Service": "frauddetector",
+    "ResourceType": "frauddetector:label"
+  },
+  {
+    "Service": "frauddetector",
+    "ResourceType": "frauddetector:model"
+  },
+  {
+    "Service": "frauddetector",
+    "ResourceType": "frauddetector:outcome"
+  },
+  {
+    "Service": "frauddetector",
+    "ResourceType": "frauddetector:variable"
+  },
+  {
+    "Service": "fsx",
+    "ResourceType": "fsx:backup"
+  },
+  {
+    "Service": "fsx",
+    "ResourceType": "fsx:file-system"
+  },
+  {
+    "Service": "gamelift",
+    "ResourceType": "gamelift:alias"
+  },
+  {
+    "Service": "gamelift",
+    "ResourceType": "gamelift:build"
+  },
+  {
+    "Service": "gamelift",
+    "ResourceType": "gamelift:gamesessionqueue"
+  },
+  {
+    "Service": "gamelift",
+    "ResourceType": "gamelift:location"
+  },
+  {
+    "Service": "gamelift",
+    "ResourceType": "gamelift:matchmakingconfiguration"
+  },
+  {
+    "Service": "gamelift",
+    "ResourceType": "gamelift:matchmakingruleset"
+  },
+  {
+    "Service": "gamelift",
+    "ResourceType": "gamelift:script"
+  },
+  {
+    "Service": "glacier",
+    "ResourceType": "glacier:vaults"
+  },
+  {
+    "Service": "globalaccelerator",
+    "ResourceType": "globalaccelerator:accelerator"
+  },
+  {
+    "Service": "globalaccelerator",
+    "ResourceType": "globalaccelerator:accelerator/listener"
+  },
+  {
+    "Service": "globalaccelerator",
+    "ResourceType": "globalaccelerator:accelerator/listener/endpoint-group"
+  },
+  {
+    "Service": "glue",
+    "ResourceType": "glue:crawler"
+  },
+  {
+    "Service": "glue",
+    "ResourceType": "glue:database"
+  },
+  {
+    "Service": "glue",
+    "ResourceType": "glue:dataQualityRuleset"
+  },
+  {
+    "Service": "glue",
+    "ResourceType": "glue:job"
+  },
+  {
+    "Service": "glue",
+    "ResourceType": "glue:mlTransform"
+  },
+  {
+    "Service": "glue",
+    "ResourceType": "glue:registry"
+  },
+  {
+    "Service": "glue",
+    "ResourceType": "glue:table"
+  },
+  {
+    "Service": "glue",
+    "ResourceType": "glue:trigger"
+  },
+  {
+    "Service": "grafana",
+    "ResourceType": "grafana:workspaces"
+  },
+  {
+    "Service": "greengrass",
+    "ResourceType": "greengrass:components:versions"
+  },
+  {
+    "Service": "greengrass",
+    "ResourceType": "greengrass:connectorsDefinition"
+  },
+  {
+    "Service": "greengrass",
+    "ResourceType": "greengrass:coresDefinition"
+  },
+  {
+    "Service": "greengrass",
+    "ResourceType": "greengrass:devicesDefinition"
+  },
+  {
+    "Service": "greengrass",
+    "ResourceType": "greengrass:functionsDefinition"
+  },
+  {
+    "Service": "greengrass",
+    "ResourceType": "greengrass:groups"
+  },
+  {
+    "Service": "greengrass",
+    "ResourceType": "greengrass:loggersDefinition"
+  },
+  {
+    "Service": "greengrass",
+    "ResourceType": "greengrass:resourcesDefinition"
+  },
+  {
+    "Service": "greengrass",
+    "ResourceType": "greengrass:subscriptionsDefinition"
+  },
+  {
+    "Service": "groundstation",
+    "ResourceType": "groundstation:config"
+  },
+  {
+    "Service": "groundstation",
+    "ResourceType": "groundstation:dataflow-endpoint-group"
+  },
+  {
+    "Service": "groundstation",
+    "ResourceType": "groundstation:mission-profile"
+  },
+  {
+    "Service": "guardduty",
+    "ResourceType": "guardduty:detector"
+  },
+  {
+    "Service": "guardduty",
+    "ResourceType": "guardduty:detector/filter"
+  },
+  {
+    "Service": "guardduty",
+    "ResourceType": "guardduty:detector/ipset"
+  },
+  {
+    "Service": "guardduty",
+    "ResourceType": "guardduty:detector/publishingDestination"
+  },
+  {
+    "Service": "guardduty",
+    "ResourceType": "guardduty:detector/threatintelset"
+  },
+  {
+    "Service": "guardduty",
+    "ResourceType": "guardduty:malware-protection-plan"
+  },
+  {
+    "Service": "healthlake",
+    "ResourceType": "healthlake:datastore/fhir"
+  },
+  {
+    "Service": "iam",
+    "ResourceType": "iam:group"
+  },
+  {
+    "Service": "iam",
+    "ResourceType": "iam:instance-profile"
+  },
+  {
+    "Service": "iam",
+    "ResourceType": "iam:mfa"
+  },
+  {
+    "Service": "iam",
+    "ResourceType": "iam:oidc-provider"
+  },
+  {
+    "Service": "iam",
+    "ResourceType": "iam:policy"
+  },
+  {
+    "Service": "iam",
+    "ResourceType": "iam:role"
+  },
+  {
+    "Service": "iam",
+    "ResourceType": "iam:saml-provider"
+  },
+  {
+    "Service": "iam",
+    "ResourceType": "iam:server-certificate"
+  },
+  {
+    "Service": "iam",
+    "ResourceType": "iam:user"
+  },
+  {
+    "Service": "imagebuilder",
+    "ResourceType": "imagebuilder:component"
+  },
+  {
+    "Service": "imagebuilder",
+    "ResourceType": "imagebuilder:container-recipe"
+  },
+  {
+    "Service": "imagebuilder",
+    "ResourceType": "imagebuilder:distribution-configuration"
+  },
+  {
+    "Service": "imagebuilder",
+    "ResourceType": "imagebuilder:image"
+  },
+  {
+    "Service": "imagebuilder",
+    "ResourceType": "imagebuilder:image-pipeline"
+  },
+  {
+    "Service": "imagebuilder",
+    "ResourceType": "imagebuilder:image-recipe"
+  },
+  {
+    "Service": "imagebuilder",
+    "ResourceType": "imagebuilder:infrastructure-configuration"
+  },
+  {
+    "Service": "inspector",
+    "ResourceType": "inspector:target/template"
+  },
+  {
+    "Service": "inspector2",
+    "ResourceType": "inspector2:filter"
+  },
+  {
+    "Service": "iot",
+    "ResourceType": "iot:authorizer"
+  },
+  {
+    "Service": "iot",
+    "ResourceType": "iot:billinggroup"
+  },
+  {
+    "Service": "iot",
+    "ResourceType": "iot:cacert"
+  },
+  {
+    "Service": "iot",
+    "ResourceType": "iot:cert"
+  },
+  {
+    "Service": "iot",
+    "ResourceType": "iot:fleetmetric"
+  },
+  {
+    "Service": "iot",
+    "ResourceType": "iot:job"
+  },
+  {
+    "Service": "iot",
+    "ResourceType": "iot:jobtemplate"
+  },
+  {
+    "Service": "iot",
+    "ResourceType": "iot:mitigationaction"
+  },
+  {
+    "Service": "iot",
+    "ResourceType": "iot:policy"
+  },
+  {
+    "Service": "iot",
+    "ResourceType": "iot:provisioningtemplate"
+  },
+  {
+    "Service": "iot",
+    "ResourceType": "iot:rolealias"
+  },
+  {
+    "Service": "iot",
+    "ResourceType": "iot:rule"
+  },
+  {
+    "Service": "iot",
+    "ResourceType": "iot:ruledestination"
+  },
+  {
+    "Service": "iot",
+    "ResourceType": "iot:scheduledaudit"
+  },
+  {
+    "Service": "iot",
+    "ResourceType": "iot:securityprofile"
+  },
+  {
+    "Service": "iot",
+    "ResourceType": "iot:thing"
+  },
+  {
+    "Service": "iot",
+    "ResourceType": "iot:thinggroup"
+  },
+  {
+    "Service": "iot",
+    "ResourceType": "iot:thingtype"
+  },
+  {
+    "Service": "iotdeviceadvisor",
+    "ResourceType": "iotdeviceadvisor:suitedefinition"
+  },
+  {
+    "Service": "iotfleetwise",
+    "ResourceType": "iotfleetwise:decoder-manifest"
+  },
+  {
+    "Service": "iotfleetwise",
+    "ResourceType": "iotfleetwise:model-manifest"
+  },
+  {
+    "Service": "iotfleetwise",
+    "ResourceType": "iotfleetwise:signal-catalog"
+  },
+  {
+    "Service": "iotfleetwise",
+    "ResourceType": "iotfleetwise:vehicle"
+  },
+  {
+    "Service": "iotsitewise",
+    "ResourceType": "iotsitewise:access-policy"
+  },
+  {
+    "Service": "iotsitewise",
+    "ResourceType": "iotsitewise:asset"
+  },
+  {
+    "Service": "iotsitewise",
+    "ResourceType": "iotsitewise:asset-model"
+  },
+  {
+    "Service": "iotsitewise",
+    "ResourceType": "iotsitewise:dashboard"
+  },
+  {
+    "Service": "iotsitewise",
+    "ResourceType": "iotsitewise:gateway"
+  },
+  {
+    "Service": "iotsitewise",
+    "ResourceType": "iotsitewise:portal"
+  },
+  {
+    "Service": "iotsitewise",
+    "ResourceType": "iotsitewise:project"
+  },
+  {
+    "Service": "iottwinmaker",
+    "ResourceType": "iottwinmaker:workspace"
+  },
+  {
+    "Service": "iottwinmaker",
+    "ResourceType": "iottwinmaker:workspace/component-type"
+  },
+  {
+    "Service": "iottwinmaker",
+    "ResourceType": "iottwinmaker:workspace/entity"
+  },
+  {
+    "Service": "iottwinmaker",
+    "ResourceType": "iottwinmaker:workspace/sync-job"
+  },
+  {
+    "Service": "iotwireless",
+    "ResourceType": "iotwireless:Destination"
+  },
+  {
+    "Service": "iotwireless",
+    "ResourceType": "iotwireless:DeviceProfile"
+  },
+  {
+    "Service": "iotwireless",
+    "ResourceType": "iotwireless:FuotaTask"
+  },
+  {
+    "Service": "iotwireless",
+    "ResourceType": "iotwireless:MulticastGroup"
+  },
+  {
+    "Service": "iotwireless",
+    "ResourceType": "iotwireless:ServiceProfile"
+  },
+  {
+    "Service": "iotwireless",
+    "ResourceType": "iotwireless:SidewalkAccount"
+  },
+  {
+    "Service": "iotwireless",
+    "ResourceType": "iotwireless:WirelessDevice"
+  },
+  {
+    "Service": "iotwireless",
+    "ResourceType": "iotwireless:WirelessGateway"
+  },
+  {
+    "Service": "iotwireless",
+    "ResourceType": "iotwireless:WirelessGatewayTaskDefinition"
+  },
+  {
+    "Service": "ivs",
+    "ResourceType": "ivs:channel"
+  },
+  {
+    "Service": "ivs",
+    "ResourceType": "ivs:encoder-configuration"
+  },
+  {
+    "Service": "ivs",
+    "ResourceType": "ivs:ingest-configuration"
+  },
+  {
+    "Service": "ivs",
+    "ResourceType": "ivs:playback-key"
+  },
+  {
+    "Service": "ivs",
+    "ResourceType": "ivs:playback-restriction-policy"
+  },
+  {
+    "Service": "ivs",
+    "ResourceType": "ivs:recording-configuration"
+  },
+  {
+    "Service": "ivs",
+    "ResourceType": "ivs:storage-configuration"
+  },
+  {
+    "Service": "ivs",
+    "ResourceType": "ivs:stream-key"
+  },
+  {
+    "Service": "ivschat",
+    "ResourceType": "ivschat:logging-configuration"
+  },
+  {
+    "Service": "ivschat",
+    "ResourceType": "ivschat:room"
+  },
+  {
+    "Service": "kafka",
+    "ResourceType": "kafka:cluster"
+  },
+  {
+    "Service": "kafka",
+    "ResourceType": "kafka:configuration"
+  },
+  {
+    "Service": "kendra-ranking",
+    "ResourceType": "kendra-ranking:rescore-execution-plan"
+  },
+  {
+    "Service": "kendra",
+    "ResourceType": "kendra:index"
+  },
+  {
+    "Service": "kendra",
+    "ResourceType": "kendra:index/access-control-configuration"
+  },
+  {
+    "Service": "kendra",
+    "ResourceType": "kendra:index/data-source"
+  },
+  {
+    "Service": "kendra",
+    "ResourceType": "kendra:index/experience"
+  },
+  {
+    "Service": "kendra",
+    "ResourceType": "kendra:index/faq"
+  },
+  {
+    "Service": "kendra",
+    "ResourceType": "kendra:index/featured-results-set"
+  },
+  {
+    "Service": "kendra",
+    "ResourceType": "kendra:index/query-suggestions-block-list"
+  },
+  {
+    "Service": "kendra",
+    "ResourceType": "kendra:index/thesaurus"
+  },
+  {
+    "Service": "kinesis",
+    "ResourceType": "kinesis:stream"
+  },
+  {
+    "Service": "kinesisanalytics",
+    "ResourceType": "kinesisanalytics:application"
+  },
+  {
+    "Service": "kinesisvideo",
+    "ResourceType": "kinesisvideo:channel"
+  },
+  {
+    "Service": "kinesisvideo",
+    "ResourceType": "kinesisvideo:stream"
+  },
+  {
+    "Service": "kms",
+    "ResourceType": "kms:key"
+  },
+  {
+    "Service": "lambda",
+    "ResourceType": "lambda:code-signing-config"
+  },
+  {
+    "Service": "lambda",
+    "ResourceType": "lambda:event-source-mapping"
+  },
+  {
+    "Service": "lambda",
+    "ResourceType": "lambda:function"
+  },
+  {
+    "Service": "lambda",
+    "ResourceType": "lambda:function/version"
+  },
+  {
+    "Service": "lambda",
+    "ResourceType": "lambda:layer/version"
+  },
+  {
+    "Service": "lex",
+    "ResourceType": "lex:bot"
+  },
+  {
+    "Service": "lex",
+    "ResourceType": "lex:bot-alias"
+  },
+  {
+    "Service": "license-manager",
+    "ResourceType": "license-manager:grant"
+  },
+  {
+    "Service": "logs",
+    "ResourceType": "logs:destination"
+  },
+  {
+    "Service": "logs",
+    "ResourceType": "logs:log-group"
+  },
+  {
+    "Service": "m2",
+    "ResourceType": "m2:env"
+  },
+  {
+    "Service": "macie2",
+    "ResourceType": "macie2:allow-list"
+  },
+  {
+    "Service": "macie2",
+    "ResourceType": "macie2:custom-data-identifier"
+  },
+  {
+    "Service": "macie2",
+    "ResourceType": "macie2:findings-filter"
+  },
+  {
+    "Service": "macie2",
+    "ResourceType": "macie2:member"
+  },
+  {
+    "Service": "managedblockchain",
+    "ResourceType": "managedblockchain:accessors"
+  },
+  {
+    "Service": "mediaconnect",
+    "ResourceType": "mediaconnect:flow"
+  },
+  {
+    "Service": "mediaconnect",
+    "ResourceType": "mediaconnect:gateway"
+  },
+  {
+    "Service": "mediapackage-vod",
+    "ResourceType": "mediapackage-vod:assets"
+  },
+  {
+    "Service": "mediapackage-vod",
+    "ResourceType": "mediapackage-vod:packaging-configurations"
+  },
+  {
+    "Service": "mediapackage-vod",
+    "ResourceType": "mediapackage-vod:packaging-groups"
+  },
+  {
+    "Service": "mediapackage",
+    "ResourceType": "mediapackage:channels"
+  },
+  {
+    "Service": "mediapackage",
+    "ResourceType": "mediapackage:origin_endpoints"
+  },
+  {
+    "Service": "mediastore",
+    "ResourceType": "mediastore:container"
+  },
+  {
+    "Service": "mediatailor",
+    "ResourceType": "mediatailor:channel"
+  },
+  {
+    "Service": "mediatailor",
+    "ResourceType": "mediatailor:liveSource"
+  },
+  {
+    "Service": "mediatailor",
+    "ResourceType": "mediatailor:playbackConfiguration"
+  },
+  {
+    "Service": "mediatailor",
+    "ResourceType": "mediatailor:vodSource"
+  },
+  {
+    "Service": "memorydb",
+    "ResourceType": "memorydb:acl"
+  },
+  {
+    "Service": "memorydb",
+    "ResourceType": "memorydb:cluster"
+  },
+  {
+    "Service": "memorydb",
+    "ResourceType": "memorydb:parametergroup"
+  },
+  {
+    "Service": "memorydb",
+    "ResourceType": "memorydb:snapshot"
+  },
+  {
+    "Service": "memorydb",
+    "ResourceType": "memorydb:subnetgroup"
+  },
+  {
+    "Service": "memorydb",
+    "ResourceType": "memorydb:user"
+  },
+  {
+    "Service": "mobiletargeting",
+    "ResourceType": "mobiletargeting:apps/campaigns"
+  },
+  {
+    "Service": "mobiletargeting",
+    "ResourceType": "mobiletargeting:apps/segments"
+  },
+  {
+    "Service": "mobiletargeting",
+    "ResourceType": "mobiletargeting:templates/EMAIL"
+  },
+  {
+    "Service": "mobiletargeting",
+    "ResourceType": "mobiletargeting:templates/PUSH"
+  },
+  {
+    "Service": "mobiletargeting",
+    "ResourceType": "mobiletargeting:templates/SMS"
+  },
+  {
+    "Service": "mq",
+    "ResourceType": "mq:broker"
+  },
+  {
+    "Service": "mq",
+    "ResourceType": "mq:configuration"
+  },
+  {
+    "Service": "network-firewall",
+    "ResourceType": "network-firewall:firewall"
+  },
+  {
+    "Service": "network-firewall",
+    "ResourceType": "network-firewall:firewall-policy"
+  },
+  {
+    "Service": "network-firewall",
+    "ResourceType": "network-firewall:stateful-rulegroup"
+  },
+  {
+    "Service": "network-firewall",
+    "ResourceType": "network-firewall:stateless-rulegroup"
+  },
+  {
+    "Service": "networkmanager",
+    "ResourceType": "networkmanager:attachment"
+  },
+  {
+    "Service": "networkmanager",
+    "ResourceType": "networkmanager:core-network"
+  },
+  {
+    "Service": "networkmanager",
+    "ResourceType": "networkmanager:device"
+  },
+  {
+    "Service": "networkmanager",
+    "ResourceType": "networkmanager:global-network"
+  },
+  {
+    "Service": "networkmanager",
+    "ResourceType": "networkmanager:link"
+  },
+  {
+    "Service": "oam",
+    "ResourceType": "oam:sink"
+  },
+  {
+    "Service": "omics",
+    "ResourceType": "omics:referenceStore"
+  },
+  {
+    "Service": "omics",
+    "ResourceType": "omics:runGroup"
+  },
+  {
+    "Service": "omics",
+    "ResourceType": "omics:workflow"
+  },
+  {
+    "Service": "outposts",
+    "ResourceType": "outposts:site"
+  },
+  {
+    "Service": "panorama",
+    "ResourceType": "panorama:device"
+  },
+  {
+    "Service": "panorama",
+    "ResourceType": "panorama:package"
+  },
+  {
+    "Service": "partnercentral",
+    "ResourceType": "partnercentral:catalog/engagement"
+  },
+  {
+    "Service": "partnercentral",
+    "ResourceType": "partnercentral:catalog/engagement-invitation"
+  },
+  {
+    "Service": "partnercentral",
+    "ResourceType": "partnercentral:catalog/opportunity"
+  },
+  {
+    "Service": "partnercentral",
+    "ResourceType": "partnercentral:catalog/resource-snapshot-job"
+  },
+  {
+    "Service": "partnercentral",
+    "ResourceType": "partnercentral:resourcesnapshot"
+  },
+  {
+    "Service": "personalize",
+    "ResourceType": "personalize:dataset"
+  },
+  {
+    "Service": "personalize",
+    "ResourceType": "personalize:dataset-group"
+  },
+  {
+    "Service": "personalize",
+    "ResourceType": "personalize:schema"
+  },
+  {
+    "Service": "personalize",
+    "ResourceType": "personalize:solution"
+  },
+  {
+    "Service": "pipes",
+    "ResourceType": "pipes:pipe"
+  },
+  {
+    "Service": "profile",
+    "ResourceType": "profile:domains"
+  },
+  {
+    "Service": "profile",
+    "ResourceType": "profile:domains/integrations"
+  },
+  {
+    "Service": "profile",
+    "ResourceType": "profile:domains/object-types"
+  },
+  {
+    "Service": "proton",
+    "ResourceType": "proton:environment-account-connection"
+  },
+  {
+    "Service": "proton",
+    "ResourceType": "proton:environment-template"
+  },
+  {
+    "Service": "proton",
+    "ResourceType": "proton:service-template"
+  },
+  {
+    "Service": "quicksight",
+    "ResourceType": "quicksight:dataset"
+  },
+  {
+    "Service": "quicksight",
+    "ResourceType": "quicksight:datasource"
+  },
+  {
+    "Service": "quicksight",
+    "ResourceType": "quicksight:template"
+  },
+  {
+    "Service": "quicksight",
+    "ResourceType": "quicksight:theme"
+  },
+  {
+    "Service": "ram",
+    "ResourceType": "ram:permission"
+  },
+  {
+    "Service": "ram",
+    "ResourceType": "ram:resource-share"
+  },
+  {
+    "Service": "rds",
+    "ResourceType": "rds:auto-backup"
+  },
+  {
+    "Service": "rds",
+    "ResourceType": "rds:cev"
+  },
+  {
+    "Service": "rds",
+    "ResourceType": "rds:cluster"
+  },
+  {
+    "Service": "rds",
+    "ResourceType": "rds:cluster-endpoint"
+  },
+  {
+    "Service": "rds",
+    "ResourceType": "rds:cluster-pg"
+  },
+  {
+    "Service": "rds",
+    "ResourceType": "rds:cluster-snapshot"
+  },
+  {
+    "Service": "rds",
+    "ResourceType": "rds:db"
+  },
+  {
+    "Service": "rds",
+    "ResourceType": "rds:db-proxy"
+  },
+  {
+    "Service": "rds",
+    "ResourceType": "rds:db-proxy-endpoint"
+  },
+  {
+    "Service": "rds",
+    "ResourceType": "rds:deployment"
+  },
+  {
+    "Service": "rds",
+    "ResourceType": "rds:es"
+  },
+  {
+    "Service": "rds",
+    "ResourceType": "rds:global-cluster"
+  },
+  {
+    "Service": "rds",
+    "ResourceType": "rds:og"
+  },
+  {
+    "Service": "rds",
+    "ResourceType": "rds:pg"
+  },
+  {
+    "Service": "rds",
+    "ResourceType": "rds:ri"
+  },
+  {
+    "Service": "rds",
+    "ResourceType": "rds:secgrp"
+  },
+  {
+    "Service": "rds",
+    "ResourceType": "rds:snapshot"
+  },
+  {
+    "Service": "rds",
+    "ResourceType": "rds:subgrp"
+  },
+  {
+    "Service": "redshift",
+    "ResourceType": "redshift:cluster"
+  },
+  {
+    "Service": "redshift",
+    "ResourceType": "redshift:eventsubscription"
+  },
+  {
+    "Service": "redshift",
+    "ResourceType": "redshift:parametergroup"
+  },
+  {
+    "Service": "redshift",
+    "ResourceType": "redshift:snapshot"
+  },
+  {
+    "Service": "redshift",
+    "ResourceType": "redshift:snapshotcopygrant"
+  },
+  {
+    "Service": "redshift",
+    "ResourceType": "redshift:snapshotschedule"
+  },
+  {
+    "Service": "redshift",
+    "ResourceType": "redshift:subnetgroup"
+  },
+  {
+    "Service": "redshift",
+    "ResourceType": "redshift:usagelimit"
+  },
+  {
+    "Service": "refactor-spaces",
+    "ResourceType": "refactor-spaces:environment"
+  },
+  {
+    "Service": "refactor-spaces",
+    "ResourceType": "refactor-spaces:environment/application"
+  },
+  {
+    "Service": "refactor-spaces",
+    "ResourceType": "refactor-spaces:environment/application/route"
+  },
+  {
+    "Service": "refactor-spaces",
+    "ResourceType": "refactor-spaces:environment/application/service"
+  },
+  {
+    "Service": "rekognition",
+    "ResourceType": "rekognition:project"
+  },
+  {
+    "Service": "resiliencehub",
+    "ResourceType": "resiliencehub:app"
+  },
+  {
+    "Service": "resiliencehub",
+    "ResourceType": "resiliencehub:resiliency-policy"
+  },
+  {
+    "Service": "resource-explorer-2",
+    "ResourceType": "resource-explorer-2:index"
+  },
+  {
+    "Service": "resource-explorer-2",
+    "ResourceType": "resource-explorer-2:view"
+  },
+  {
+    "Service": "resource-groups",
+    "ResourceType": "resource-groups:group"
+  },
+  {
+    "Service": "route53-recovery-control",
+    "ResourceType": "route53-recovery-control:cluster"
+  },
+  {
+    "Service": "route53-recovery-control",
+    "ResourceType": "route53-recovery-control:controlpanel/routingcontrol"
+  },
+  {
+    "Service": "route53-recovery-control",
+    "ResourceType": "route53-recovery-control:controlpanel/safetyrule"
+  },
+  {
+    "Service": "route53-recovery-readiness",
+    "ResourceType": "route53-recovery-readiness:cell"
+  },
+  {
+    "Service": "route53-recovery-readiness",
+    "ResourceType": "route53-recovery-readiness:readiness-check"
+  },
+  {
+    "Service": "route53-recovery-readiness",
+    "ResourceType": "route53-recovery-readiness:recovery-group"
+  },
+  {
+    "Service": "route53-recovery-readiness",
+    "ResourceType": "route53-recovery-readiness:resource-set"
+  },
+  {
+    "Service": "route53",
+    "ResourceType": "route53:domain"
+  },
+  {
+    "Service": "route53",
+    "ResourceType": "route53:healthcheck"
+  },
+  {
+    "Service": "route53",
+    "ResourceType": "route53:hostedzone"
+  },
+  {
+    "Service": "route53resolver",
+    "ResourceType": "route53resolver:firewall-domain-list"
+  },
+  {
+    "Service": "route53resolver",
+    "ResourceType": "route53resolver:firewall-rule-group"
+  },
+  {
+    "Service": "route53resolver",
+    "ResourceType": "route53resolver:firewall-rule-group-association"
+  },
+  {
+    "Service": "route53resolver",
+    "ResourceType": "route53resolver:resolver-endpoint"
+  },
+  {
+    "Service": "route53resolver",
+    "ResourceType": "route53resolver:resolver-query-log-config"
+  },
+  {
+    "Service": "route53resolver",
+    "ResourceType": "route53resolver:resolver-rule"
+  },
+  {
+    "Service": "rum",
+    "ResourceType": "rum:appmonitor"
+  },
+  {
+    "Service": "s3",
+    "ResourceType": "s3:accesspoint"
+  },
+  {
+    "Service": "s3",
+    "ResourceType": "s3:bucket"
+  },
+  {
+    "Service": "s3",
+    "ResourceType": "s3:multiregionaccesspoint"
+  },
+  {
+    "Service": "s3",
+    "ResourceType": "s3:storage-lens"
+  },
+  {
+    "Service": "s3",
+    "ResourceType": "s3:storage-lens-group"
+  },
+  {
+    "Service": "s3express",
+    "ResourceType": "s3express:bucket"
+  },
+  {
+    "Service": "sagemaker",
+    "ResourceType": "sagemaker:action"
+  },
+  {
+    "Service": "sagemaker",
+    "ResourceType": "sagemaker:algorithm"
+  },
+  {
+    "Service": "sagemaker",
+    "ResourceType": "sagemaker:app"
+  },
+  {
+    "Service": "sagemaker",
+    "ResourceType": "sagemaker:app-image-config"
+  },
+  {
+    "Service": "sagemaker",
+    "ResourceType": "sagemaker:artifact"
+  },
+  {
+    "Service": "sagemaker",
+    "ResourceType": "sagemaker:cluster"
+  },
+  {
+    "Service": "sagemaker",
+    "ResourceType": "sagemaker:code-repository"
+  },
+  {
+    "Service": "sagemaker",
+    "ResourceType": "sagemaker:context"
+  },
+  {
+    "Service": "sagemaker",
+    "ResourceType": "sagemaker:domain"
+  },
+  {
+    "Service": "sagemaker",
+    "ResourceType": "sagemaker:endpoint"
+  },
+  {
+    "Service": "sagemaker",
+    "ResourceType": "sagemaker:endpoint-config"
+  },
+  {
+    "Service": "sagemaker",
+    "ResourceType": "sagemaker:experiment"
+  },
+  {
+    "Service": "sagemaker",
+    "ResourceType": "sagemaker:experiment-trial"
+  },
+  {
+    "Service": "sagemaker",
+    "ResourceType": "sagemaker:experiment-trial-component"
+  },
+  {
+    "Service": "sagemaker",
+    "ResourceType": "sagemaker:feature-group"
+  },
+  {
+    "Service": "sagemaker",
+    "ResourceType": "sagemaker:flow-definition"
+  },
+  {
+    "Service": "sagemaker",
+    "ResourceType": "sagemaker:hub"
+  },
+  {
+    "Service": "sagemaker",
+    "ResourceType": "sagemaker:hub-content"
+  },
+  {
+    "Service": "sagemaker",
+    "ResourceType": "sagemaker:human-loop"
+  },
+  {
+    "Service": "sagemaker",
+    "ResourceType": "sagemaker:human-task-ui"
+  },
+  {
+    "Service": "sagemaker",
+    "ResourceType": "sagemaker:image"
+  },
+  {
+    "Service": "sagemaker",
+    "ResourceType": "sagemaker:image-version"
+  },
+  {
+    "Service": "sagemaker",
+    "ResourceType": "sagemaker:inference-component"
+  },
+  {
+    "Service": "sagemaker",
+    "ResourceType": "sagemaker:inference-experiment"
+  },
+  {
+    "Service": "sagemaker",
+    "ResourceType": "sagemaker:mlflow-tracking-server"
+  },
+  {
+    "Service": "sagemaker",
+    "ResourceType": "sagemaker:model"
+  },
+  {
+    "Service": "sagemaker",
+    "ResourceType": "sagemaker:model-card"
+  },
+  {
+    "Service": "sagemaker",
+    "ResourceType": "sagemaker:model-package"
+  },
+  {
+    "Service": "sagemaker",
+    "ResourceType": "sagemaker:model-package-group"
+  },
+  {
+    "Service": "sagemaker",
+    "ResourceType": "sagemaker:monitoring-schedule"
+  },
+  {
+    "Service": "sagemaker",
+    "ResourceType": "sagemaker:notebook-instance"
+  },
+  {
+    "Service": "sagemaker",
+    "ResourceType": "sagemaker:notebook-instance-lifecycle-config"
+  },
+  {
+    "Service": "sagemaker",
+    "ResourceType": "sagemaker:partner-app"
+  },
+  {
+    "Service": "sagemaker",
+    "ResourceType": "sagemaker:pipeline"
+  },
+  {
+    "Service": "sagemaker",
+    "ResourceType": "sagemaker:project"
+  },
+  {
+    "Service": "sagemaker",
+    "ResourceType": "sagemaker:space"
+  },
+  {
+    "Service": "sagemaker",
+    "ResourceType": "sagemaker:studio-lifecycle-config"
+  },
+  {
+    "Service": "sagemaker",
+    "ResourceType": "sagemaker:user-profile"
+  },
+  {
+    "Service": "sagemaker",
+    "ResourceType": "sagemaker:workforce"
+  },
+  {
+    "Service": "sagemaker",
+    "ResourceType": "sagemaker:workteam"
+  },
+  {
+    "Service": "scheduler",
+    "ResourceType": "scheduler:schedule-group"
+  },
+  {
+    "Service": "schemas",
+    "ResourceType": "schemas:discoverer"
+  },
+  {
+    "Service": "secretsmanager",
+    "ResourceType": "secretsmanager:secret"
+  },
+  {
+    "Service": "servicecatalog",
+    "ResourceType": "servicecatalog:applications"
+  },
+  {
+    "Service": "servicecatalog",
+    "ResourceType": "servicecatalog:attribute-groups"
+  },
+  {
+    "Service": "servicediscovery",
+    "ResourceType": "servicediscovery:service"
+  },
+  {
+    "Service": "ses",
+    "ResourceType": "ses:configuration-set"
+  },
+  {
+    "Service": "ses",
+    "ResourceType": "ses:contact-list"
+  },
+  {
+    "Service": "ses",
+    "ResourceType": "ses:dedicated-ip-pool"
+  },
+  {
+    "Service": "ses",
+    "ResourceType": "ses:identity"
+  },
+  {
+    "Service": "shield",
+    "ResourceType": "shield:protection"
+  },
+  {
+    "Service": "shield",
+    "ResourceType": "shield:protection-group"
+  },
+  {
+    "Service": "signer",
+    "ResourceType": "signer:signing-profiles"
+  },
+  {
+    "Service": "sns",
+    "ResourceType": "sns:topic"
+  },
+  {
+    "Service": "sqs",
+    "ResourceType": "sqs:queue"
+  },
+  {
+    "Service": "ssm-incidents",
+    "ResourceType": "ssm-incidents:response-plan"
+  },
+  {
+    "Service": "ssm",
+    "ResourceType": "ssm:association"
+  },
+  {
+    "Service": "ssm",
+    "ResourceType": "ssm:document"
+  },
+  {
+    "Service": "ssm",
+    "ResourceType": "ssm:maintenancewindow"
+  },
+  {
+    "Service": "ssm",
+    "ResourceType": "ssm:managed-instance"
+  },
+  {
+    "Service": "ssm",
+    "ResourceType": "ssm:parameter"
+  },
+  {
+    "Service": "ssm",
+    "ResourceType": "ssm:resource-data-sync"
+  },
+  {
+    "Service": "ssm",
+    "ResourceType": "ssm:session"
+  },
+  {
+    "Service": "ssm",
+    "ResourceType": "ssm:windowtarget"
+  },
+  {
+    "Service": "ssm",
+    "ResourceType": "ssm:windowtask"
+  },
+  {
+    "Service": "states",
+    "ResourceType": "states:activity"
+  },
+  {
+    "Service": "states",
+    "ResourceType": "states:stateMachine"
+  },
+  {
+    "Service": "storagegateway",
+    "ResourceType": "storagegateway:gateway"
+  },
+  {
+    "Service": "storagegateway",
+    "ResourceType": "storagegateway:share"
+  },
+  {
+    "Service": "synthetics",
+    "ResourceType": "synthetics:canary"
+  },
+  {
+    "Service": "synthetics",
+    "ResourceType": "synthetics:group"
+  },
+  {
+    "Service": "transfer",
+    "ResourceType": "transfer:agreement"
+  },
+  {
+    "Service": "transfer",
+    "ResourceType": "transfer:certificate"
+  },
+  {
+    "Service": "transfer",
+    "ResourceType": "transfer:connector"
+  },
+  {
+    "Service": "transfer",
+    "ResourceType": "transfer:profile"
+  },
+  {
+    "Service": "transfer",
+    "ResourceType": "transfer:server"
+  },
+  {
+    "Service": "transfer",
+    "ResourceType": "transfer:user"
+  },
+  {
+    "Service": "transfer",
+    "ResourceType": "transfer:workflow"
+  },
+  {
+    "Service": "verifiedpermissions",
+    "ResourceType": "verifiedpermissions:policy-store"
+  },
+  {
+    "Service": "vpc-lattice",
+    "ResourceType": "vpc-lattice:service"
+  },
+  {
+    "Service": "vpc-lattice",
+    "ResourceType": "vpc-lattice:service/listener"
+  },
+  {
+    "Service": "vpc-lattice",
+    "ResourceType": "vpc-lattice:servicenetwork"
+  },
+  {
+    "Service": "vpc-lattice",
+    "ResourceType": "vpc-lattice:servicenetworkserviceassociation"
+  },
+  {
+    "Service": "vpc-lattice",
+    "ResourceType": "vpc-lattice:targetgroup"
+  },
+  {
+    "Service": "wafv2",
+    "ResourceType": "wafv2:ipset"
+  },
+  {
+    "Service": "wafv2",
+    "ResourceType": "wafv2:regexpatternset"
+  },
+  {
+    "Service": "wafv2",
+    "ResourceType": "wafv2:rulegroup"
+  },
+  {
+    "Service": "wafv2",
+    "ResourceType": "wafv2:webacl"
+  },
+  {
+    "Service": "wellarchitected",
+    "ResourceType": "wellarchitected:workload"
+  },
+  {
+    "Service": "wisdom",
+    "ResourceType": "wisdom:assistant"
+  },
+  {
+    "Service": "wisdom",
+    "ResourceType": "wisdom:association"
+  },
+  {
+    "Service": "wisdom",
+    "ResourceType": "wisdom:content"
+  },
+  {
+    "Service": "wisdom",
+    "ResourceType": "wisdom:knowledge-base"
+  },
+  {
+    "Service": "workspaces-web",
+    "ResourceType": "workspaces-web:portal"
+  },
+  {
+    "Service": "workspaces",
+    "ResourceType": "workspaces:connectionalias"
+  },
+  {
+    "Service": "workspaces",
+    "ResourceType": "workspaces:workspace"
+  },
+  {
+    "Service": "xray",
+    "ResourceType": "xray:sampling-rule"
+  }
+]

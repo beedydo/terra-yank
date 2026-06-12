@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>AURA — Rizz Up!</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet" />
+
+<style>
+  html, body {
+    margin: 0; padding: 0;
+    background: #ebe4d8;
+    background:
+      radial-gradient(60% 50% at 15% 0%, oklch(0.92 0.05 60) 0%, transparent 70%),
+      radial-gradient(50% 60% at 90% 100%, oklch(0.9 0.08 300) 0%, transparent 70%),
+      #ece6db;
+    color: #1a1a1a;
+    font-family: "Bricolage Grotesque", system-ui, sans-serif;
+    min-height: 100vh;
+  }
+  body {
+    display: flex; align-items: center; justify-content: center;
+    padding: 40px 20px; box-sizing: border-box; min-height: 100vh;
+  }
+  * { -webkit-tap-highlight-color: transparent; }
+
+  /* Floating eyes on landing */
+  .aura-eye {
+    width: 32px; height: 44px; border-radius: 50%;
+    background: white; position: relative; box-shadow: inset -2px -2px 4px rgba(0,0,0,0.05);
+  }
+  .aura-eye::after {
+    content: ''; position: absolute; top: 38%; left: 28%;
+    width: 14px; height: 18px; border-radius: 50%; background: #1B1410;
+    animation: aura-eye 5s ease-in-out infinite;
+  }
+  .aura-eye:nth-child(2)::after { animation-delay: 0.7s; }
+
+  /* Blink cursor */
+  .aura-blink {
+    display: inline-block;
+    animation: aura-blink 1s steps(2, end) infinite;
+  }
+
+  @keyframes aura-blink { 50% { opacity: 0; } }
+  @keyframes aura-blink-slow { 0%, 100% { opacity: 0.4; } 50% { opacity: 1; } }
+  @keyframes aura-eye {
+    0%, 30% { transform: translate(0, 0); }
+    40%, 60% { transform: translate(4px, -2px); }
+    70%, 100% { transform: translate(-3px, 2px); }
+  }
+  @keyframes aura-morph {
+    0%, 100% { border-radius: 50% 50% 48% 52% / 56% 52% 48% 44%; transform: rotate(0deg); }
+    33%      { border-radius: 56% 44% 60% 40% / 48% 60% 40% 52%; transform: rotate(2deg); }
+    66%      { border-radius: 44% 56% 40% 60% / 60% 40% 60% 40%; transform: rotate(-2deg); }
+  }
+  @keyframes aura-pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.04); }
+  }
+  @keyframes aura-pop {
+    0%   { transform: scale(0.4); opacity: 0; }
+    60%  { transform: scale(1.06); opacity: 1; }
+    100% { transform: scale(1); opacity: 1; }
+  }
+  @keyframes aura-rise {
+    from { transform: translateY(14px); opacity: 0; }
+    to   { transform: translateY(0); opacity: 1; }
+  }
+  @keyframes aura-burst {
+    0%   { transform: translate(-50%, -50%) scale(0.4); opacity: 0; }
+    60%  { opacity: 1; }
+    100% { transform: translate(-50%, -50%) scale(1.4); opacity: 0; }
+  }
+  @keyframes aura-fade { from { opacity: 0; } to { opacity: 1; } }
+  @keyframes aura-slide-up {
+    from { transform: translateY(40px); opacity: 0; }
+    to   { transform: translateY(0); opacity: 1; }
+  }
+  @keyframes aura-grow {
+    from { width: 0%; }
+  }
+
+  /* Scrollbar hide */
+  ::-webkit-scrollbar { width: 0; height: 0; display: none; }
+  * { scrollbar-width: none; }
+</style>
+</head>
+<body>
+
+<div id="root"></div>
+
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+
+<script src="data.js"></script>
+
+<script type="text/babel" src="ios-frame.jsx"></script>
+<script type="text/babel" src="tweaks-panel.jsx"></script>
+<script type="text/babel" src="food-icons.jsx"></script>
+<script type="text/babel" src="components.jsx"></script>
+<script type="text/babel" src="aura-scenes.jsx"></script>
+<script type="text/babel" src="screens.jsx"></script>
+<script type="text/babel" src="results.jsx"></script>
+<script type="text/babel" src="home.jsx"></script>
+<script type="text/babel" src="aura-chat.jsx"></script>
+<script type="text/babel" src="leadcapture.jsx"></script>
+<script type="text/babel" src="app.jsx"></script>
+
+<script type="text/babel">
+  const root = ReactDOM.createRoot(document.getElementById('root'));
+  root.render(<App />);
+</script>
+
+</body>
+</html>

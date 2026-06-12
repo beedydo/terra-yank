@@ -1,0 +1,27 @@
+{
+  "name": "i2cv2",
+  "version": "1.0.0",
+  "description": "I2CV2 helps GCC cloud engineers discover AWS resources that are not managed by Terraform, select resources to bring under IaC, generate/import Terraform, and iteratively refactor the result into a governed GitLab workflow.",
+  "main": "dist/server.js",
+  "scripts": {
+    "build": "mkdir -p dist && cp -r src/* dist/",
+    "start": "node dist/server.js",
+    "dev": "node --env-file=.env src/server.js",
+    "test": "echo \"No tests configured\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.95.2",
+    "@aws-sdk/client-config-service": "^3.1065.0",
+    "@aws-sdk/client-ec2": "^3.1041.0",
+    "@aws-sdk/client-iam": "^3.1041.0",
+    "@aws-sdk/client-resource-explorer-2": "^3.1041.0",
+    "@aws-sdk/client-resource-groups-tagging-api": "^3.1041.0",
+    "@aws-sdk/client-sts": "^3.1041.0",
+    "@libsql/client": "^0.17.3",
+    "express": "^5.2.1"
+  }
+}

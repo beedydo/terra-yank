@@ -1,0 +1,167 @@
+STICKER IMAGE GENERATION PROMPT — i2cv2
+=======================================
+
+PROJECT CONTEXT
+---------------
+This sticker is for a developer tool called "i2cv2" (pronounced "I to C V2", short for
+"Infrastructure to Code v2"). It is a web application built for Singapore Government cloud
+engineers who manage cloud infrastructure on GCC (Government Commercial Cloud) — Singapore's
+sovereign cloud environment built on AWS.
+
+THE CORE PROBLEM IT SOLVES
+---------------------------
+Government engineers often build AWS cloud infrastructure manually (clicking around in the AWS
+Console) instead of writing code. This "ClickOps" approach leaves infrastructure ungoverned,
+undocumented, and impossible to audit or replicate. i2cv2 fixes this: it scans your AWS account,
+finds everything that isn't tracked in code, and uses an AI agent to automatically write the
+Terraform code that describes those resources — so engineers can finally bring their infrastructure
+under version control in GitLab.
+
+WHAT THE TOOL ACTUALLY DOES (the magic)
+----------------------------------------
+1. Connects to your AWS account and discovers every cloud resource (EC2, S3, Lambda, RDS,
+   VPCs, IAM roles, etc.) using AWS Resource Explorer.
+2. Compares discovered resources against uploaded Terraform state files to classify what's
+   already managed vs what's rogue/unmanaged.
+3. Separates government-owned baseline infrastructure (GCCI-tagged) from your agency's
+   own resources.
+4. You select the unmanaged resources you want to bring under code.
+5. The tool spins up a temporary Terraform workspace, runs "terraform plan -generate-config-out"
+   to auto-generate initial Terraform config from live cloud state.
+6. An AI agent (Claude by Anthropic) iteratively refines the generated Terraform code —
+   removing defaults, grouping resources by service, extracting variables — and validates
+   each iteration by running "terraform plan" until the plan is perfectly clean (zero drift).
+7. You review the generated .tf files live in the browser while watching real-time AI progress.
+8. One click commits the production-ready Terraform files into your GitLab repository.
+
+KEY TECHNOLOGIES IN THE STACK
+------------------------------
+- Node.js backend (Express)
+- AWS Resource Explorer 2 (discovery engine)
+- Terraform CLI (bundled inside the Docker container, v1.12.1)
+- Anthropic Claude AI (the LLM that writes and refines Terraform code)
+- GitLab API (Singapore Government Tech Stack: sgts.gitlab-dedicated.com)
+- TechPass OAuth (Singapore Government single sign-on)
+- Deployed on Airbase (GDS Singapore's container platform)
+- Docker container
+- SQLite database
+
+THE BRAND / TOOL NAME
+---------------------
+- Full name: i2cv2
+- Subtitle options: "Infrastructure to Code", "ClickOps to GitOps", "Tame your cloud"
+- Version badge: v2
+- Made for: Singapore Government GCC engineers
+
+THE EMOTIONAL VIBE / STORY
+---------------------------
+The sticker should capture the feeling of:
+  - Taking something chaotic (manually clicked AWS resources, ungoverned cloud sprawl) and
+    making it ordered, versioned, and beautiful (clean Terraform code in GitLab).
+  - The transformation from "ClickOps" to "GitOps".
+  - AI doing the boring, tedious Terraform writing work so engineers don't have to.
+  - A government engineer finally having control and visibility over their cloud.
+  - The satisfaction of running "terraform plan" and seeing zero changes.
+
+VISUAL METAPHOR IDEAS (choose one or blend)
+--------------------------------------------
+OPTION A — "The Archaeologist / Miner":
+  A pickaxe or shovel digging into a cloud (AWS cloud icon) and pulling out structured,
+  glowing Terraform code blocks. Like mining raw ore and refining it into gold. The cloud
+  is wild/messy on the left, and the output on the right is neat, stacked code files.
+  Colors: deep orange, amber, dark background.
+
+OPTION B — "The Robot Coder":
+  A friendly robot (representing the Claude AI agent) sitting at a terminal, writing Terraform
+  code. Behind the robot: a chaotic explosion of AWS service icons (EC2, S3, RDS, Lambda, VPC).
+  In front of the robot: clean, organized .tf files going into a GitLab pipeline.
+  The robot has a Singapore red accent — maybe a red lanyard or badge.
+  Colors: electric blue robot, green terminal glow, dark background, Singapore red accent.
+
+OPTION C — "ClickOps to GitOps transformation":
+  Split panel design. LEFT SIDE: messy/chaotic hand cursor clicking around an AWS console,
+  resources floating everywhere, no order. A bold "BEFORE" label or "ClickOps" tag.
+  RIGHT SIDE: clean Terraform (.tf) files, a GitLab logo, organized and structured.
+  A bold "AFTER" label or "GitOps" tag. A lightning bolt or arrow in the center representing
+  the transformation. The i2cv2 logo sits prominently in the center.
+  Colors: red/orange chaos on left, clean green/blue order on right.
+
+OPTION D — "The Terraform Whisperer":
+  A silhouetted engineer pointing at a wild storm cloud full of AWS icons, and with the other
+  hand gesturing toward a glowing terminal where an AI writes terraform code automatically.
+  The vibe: calm authority over cloud chaos. Think "cloud tamer" energy.
+  Colors: stormy dark purple/blue, neon green terminal output, white silhouette.
+
+OPTION E — "Clean Plan" (developer in-joke):
+  Giant terminal output showing "Plan: 0 to add, 0 to change, 0 to destroy." with green
+  checkmarks. This is the holy grail output every Terraform user wants to see.
+  Small text beneath: "Made possible by i2cv2".
+  The i2cv2 logo in the corner. Very programmer-culture sticker energy.
+  Colors: dark terminal black, bright green text, red "before" vs green "after" contrast.
+
+TEXT TO INCLUDE ON STICKER
+---------------------------
+REQUIRED:
+  - "i2cv2"  (the tool name — this must be prominent)
+
+CHOOSE ONE tagline:
+  - "Infrastructure to Code"
+  - "ClickOps → GitOps"
+  - "Tame your cloud."
+  - "0 to add. 0 to change. 0 to destroy."
+  - "From chaos to Terraform."
+
+OPTIONAL small badge text:
+  - "Powered by Claude AI"  OR  "AI-assisted Terraform"
+  - "Built for GCC"  OR  "Singapore Government Cloud"
+  - "v2"
+
+STICKER FORMAT REQUIREMENTS
+-----------------------------
+- Shape: Die-cut sticker (outline follows the shape of the art, not a square/rectangle)
+  OR circle/hexagon (developer sticker standard)
+- Size: Designed for ~3 inch / 7.5cm laptop sticker
+- Style: Bold, high contrast — must be readable at small sizes
+- Background: Dark preferred (dark navy, black, deep purple) so it looks good on silver laptops
+- Color palette suggestion:
+    Primary: Deep navy or black background
+    Accent 1: Neon green (Terraform/terminal green: #00ED64 or similar)
+    Accent 2: Electric blue or orange
+    Text: White or off-white
+    Optional: Singapore red (#EF3340) as an accent to signal SG government context
+- Art style: Flat vector / modern tech sticker aesthetic (similar to Kubernetes, Terraform,
+  Docker, HashiCorp sticker style) — clean lines, bold shapes, minimal gradients
+- NOT a photo-realistic style — should look like a developer conference sticker
+
+TECHNICAL SYMBOLS THAT COULD APPEAR
+-------------------------------------
+- Terraform logo style (the diamond/gem icon)
+- AWS cloud icon (stylized)
+- GitLab fox/tanuki logo (if licensing allows) OR just a git branch icon
+- Terminal / command line window
+- AI/neural network nodes (to represent Claude AI agent)
+- Padlock or checkmark (governance, compliance)
+- Singapore flag colors or lion motif (subtle, to ground it in SG govt context)
+- Code brackets { } or .tf file icon
+- Import arrow (resources flowing INTO code)
+
+WHAT TO AVOID
+-------------
+- Avoid busy/cluttered designs — must read clearly at 3 inch
+- Avoid light backgrounds (won't show on silver MacBooks)
+- Avoid overly corporate/government-bland aesthetic — this is a developer tool, it should
+  feel like something engineers are PROUD to put on their laptop
+- Avoid the word "government" in large text — keep it subtle
+- Avoid realistic human faces
+
+FINAL SUMMARY SENTENCE FOR THE AI
+-----------------------------------
+Generate a bold, dark-background developer sticker for a tool called "i2cv2"
+(Infrastructure to Code v2) — a Singapore Government cloud tool that uses AI (Claude)
+to automatically scan AWS accounts, find unmanaged infrastructure, and write production-ready
+Terraform code to bring everything under GitLab version control. The sticker should feel
+like a proud badge for a cloud engineer who has finally tamed their AWS environment.
+The visual should convey transformation: chaos (manual ClickOps) becoming order (clean Terraform code).
+Include the text "i2cv2" prominently and one of these taglines: "Infrastructure to Code"
+or "ClickOps → GitOps". Dark background, neon green + electric blue palette,
+flat vector style, die-cut or hexagon shape.

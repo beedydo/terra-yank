@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../Downloads/i2cv2-i2cv2.v1/docs"
+		},
+		{
+			"path": "../Downloads/i2cv2-i2cv2.v1/scripts"
+		},
+		{
+			"path": "../Downloads/i2cv2-i2cv2.v1/src"
+		}
+	],
+	"settings": {}
+}

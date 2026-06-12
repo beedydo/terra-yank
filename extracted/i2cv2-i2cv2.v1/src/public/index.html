@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>i2cv2</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="app-shell" id="app-shell">
+      <header class="topbar">
+        <div class="brand">i2cv2</div>
+        <nav class="nav">
+          <button class="nav__item is-active" data-page="integrations">Integrations</button>
+          <button class="nav__item" data-page="discovery">Discovery</button>
+          <button class="nav__item" data-page="export">Export</button>
+        </nav>
+        <div class="topbar-right">
+          <div class="scan-status" id="scanStatus">Select a region and scan</div>
+          <div class="user-info" id="userInfo"></div>
+        </div>
+      </header>
+
+      <main class="workspace">
+        <section class="hero">
+          <div>
+            <p class="eyebrow">Infrastructure to Code</p>
+            <h1>Discover, classify, and export AWS resources into GitLab.</h1>
+          </div>
+          <div class="hero__metric">
+            <span id="heroSelected">0</span>
+            <small>selected resources</small>
+          </div>
+        </section>
+
+        <section class="page is-active" id="page-integrations"></section>
+        <section class="page" id="page-discovery"></section>
+        <section class="page" id="page-export"></section>
+      </main>
+    </div>
+
+    <div class="toast" id="toast" role="status"></div>
+    <script src="/app.js"></script>
+  </body>
+</html>

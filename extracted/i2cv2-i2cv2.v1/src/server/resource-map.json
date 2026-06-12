@@ -1,0 +1,2090 @@
+{
+  "providerVersion": "5.100.0",
+  "generatedAt": "2026-05-15T03:58:50.886Z",
+  "totalReTypes": 657,
+  "mappedTypes": 347,
+  "resources": {
+    "access-analyzer:analyzer": {
+      "tfType": "aws_accessanalyzer_analyzer",
+      "importIdField": "resourceId",
+      "reType": "access-analyzer:analyzer",
+      "source": "convention"
+    },
+    "acm-pca:certificate-authority": {
+      "tfType": "aws_acmpca_certificate_authority",
+      "importIdField": "arn",
+      "reType": "acm-pca:certificate-authority",
+      "source": "override"
+    },
+    "acm:certificate": {
+      "tfType": "aws_acm_certificate",
+      "importIdField": "arn",
+      "reType": "acm:certificate",
+      "source": "override"
+    },
+    "airflow:environment": {
+      "tfType": "aws_mwaa_environment",
+      "importIdField": "resourceId",
+      "reType": "airflow:environment",
+      "source": "override"
+    },
+    "amplify:apps": {
+      "tfType": "aws_amplify_app",
+      "importIdField": "resourceId",
+      "reType": "amplify:apps",
+      "source": "override"
+    },
+    "aoss:collection": {
+      "tfType": "aws_opensearchserverless_collection",
+      "importIdField": "resourceId",
+      "reType": "aoss:collection",
+      "source": "override"
+    },
+    "apigateway:apis": {
+      "tfType": "aws_apigatewayv2_api",
+      "importIdField": "resourceId",
+      "reType": "apigateway:apis",
+      "source": "override"
+    },
+    "apigateway:restapis": {
+      "tfType": "aws_api_gateway_rest_api",
+      "importIdField": "resourceId",
+      "reType": "apigateway:restapis",
+      "source": "override"
+    },
+    "apigateway:vpclinks": {
+      "tfType": "aws_api_gateway_vpc_link",
+      "importIdField": "resourceId",
+      "reType": "apigateway:vpclinks",
+      "source": "override"
+    },
+    "app-integrations:event-integration": {
+      "tfType": "aws_appintegrations_event_integration",
+      "importIdField": "resourceId",
+      "reType": "app-integrations:event-integration",
+      "source": "override"
+    },
+    "appconfig:application": {
+      "tfType": "aws_appconfig_application",
+      "importIdField": "resourceId",
+      "reType": "appconfig:application",
+      "source": "override"
+    },
+    "appconfig:deploymentstrategy": {
+      "tfType": "aws_appconfig_deployment_strategy",
+      "importIdField": "resourceId",
+      "reType": "appconfig:deploymentstrategy",
+      "source": "override"
+    },
+    "appflow:flow": {
+      "tfType": "aws_appflow_flow",
+      "importIdField": "resourceId",
+      "reType": "appflow:flow",
+      "source": "override"
+    },
+    "appmesh:mesh": {
+      "tfType": "aws_appmesh_mesh",
+      "importIdField": "resourceId",
+      "reType": "appmesh:mesh",
+      "source": "override"
+    },
+    "apprunner:autoscalingconfiguration": {
+      "tfType": "aws_apprunner_auto_scaling_configuration_version",
+      "importIdField": "resourceId",
+      "reType": "apprunner:autoscalingconfiguration",
+      "source": "override"
+    },
+    "apprunner:connection": {
+      "tfType": "aws_apprunner_connection",
+      "importIdField": "resourceId",
+      "reType": "apprunner:connection",
+      "source": "override"
+    },
+    "apprunner:service": {
+      "tfType": "aws_apprunner_service",
+      "importIdField": "resourceId",
+      "reType": "apprunner:service",
+      "source": "override"
+    },
+    "apprunner:vpcconnector": {
+      "tfType": "aws_apprunner_vpc_connector",
+      "importIdField": "resourceId",
+      "reType": "apprunner:vpcconnector",
+      "source": "override"
+    },
+    "appstream:fleet": {
+      "tfType": "aws_appstream_fleet",
+      "importIdField": "resourceId",
+      "reType": "appstream:fleet",
+      "source": "override"
+    },
+    "appstream:image-builder": {
+      "tfType": "aws_appstream_image_builder",
+      "importIdField": "resourceId",
+      "reType": "appstream:image-builder",
+      "source": "override"
+    },
+    "appstream:stack": {
+      "tfType": "aws_appstream_stack",
+      "importIdField": "resourceId",
+      "reType": "appstream:stack",
+      "source": "override"
+    },
+    "appsync:apis": {
+      "tfType": "aws_appsync_graphql_api",
+      "importIdField": "resourceId",
+      "reType": "appsync:apis",
+      "source": "override"
+    },
+    "aps:rulegroupsnamespace": {
+      "tfType": "aws_prometheus_rule_group_namespace",
+      "importIdField": "resourceId",
+      "reType": "aps:rulegroupsnamespace",
+      "source": "override"
+    },
+    "aps:workspace": {
+      "tfType": "aws_prometheus_workspace",
+      "importIdField": "resourceId",
+      "reType": "aps:workspace",
+      "source": "override"
+    },
+    "athena:datacatalog": {
+      "tfType": "aws_athena_data_catalog",
+      "importIdField": "resourceId",
+      "reType": "athena:datacatalog",
+      "source": "override"
+    },
+    "athena:workgroup": {
+      "tfType": "aws_athena_workgroup",
+      "importIdField": "resourceId",
+      "reType": "athena:workgroup",
+      "source": "override"
+    },
+    "autoscaling:autoScalingGroup": {
+      "tfType": "aws_autoscaling_group",
+      "importIdField": "resourceId",
+      "reType": "autoscaling:autoScalingGroup",
+      "source": "override"
+    },
+    "backup:backup-plan": {
+      "tfType": "aws_backup_plan",
+      "importIdField": "resourceId",
+      "reType": "backup:backup-plan",
+      "source": "override"
+    },
+    "backup:backup-vault": {
+      "tfType": "aws_backup_vault",
+      "importIdField": "resourceId",
+      "reType": "backup:backup-vault",
+      "source": "override"
+    },
+    "backup:report-plan": {
+      "tfType": "aws_backup_report_plan",
+      "importIdField": "resourceId",
+      "reType": "backup:report-plan",
+      "source": "override"
+    },
+    "batch:compute-environment": {
+      "tfType": "aws_batch_compute_environment",
+      "importIdField": "resourceId",
+      "reType": "batch:compute-environment",
+      "source": "override"
+    },
+    "batch:job-definition": {
+      "tfType": "aws_batch_job_definition",
+      "importIdField": "resourceId",
+      "reType": "batch:job-definition",
+      "source": "override"
+    },
+    "batch:job-queue": {
+      "tfType": "aws_batch_job_queue",
+      "importIdField": "resourceId",
+      "reType": "batch:job-queue",
+      "source": "override"
+    },
+    "batch:scheduling-policy": {
+      "tfType": "aws_batch_scheduling_policy",
+      "importIdField": "resourceId",
+      "reType": "batch:scheduling-policy",
+      "source": "override"
+    },
+    "bedrock:guardrail": {
+      "tfType": "aws_bedrock_guardrail",
+      "importIdField": "resourceId",
+      "reType": "bedrock:guardrail",
+      "source": "override"
+    },
+    "budgets:budget": {
+      "tfType": "aws_budgets_budget",
+      "importIdField": "resourceId",
+      "reType": "budgets:budget",
+      "source": "override"
+    },
+    "ce:anomalymonitor": {
+      "tfType": "aws_ce_anomaly_monitor",
+      "importIdField": "resourceId",
+      "reType": "ce:anomalymonitor",
+      "source": "override"
+    },
+    "ce:anomalysubscription": {
+      "tfType": "aws_ce_anomaly_subscription",
+      "importIdField": "resourceId",
+      "reType": "ce:anomalysubscription",
+      "source": "override"
+    },
+    "cleanrooms:collaboration": {
+      "tfType": "aws_cleanrooms_collaboration",
+      "importIdField": "resourceId",
+      "reType": "cleanrooms:collaboration",
+      "source": "override"
+    },
+    "cloud9:environment": {
+      "tfType": "aws_cloud9_environment_ec2",
+      "importIdField": "resourceId",
+      "reType": "cloud9:environment",
+      "source": "override"
+    },
+    "cloudformation:stack": {
+      "tfType": "aws_cloudformation_stack",
+      "importIdField": "resourceId",
+      "reType": "cloudformation:stack",
+      "source": "override"
+    },
+    "cloudformation:stackset": {
+      "tfType": "aws_cloudformation_stack_set",
+      "importIdField": "resourceId",
+      "reType": "cloudformation:stackset",
+      "source": "override"
+    },
+    "cloudfront:cache-policy": {
+      "tfType": "aws_cloudfront_cache_policy",
+      "importIdField": "resourceId",
+      "reType": "cloudfront:cache-policy",
+      "source": "override"
+    },
+    "cloudfront:distribution": {
+      "tfType": "aws_cloudfront_distribution",
+      "importIdField": "resourceId",
+      "reType": "cloudfront:distribution",
+      "source": "override"
+    },
+    "cloudfront:function": {
+      "tfType": "aws_cloudfront_function",
+      "importIdField": "resourceId",
+      "reType": "cloudfront:function",
+      "source": "override"
+    },
+    "cloudfront:origin-access-control": {
+      "tfType": "aws_cloudfront_origin_access_control",
+      "importIdField": "resourceId",
+      "reType": "cloudfront:origin-access-control",
+      "source": "override"
+    },
+    "cloudfront:origin-access-identity": {
+      "tfType": "aws_cloudfront_origin_access_identity",
+      "importIdField": "resourceId",
+      "reType": "cloudfront:origin-access-identity",
+      "source": "override"
+    },
+    "cloudfront:origin-request-policy": {
+      "tfType": "aws_cloudfront_origin_request_policy",
+      "importIdField": "resourceId",
+      "reType": "cloudfront:origin-request-policy",
+      "source": "override"
+    },
+    "cloudfront:realtime-log-config": {
+      "tfType": "aws_cloudfront_realtime_log_config",
+      "importIdField": "resourceId",
+      "reType": "cloudfront:realtime-log-config",
+      "source": "override"
+    },
+    "cloudfront:response-headers-policy": {
+      "tfType": "aws_cloudfront_response_headers_policy",
+      "importIdField": "resourceId",
+      "reType": "cloudfront:response-headers-policy",
+      "source": "override"
+    },
+    "cloudtrail:trail": {
+      "tfType": "aws_cloudtrail",
+      "importIdField": "resourceId",
+      "reType": "cloudtrail:trail",
+      "source": "override"
+    },
+    "cloudwatch:alarm": {
+      "tfType": "aws_cloudwatch_metric_alarm",
+      "importIdField": "resourceId",
+      "reType": "cloudwatch:alarm",
+      "source": "override"
+    },
+    "cloudwatch:dashboard": {
+      "tfType": "aws_cloudwatch_dashboard",
+      "importIdField": "resourceId",
+      "reType": "cloudwatch:dashboard",
+      "source": "override"
+    },
+    "cloudwatch:metric-stream": {
+      "tfType": "aws_cloudwatch_metric_stream",
+      "importIdField": "resourceId",
+      "reType": "cloudwatch:metric-stream",
+      "source": "override"
+    },
+    "codeartifact:domain": {
+      "tfType": "aws_codeartifact_domain",
+      "importIdField": "resourceId",
+      "reType": "codeartifact:domain",
+      "source": "override"
+    },
+    "codeartifact:repository": {
+      "tfType": "aws_codeartifact_repository",
+      "importIdField": "resourceId",
+      "reType": "codeartifact:repository",
+      "source": "override"
+    },
+    "codebuild:project": {
+      "tfType": "aws_codebuild_project",
+      "importIdField": "resourceId",
+      "reType": "codebuild:project",
+      "source": "override"
+    },
+    "codecommit:repository": {
+      "tfType": "aws_codecommit_repository",
+      "importIdField": "resourceId",
+      "reType": "codecommit:repository",
+      "source": "override"
+    },
+    "codeconnections:connection": {
+      "tfType": "aws_codeconnections_connection",
+      "importIdField": "resourceId",
+      "reType": "codeconnections:connection",
+      "source": "override"
+    },
+    "codedeploy:application": {
+      "tfType": "aws_codedeploy_app",
+      "importIdField": "resourceId",
+      "reType": "codedeploy:application",
+      "source": "override"
+    },
+    "codedeploy:deploymentconfig": {
+      "tfType": "aws_codedeploy_deployment_config",
+      "importIdField": "resourceId",
+      "reType": "codedeploy:deploymentconfig",
+      "source": "override"
+    },
+    "codepipeline:pipeline": {
+      "tfType": "aws_codepipeline",
+      "importIdField": "resourceId",
+      "reType": "codepipeline:pipeline",
+      "source": "override"
+    },
+    "codepipeline:webhook": {
+      "tfType": "aws_codepipeline_webhook",
+      "importIdField": "resourceId",
+      "reType": "codepipeline:webhook",
+      "source": "override"
+    },
+    "codestar-connections:connection": {
+      "tfType": "aws_codestarconnections_connection",
+      "importIdField": "resourceId",
+      "reType": "codestar-connections:connection",
+      "source": "override"
+    },
+    "codestar-connections:host": {
+      "tfType": "aws_codestarconnections_host",
+      "importIdField": "resourceId",
+      "reType": "codestar-connections:host",
+      "source": "override"
+    },
+    "cognito-identity:identitypool": {
+      "tfType": "aws_cognito_identity_pool",
+      "importIdField": "resourceId",
+      "reType": "cognito-identity:identitypool",
+      "source": "override"
+    },
+    "cognito-idp:userpool": {
+      "tfType": "aws_cognito_user_pool",
+      "importIdField": "resourceId",
+      "reType": "cognito-idp:userpool",
+      "source": "override"
+    },
+    "comprehend:document-classifier": {
+      "tfType": "aws_comprehend_document_classifier",
+      "importIdField": "resourceId",
+      "reType": "comprehend:document-classifier",
+      "source": "override"
+    },
+    "comprehend:entity-recognizer": {
+      "tfType": "aws_comprehend_entity_recognizer",
+      "importIdField": "resourceId",
+      "reType": "comprehend:entity-recognizer",
+      "source": "override"
+    },
+    "config:config-rule": {
+      "tfType": "aws_config_config_rule",
+      "importIdField": "resourceId",
+      "reType": "config:config-rule",
+      "source": "override"
+    },
+    "connect:instance": {
+      "tfType": "aws_connect_instance",
+      "importIdField": "resourceId",
+      "reType": "connect:instance",
+      "source": "override"
+    },
+    "connect:phone-number": {
+      "tfType": "aws_connect_phone_number",
+      "importIdField": "resourceId",
+      "reType": "connect:phone-number",
+      "source": "override"
+    },
+    "dataexchange:data-sets": {
+      "tfType": "aws_dataexchange_data_set",
+      "importIdField": "resourceId",
+      "reType": "dataexchange:data-sets",
+      "source": "override"
+    },
+    "datapipeline:pipeline": {
+      "tfType": "aws_datapipeline_pipeline",
+      "importIdField": "resourceId",
+      "reType": "datapipeline:pipeline",
+      "source": "override"
+    },
+    "datasync:task": {
+      "tfType": "aws_datasync_task",
+      "importIdField": "resourceId",
+      "reType": "datasync:task",
+      "source": "override"
+    },
+    "dax:cache": {
+      "tfType": "aws_dax_cluster",
+      "importIdField": "resourceId",
+      "reType": "dax:cache",
+      "source": "override"
+    },
+    "detective:graph": {
+      "tfType": "aws_detective_graph",
+      "importIdField": "resourceId",
+      "reType": "detective:graph",
+      "source": "override"
+    },
+    "devicefarm:instanceprofile": {
+      "tfType": "aws_devicefarm_instance_profile",
+      "importIdField": "resourceId",
+      "reType": "devicefarm:instanceprofile",
+      "source": "override"
+    },
+    "devicefarm:project": {
+      "tfType": "aws_devicefarm_project",
+      "importIdField": "resourceId",
+      "reType": "devicefarm:project",
+      "source": "override"
+    },
+    "devicefarm:testgrid-project": {
+      "tfType": "aws_devicefarm_test_grid_project",
+      "importIdField": "resourceId",
+      "reType": "devicefarm:testgrid-project",
+      "source": "override"
+    },
+    "directconnect:dx-gateway": {
+      "tfType": "aws_dx_gateway",
+      "importIdField": "resourceId",
+      "reType": "directconnect:dx-gateway",
+      "source": "override"
+    },
+    "dlm:policy": {
+      "tfType": "aws_dlm_lifecycle_policy",
+      "importIdField": "resourceId",
+      "reType": "dlm:policy",
+      "source": "override"
+    },
+    "dms:endpoint": {
+      "tfType": "aws_dms_endpoint",
+      "importIdField": "resourceId",
+      "reType": "dms:endpoint",
+      "source": "override"
+    },
+    "dms:es": {
+      "tfType": "aws_dms_event_subscription",
+      "importIdField": "resourceId",
+      "reType": "dms:es",
+      "source": "override"
+    },
+    "dms:rep": {
+      "tfType": "aws_dms_replication_instance",
+      "importIdField": "resourceId",
+      "reType": "dms:rep",
+      "source": "override"
+    },
+    "dms:subgrp": {
+      "tfType": "aws_dms_replication_subnet_group",
+      "importIdField": "resourceId",
+      "reType": "dms:subgrp",
+      "source": "override"
+    },
+    "dms:task": {
+      "tfType": "aws_dms_replication_task",
+      "importIdField": "resourceId",
+      "reType": "dms:task",
+      "source": "override"
+    },
+    "ds:directory": {
+      "tfType": "aws_directory_service_directory",
+      "importIdField": "resourceId",
+      "reType": "ds:directory",
+      "source": "override"
+    },
+    "dynamodb:table": {
+      "tfType": "aws_dynamodb_table",
+      "importIdField": "resourceId",
+      "reType": "dynamodb:table",
+      "source": "override"
+    },
+    "ec2:capacity-reservation": {
+      "tfType": "aws_ec2_capacity_reservation",
+      "importIdField": "resourceId",
+      "reType": "ec2:capacity-reservation",
+      "source": "override"
+    },
+    "ec2:carrier-gateway": {
+      "tfType": "aws_ec2_carrier_gateway",
+      "importIdField": "resourceId",
+      "reType": "ec2:carrier-gateway",
+      "source": "override"
+    },
+    "ec2:client-vpn-endpoint": {
+      "tfType": "aws_ec2_client_vpn_endpoint",
+      "importIdField": "resourceId",
+      "reType": "ec2:client-vpn-endpoint",
+      "source": "override"
+    },
+    "ec2:customer-gateway": {
+      "tfType": "aws_customer_gateway",
+      "importIdField": "resourceId",
+      "reType": "ec2:customer-gateway",
+      "source": "override"
+    },
+    "ec2:dedicated-host": {
+      "tfType": "aws_ec2_host",
+      "importIdField": "resourceId",
+      "reType": "ec2:dedicated-host",
+      "source": "override"
+    },
+    "ec2:dhcp-options": {
+      "tfType": "aws_vpc_dhcp_options",
+      "importIdField": "resourceId",
+      "reType": "ec2:dhcp-options",
+      "source": "override"
+    },
+    "ec2:egress-only-internet-gateway": {
+      "tfType": "aws_egress_only_internet_gateway",
+      "importIdField": "resourceId",
+      "reType": "ec2:egress-only-internet-gateway",
+      "source": "override"
+    },
+    "ec2:elastic-ip": {
+      "tfType": "aws_eip",
+      "importIdField": "resourceId",
+      "reType": "ec2:elastic-ip",
+      "source": "override"
+    },
+    "ec2:fleet": {
+      "tfType": "aws_ec2_fleet",
+      "importIdField": "resourceId",
+      "reType": "ec2:fleet",
+      "source": "override"
+    },
+    "ec2:image": {
+      "tfType": "aws_ami",
+      "importIdField": "resourceId",
+      "reType": "ec2:image",
+      "source": "override"
+    },
+    "ec2:instance": {
+      "tfType": "aws_instance",
+      "importIdField": "resourceId",
+      "reType": "ec2:instance",
+      "source": "override"
+    },
+    "ec2:internet-gateway": {
+      "tfType": "aws_internet_gateway",
+      "importIdField": "resourceId",
+      "reType": "ec2:internet-gateway",
+      "source": "override"
+    },
+    "ec2:ipam": {
+      "tfType": "aws_vpc_ipam",
+      "importIdField": "resourceId",
+      "reType": "ec2:ipam",
+      "source": "override"
+    },
+    "ec2:ipam-pool": {
+      "tfType": "aws_vpc_ipam_pool",
+      "importIdField": "resourceId",
+      "reType": "ec2:ipam-pool",
+      "source": "override"
+    },
+    "ec2:ipam-resource-discovery": {
+      "tfType": "aws_vpc_ipam_resource_discovery",
+      "importIdField": "resourceId",
+      "reType": "ec2:ipam-resource-discovery",
+      "source": "override"
+    },
+    "ec2:ipam-scope": {
+      "tfType": "aws_vpc_ipam_scope",
+      "importIdField": "resourceId",
+      "reType": "ec2:ipam-scope",
+      "source": "override"
+    },
+    "ec2:key-pair": {
+      "tfType": "aws_key_pair",
+      "importIdField": "resourceId",
+      "reType": "ec2:key-pair",
+      "source": "override"
+    },
+    "ec2:launch-template": {
+      "tfType": "aws_launch_template",
+      "importIdField": "resourceId",
+      "reType": "ec2:launch-template",
+      "source": "override"
+    },
+    "ec2:natgateway": {
+      "tfType": "aws_nat_gateway",
+      "importIdField": "resourceId",
+      "reType": "ec2:natgateway",
+      "source": "override"
+    },
+    "ec2:network-acl": {
+      "tfType": "aws_network_acl",
+      "importIdField": "resourceId",
+      "reType": "ec2:network-acl",
+      "source": "override"
+    },
+    "ec2:network-insights-analysis": {
+      "tfType": "aws_ec2_network_insights_analysis",
+      "importIdField": "resourceId",
+      "reType": "ec2:network-insights-analysis",
+      "source": "override"
+    },
+    "ec2:network-insights-path": {
+      "tfType": "aws_ec2_network_insights_path",
+      "importIdField": "resourceId",
+      "reType": "ec2:network-insights-path",
+      "source": "override"
+    },
+    "ec2:network-interface": {
+      "tfType": "aws_network_interface",
+      "importIdField": "resourceId",
+      "reType": "ec2:network-interface",
+      "source": "override"
+    },
+    "ec2:placement-group": {
+      "tfType": "aws_placement_group",
+      "importIdField": "resourceId",
+      "reType": "ec2:placement-group",
+      "source": "override"
+    },
+    "ec2:prefix-list": {
+      "tfType": "aws_ec2_managed_prefix_list",
+      "importIdField": "resourceId",
+      "reType": "ec2:prefix-list",
+      "source": "override"
+    },
+    "ec2:route-table": {
+      "tfType": "aws_route_table",
+      "importIdField": "resourceId",
+      "reType": "ec2:route-table",
+      "source": "override"
+    },
+    "ec2:security-group": {
+      "tfType": "aws_security_group",
+      "importIdField": "resourceId",
+      "reType": "ec2:security-group",
+      "source": "override"
+    },
+    "ec2:security-group-rule": {
+      "tfType": "aws_vpc_security_group_ingress_rule",
+      "importIdField": "resourceId",
+      "reType": "ec2:security-group-rule",
+      "source": "override"
+    },
+    "ec2:snapshot": {
+      "tfType": "aws_ebs_snapshot",
+      "importIdField": "resourceId",
+      "reType": "ec2:snapshot",
+      "source": "override"
+    },
+    "ec2:spot-fleet-request": {
+      "tfType": "aws_spot_fleet_request",
+      "importIdField": "resourceId",
+      "reType": "ec2:spot-fleet-request",
+      "source": "override"
+    },
+    "ec2:spot-instances-request": {
+      "tfType": "aws_spot_instance_request",
+      "importIdField": "resourceId",
+      "reType": "ec2:spot-instances-request",
+      "source": "override"
+    },
+    "ec2:subnet": {
+      "tfType": "aws_subnet",
+      "importIdField": "resourceId",
+      "reType": "ec2:subnet",
+      "source": "override"
+    },
+    "ec2:traffic-mirror-filter": {
+      "tfType": "aws_ec2_traffic_mirror_filter",
+      "importIdField": "resourceId",
+      "reType": "ec2:traffic-mirror-filter",
+      "source": "override"
+    },
+    "ec2:traffic-mirror-session": {
+      "tfType": "aws_ec2_traffic_mirror_session",
+      "importIdField": "resourceId",
+      "reType": "ec2:traffic-mirror-session",
+      "source": "override"
+    },
+    "ec2:traffic-mirror-target": {
+      "tfType": "aws_ec2_traffic_mirror_target",
+      "importIdField": "resourceId",
+      "reType": "ec2:traffic-mirror-target",
+      "source": "override"
+    },
+    "ec2:transit-gateway": {
+      "tfType": "aws_ec2_transit_gateway",
+      "importIdField": "resourceId",
+      "reType": "ec2:transit-gateway",
+      "source": "override"
+    },
+    "ec2:transit-gateway-attachment": {
+      "tfType": "aws_ec2_transit_gateway_vpc_attachment",
+      "importIdField": "resourceId",
+      "reType": "ec2:transit-gateway-attachment",
+      "source": "override"
+    },
+    "ec2:transit-gateway-connect-peer": {
+      "tfType": "aws_ec2_transit_gateway_connect_peer",
+      "importIdField": "resourceId",
+      "reType": "ec2:transit-gateway-connect-peer",
+      "source": "override"
+    },
+    "ec2:transit-gateway-multicast-domain": {
+      "tfType": "aws_ec2_transit_gateway_multicast_domain",
+      "importIdField": "resourceId",
+      "reType": "ec2:transit-gateway-multicast-domain",
+      "source": "override"
+    },
+    "ec2:transit-gateway-policy-table": {
+      "tfType": "aws_ec2_transit_gateway_policy_table",
+      "importIdField": "resourceId",
+      "reType": "ec2:transit-gateway-policy-table",
+      "source": "override"
+    },
+    "ec2:transit-gateway-route-table": {
+      "tfType": "aws_ec2_transit_gateway_route_table",
+      "importIdField": "resourceId",
+      "reType": "ec2:transit-gateway-route-table",
+      "source": "override"
+    },
+    "ec2:transit-gateway-route-table-announcement": {
+      "tfType": "aws_ec2_transit_gateway_route_table_propagation",
+      "importIdField": "resourceId",
+      "reType": "ec2:transit-gateway-route-table-announcement",
+      "source": "override"
+    },
+    "ec2:verified-access-endpoint": {
+      "tfType": "aws_verifiedaccess_endpoint",
+      "importIdField": "resourceId",
+      "reType": "ec2:verified-access-endpoint",
+      "source": "override"
+    },
+    "ec2:verified-access-group": {
+      "tfType": "aws_verifiedaccess_group",
+      "importIdField": "resourceId",
+      "reType": "ec2:verified-access-group",
+      "source": "override"
+    },
+    "ec2:verified-access-instance": {
+      "tfType": "aws_verifiedaccess_instance",
+      "importIdField": "resourceId",
+      "reType": "ec2:verified-access-instance",
+      "source": "override"
+    },
+    "ec2:verified-access-trust-provider": {
+      "tfType": "aws_verifiedaccess_trust_provider",
+      "importIdField": "resourceId",
+      "reType": "ec2:verified-access-trust-provider",
+      "source": "override"
+    },
+    "ec2:volume": {
+      "tfType": "aws_ebs_volume",
+      "importIdField": "resourceId",
+      "reType": "ec2:volume",
+      "source": "override"
+    },
+    "ec2:vpc": {
+      "tfType": "aws_vpc",
+      "importIdField": "resourceId",
+      "reType": "ec2:vpc",
+      "source": "override"
+    },
+    "ec2:vpc-endpoint": {
+      "tfType": "aws_vpc_endpoint",
+      "importIdField": "resourceId",
+      "reType": "ec2:vpc-endpoint",
+      "source": "override"
+    },
+    "ec2:vpc-flow-log": {
+      "tfType": "aws_flow_log",
+      "importIdField": "resourceId",
+      "reType": "ec2:vpc-flow-log",
+      "source": "override"
+    },
+    "ec2:vpc-peering-connection": {
+      "tfType": "aws_vpc_peering_connection",
+      "importIdField": "resourceId",
+      "reType": "ec2:vpc-peering-connection",
+      "source": "override"
+    },
+    "ec2:vpn-connection": {
+      "tfType": "aws_vpn_connection",
+      "importIdField": "resourceId",
+      "reType": "ec2:vpn-connection",
+      "source": "override"
+    },
+    "ec2:vpn-gateway": {
+      "tfType": "aws_vpn_gateway",
+      "importIdField": "resourceId",
+      "reType": "ec2:vpn-gateway",
+      "source": "override"
+    },
+    "ecr-public:repository": {
+      "tfType": "aws_ecrpublic_repository",
+      "importIdField": "resourceId",
+      "reType": "ecr-public:repository",
+      "source": "override"
+    },
+    "ecr:repository": {
+      "tfType": "aws_ecr_repository",
+      "importIdField": "resourceId",
+      "reType": "ecr:repository",
+      "source": "override"
+    },
+    "ecs:capacity-provider": {
+      "tfType": "aws_ecs_capacity_provider",
+      "importIdField": "resourceId",
+      "reType": "ecs:capacity-provider",
+      "source": "override"
+    },
+    "ecs:cluster": {
+      "tfType": "aws_ecs_cluster",
+      "importIdField": "arn",
+      "reType": "ecs:cluster",
+      "source": "override"
+    },
+    "ecs:service": {
+      "tfType": "aws_ecs_service",
+      "importIdField": "arn",
+      "reType": "ecs:service",
+      "source": "override"
+    },
+    "ecs:task-definition": {
+      "tfType": "aws_ecs_task_definition",
+      "importIdField": "arn",
+      "reType": "ecs:task-definition",
+      "source": "override"
+    },
+    "ecs:task-set": {
+      "tfType": "aws_ecs_task_set",
+      "importIdField": "resourceId",
+      "reType": "ecs:task-set",
+      "source": "override"
+    },
+    "eks:cluster": {
+      "tfType": "aws_eks_cluster",
+      "importIdField": "resourceId",
+      "reType": "eks:cluster",
+      "source": "override"
+    },
+    "eks:podidentityassociation": {
+      "tfType": "aws_eks_pod_identity_association",
+      "importIdField": "resourceId",
+      "reType": "eks:podidentityassociation",
+      "source": "override"
+    },
+    "elasticache:cluster": {
+      "tfType": "aws_elasticache_cluster",
+      "importIdField": "resourceId",
+      "reType": "elasticache:cluster",
+      "source": "override"
+    },
+    "elasticache:globalreplicationgroup": {
+      "tfType": "aws_elasticache_global_replication_group",
+      "importIdField": "resourceId",
+      "reType": "elasticache:globalreplicationgroup",
+      "source": "override"
+    },
+    "elasticache:parametergroup": {
+      "tfType": "aws_elasticache_parameter_group",
+      "importIdField": "resourceId",
+      "reType": "elasticache:parametergroup",
+      "source": "override"
+    },
+    "elasticache:replicationgroup": {
+      "tfType": "aws_elasticache_replication_group",
+      "importIdField": "resourceId",
+      "reType": "elasticache:replicationgroup",
+      "source": "override"
+    },
+    "elasticache:snapshot": {
+      "tfType": "aws_elasticache_cluster",
+      "importIdField": "resourceId",
+      "reType": "elasticache:snapshot",
+      "source": "override"
+    },
+    "elasticache:subnetgroup": {
+      "tfType": "aws_elasticache_subnet_group",
+      "importIdField": "resourceId",
+      "reType": "elasticache:subnetgroup",
+      "source": "override"
+    },
+    "elasticache:user": {
+      "tfType": "aws_elasticache_user",
+      "importIdField": "resourceId",
+      "reType": "elasticache:user",
+      "source": "override"
+    },
+    "elasticache:usergroup": {
+      "tfType": "aws_elasticache_user_group",
+      "importIdField": "resourceId",
+      "reType": "elasticache:usergroup",
+      "source": "override"
+    },
+    "elasticbeanstalk:application": {
+      "tfType": "aws_elastic_beanstalk_application",
+      "importIdField": "resourceId",
+      "reType": "elasticbeanstalk:application",
+      "source": "override"
+    },
+    "elasticbeanstalk:environment": {
+      "tfType": "aws_elastic_beanstalk_environment",
+      "importIdField": "resourceId",
+      "reType": "elasticbeanstalk:environment",
+      "source": "override"
+    },
+    "elasticfilesystem:access-point": {
+      "tfType": "aws_efs_access_point",
+      "importIdField": "resourceId",
+      "reType": "elasticfilesystem:access-point",
+      "source": "override"
+    },
+    "elasticfilesystem:file-system": {
+      "tfType": "aws_efs_file_system",
+      "importIdField": "resourceId",
+      "reType": "elasticfilesystem:file-system",
+      "source": "override"
+    },
+    "elasticloadbalancing:listener-rule": {
+      "tfType": "aws_lb_listener_rule",
+      "importIdField": "arn",
+      "reType": "elasticloadbalancing:listener-rule/app",
+      "source": "override"
+    },
+    "elasticloadbalancing:listener": {
+      "tfType": "aws_lb_listener",
+      "importIdField": "arn",
+      "reType": "elasticloadbalancing:listener/app",
+      "source": "override"
+    },
+    "elasticloadbalancing:loadbalancer": {
+      "tfType": "aws_lb",
+      "importIdField": "arn",
+      "reType": "elasticloadbalancing:loadbalancer",
+      "source": "override"
+    },
+    "elasticloadbalancing:targetgroup": {
+      "tfType": "aws_lb_target_group",
+      "importIdField": "arn",
+      "reType": "elasticloadbalancing:targetgroup",
+      "source": "override"
+    },
+    "elasticmapreduce:cluster": {
+      "tfType": "aws_emr_cluster",
+      "importIdField": "resourceId",
+      "reType": "elasticmapreduce:cluster",
+      "source": "override"
+    },
+    "emr-containers:virtualclusters": {
+      "tfType": "aws_emrcontainers_virtual_cluster",
+      "importIdField": "resourceId",
+      "reType": "emr-containers:virtualclusters",
+      "source": "override"
+    },
+    "emr-serverless:applications": {
+      "tfType": "aws_emrserverless_application",
+      "importIdField": "resourceId",
+      "reType": "emr-serverless:applications",
+      "source": "override"
+    },
+    "es:domain": {
+      "tfType": "aws_opensearch_domain",
+      "importIdField": "resourceId",
+      "reType": "es:domain",
+      "source": "override"
+    },
+    "events:api-destination": {
+      "tfType": "aws_cloudwatch_event_api_destination",
+      "importIdField": "resourceId",
+      "reType": "events:api-destination",
+      "source": "override"
+    },
+    "events:archive": {
+      "tfType": "aws_cloudwatch_event_archive",
+      "importIdField": "resourceId",
+      "reType": "events:archive",
+      "source": "override"
+    },
+    "events:connection": {
+      "tfType": "aws_cloudwatch_event_connection",
+      "importIdField": "resourceId",
+      "reType": "events:connection",
+      "source": "override"
+    },
+    "events:endpoint": {
+      "tfType": "aws_cloudwatch_event_endpoint",
+      "importIdField": "resourceId",
+      "reType": "events:endpoint",
+      "source": "override"
+    },
+    "events:event-bus": {
+      "tfType": "aws_cloudwatch_event_bus",
+      "importIdField": "resourceId",
+      "reType": "events:event-bus",
+      "source": "override"
+    },
+    "events:rule": {
+      "tfType": "aws_cloudwatch_event_rule",
+      "importIdField": "resourceId",
+      "reType": "events:rule",
+      "source": "override"
+    },
+    "firehose:deliverystream": {
+      "tfType": "aws_kinesis_firehose_delivery_stream",
+      "importIdField": "resourceId",
+      "reType": "firehose:deliverystream",
+      "source": "override"
+    },
+    "fis:experiment-template": {
+      "tfType": "aws_fis_experiment_template",
+      "importIdField": "resourceId",
+      "reType": "fis:experiment-template",
+      "source": "override"
+    },
+    "fsx:file-system": {
+      "tfType": "aws_fsx_lustre_file_system",
+      "importIdField": "resourceId",
+      "reType": "fsx:file-system",
+      "source": "override"
+    },
+    "glacier:vaults": {
+      "tfType": "aws_glacier_vault",
+      "importIdField": "resourceId",
+      "reType": "glacier:vaults",
+      "source": "override"
+    },
+    "globalaccelerator:accelerator": {
+      "tfType": "aws_globalaccelerator_accelerator",
+      "importIdField": "resourceId",
+      "reType": "globalaccelerator:accelerator",
+      "source": "override"
+    },
+    "glue:crawler": {
+      "tfType": "aws_glue_crawler",
+      "importIdField": "resourceId",
+      "reType": "glue:crawler",
+      "source": "override"
+    },
+    "glue:database": {
+      "tfType": "aws_glue_catalog_database",
+      "importIdField": "resourceId",
+      "reType": "glue:database",
+      "source": "override"
+    },
+    "glue:job": {
+      "tfType": "aws_glue_job",
+      "importIdField": "resourceId",
+      "reType": "glue:job",
+      "source": "override"
+    },
+    "glue:mlTransform": {
+      "tfType": "aws_glue_ml_transform",
+      "importIdField": "resourceId",
+      "reType": "glue:mlTransform",
+      "source": "override"
+    },
+    "glue:registry": {
+      "tfType": "aws_glue_registry",
+      "importIdField": "resourceId",
+      "reType": "glue:registry",
+      "source": "override"
+    },
+    "glue:table": {
+      "tfType": "aws_glue_catalog_table",
+      "importIdField": "resourceId",
+      "reType": "glue:table",
+      "source": "override"
+    },
+    "glue:trigger": {
+      "tfType": "aws_glue_trigger",
+      "importIdField": "resourceId",
+      "reType": "glue:trigger",
+      "source": "override"
+    },
+    "grafana:workspaces": {
+      "tfType": "aws_grafana_workspace",
+      "importIdField": "resourceId",
+      "reType": "grafana:workspaces",
+      "source": "override"
+    },
+    "guardduty:detector": {
+      "tfType": "aws_guardduty_detector",
+      "importIdField": "resourceId",
+      "reType": "guardduty:detector",
+      "source": "override"
+    },
+    "iam:group": {
+      "tfType": "aws_iam_group",
+      "importIdField": "resourceId",
+      "reType": "iam:group",
+      "source": "override"
+    },
+    "iam:instance-profile": {
+      "tfType": "aws_iam_instance_profile",
+      "importIdField": "resourceId",
+      "reType": "iam:instance-profile",
+      "source": "override"
+    },
+    "iam:oidc-provider": {
+      "tfType": "aws_iam_openid_connect_provider",
+      "importIdField": "arn",
+      "reType": "iam:oidc-provider",
+      "source": "override"
+    },
+    "iam:policy": {
+      "tfType": "aws_iam_policy",
+      "importIdField": "arn",
+      "reType": "iam:policy",
+      "source": "override"
+    },
+    "iam:role": {
+      "tfType": "aws_iam_role",
+      "importIdField": "resourceId",
+      "reType": "iam:role",
+      "source": "override"
+    },
+    "iam:saml-provider": {
+      "tfType": "aws_iam_saml_provider",
+      "importIdField": "arn",
+      "reType": "iam:saml-provider",
+      "source": "override"
+    },
+    "iam:server-certificate": {
+      "tfType": "aws_iam_server_certificate",
+      "importIdField": "resourceId",
+      "reType": "iam:server-certificate",
+      "source": "override"
+    },
+    "iam:user": {
+      "tfType": "aws_iam_user",
+      "importIdField": "resourceId",
+      "reType": "iam:user",
+      "source": "override"
+    },
+    "imagebuilder:component": {
+      "tfType": "aws_imagebuilder_component",
+      "importIdField": "resourceId",
+      "reType": "imagebuilder:component",
+      "source": "override"
+    },
+    "imagebuilder:container-recipe": {
+      "tfType": "aws_imagebuilder_container_recipe",
+      "importIdField": "resourceId",
+      "reType": "imagebuilder:container-recipe",
+      "source": "override"
+    },
+    "imagebuilder:distribution-configuration": {
+      "tfType": "aws_imagebuilder_distribution_configuration",
+      "importIdField": "resourceId",
+      "reType": "imagebuilder:distribution-configuration",
+      "source": "override"
+    },
+    "imagebuilder:image": {
+      "tfType": "aws_imagebuilder_image",
+      "importIdField": "resourceId",
+      "reType": "imagebuilder:image",
+      "source": "override"
+    },
+    "imagebuilder:image-pipeline": {
+      "tfType": "aws_imagebuilder_image_pipeline",
+      "importIdField": "resourceId",
+      "reType": "imagebuilder:image-pipeline",
+      "source": "override"
+    },
+    "imagebuilder:image-recipe": {
+      "tfType": "aws_imagebuilder_image_recipe",
+      "importIdField": "resourceId",
+      "reType": "imagebuilder:image-recipe",
+      "source": "override"
+    },
+    "imagebuilder:infrastructure-configuration": {
+      "tfType": "aws_imagebuilder_infrastructure_configuration",
+      "importIdField": "resourceId",
+      "reType": "imagebuilder:infrastructure-configuration",
+      "source": "override"
+    },
+    "iot:authorizer": {
+      "tfType": "aws_iot_authorizer",
+      "importIdField": "resourceId",
+      "reType": "iot:authorizer",
+      "source": "override"
+    },
+    "iot:billinggroup": {
+      "tfType": "aws_iot_billing_group",
+      "importIdField": "resourceId",
+      "reType": "iot:billinggroup",
+      "source": "override"
+    },
+    "iot:cacert": {
+      "tfType": "aws_iot_ca_certificate",
+      "importIdField": "resourceId",
+      "reType": "iot:cacert",
+      "source": "override"
+    },
+    "iot:cert": {
+      "tfType": "aws_iot_certificate",
+      "importIdField": "resourceId",
+      "reType": "iot:cert",
+      "source": "override"
+    },
+    "iot:policy": {
+      "tfType": "aws_iot_policy",
+      "importIdField": "resourceId",
+      "reType": "iot:policy",
+      "source": "override"
+    },
+    "iot:provisioningtemplate": {
+      "tfType": "aws_iot_provisioning_template",
+      "importIdField": "resourceId",
+      "reType": "iot:provisioningtemplate",
+      "source": "override"
+    },
+    "iot:rolealias": {
+      "tfType": "aws_iot_role_alias",
+      "importIdField": "resourceId",
+      "reType": "iot:rolealias",
+      "source": "override"
+    },
+    "iot:rule": {
+      "tfType": "aws_iot_topic_rule",
+      "importIdField": "resourceId",
+      "reType": "iot:rule",
+      "source": "override"
+    },
+    "iot:thing": {
+      "tfType": "aws_iot_thing",
+      "importIdField": "resourceId",
+      "reType": "iot:thing",
+      "source": "override"
+    },
+    "iot:thinggroup": {
+      "tfType": "aws_iot_thing_group",
+      "importIdField": "resourceId",
+      "reType": "iot:thinggroup",
+      "source": "override"
+    },
+    "iot:thingtype": {
+      "tfType": "aws_iot_thing_type",
+      "importIdField": "resourceId",
+      "reType": "iot:thingtype",
+      "source": "override"
+    },
+    "ivs:channel": {
+      "tfType": "aws_ivs_channel",
+      "importIdField": "resourceId",
+      "reType": "ivs:channel",
+      "source": "override"
+    },
+    "ivs:recording-configuration": {
+      "tfType": "aws_ivs_recording_configuration",
+      "importIdField": "resourceId",
+      "reType": "ivs:recording-configuration",
+      "source": "override"
+    },
+    "kafka:cluster": {
+      "tfType": "aws_msk_cluster",
+      "importIdField": "resourceId",
+      "reType": "kafka:cluster",
+      "source": "override"
+    },
+    "kafka:configuration": {
+      "tfType": "aws_msk_configuration",
+      "importIdField": "resourceId",
+      "reType": "kafka:configuration",
+      "source": "override"
+    },
+    "kinesis:stream": {
+      "tfType": "aws_kinesis_stream",
+      "importIdField": "resourceId",
+      "reType": "kinesis:stream",
+      "source": "override"
+    },
+    "kinesisanalytics:application": {
+      "tfType": "aws_kinesis_analytics_application",
+      "importIdField": "resourceId",
+      "reType": "kinesisanalytics:application",
+      "source": "override"
+    },
+    "kinesisvideo:stream": {
+      "tfType": "aws_kinesis_video_stream",
+      "importIdField": "resourceId",
+      "reType": "kinesisvideo:stream",
+      "source": "override"
+    },
+    "kms:key": {
+      "tfType": "aws_kms_key",
+      "importIdField": "resourceId",
+      "reType": "kms:key",
+      "source": "override"
+    },
+    "lambda:code-signing-config": {
+      "tfType": "aws_lambda_code_signing_config",
+      "importIdField": "resourceId",
+      "reType": "lambda:code-signing-config",
+      "source": "override"
+    },
+    "lambda:event-source-mapping": {
+      "tfType": "aws_lambda_event_source_mapping",
+      "importIdField": "resourceId",
+      "reType": "lambda:event-source-mapping",
+      "source": "override"
+    },
+    "lambda:function": {
+      "tfType": "aws_lambda_function",
+      "importIdField": "resourceId",
+      "reType": "lambda:function",
+      "source": "override"
+    },
+    "lambda:layer": {
+      "tfType": "aws_lambda_layer_version",
+      "importIdField": "arn",
+      "reType": "lambda:layer/version",
+      "source": "override"
+    },
+    "lex:bot": {
+      "tfType": "aws_lexv2models_bot",
+      "importIdField": "resourceId",
+      "reType": "lex:bot",
+      "source": "override"
+    },
+    "logs:destination": {
+      "tfType": "aws_cloudwatch_log_destination",
+      "importIdField": "resourceId",
+      "reType": "logs:destination",
+      "source": "override"
+    },
+    "logs:log-group": {
+      "tfType": "aws_cloudwatch_log_group",
+      "importIdField": "resourceId",
+      "reType": "logs:log-group",
+      "source": "override"
+    },
+    "mediaconnect:flow": {
+      "tfType": "aws_mediaconnect_flow",
+      "importIdField": "resourceId",
+      "reType": "mediaconnect:flow",
+      "source": "override"
+    },
+    "memorydb:acl": {
+      "tfType": "aws_memorydb_acl",
+      "importIdField": "resourceId",
+      "reType": "memorydb:acl",
+      "source": "override"
+    },
+    "memorydb:cluster": {
+      "tfType": "aws_memorydb_cluster",
+      "importIdField": "resourceId",
+      "reType": "memorydb:cluster",
+      "source": "override"
+    },
+    "memorydb:parametergroup": {
+      "tfType": "aws_memorydb_parameter_group",
+      "importIdField": "resourceId",
+      "reType": "memorydb:parametergroup",
+      "source": "override"
+    },
+    "memorydb:snapshot": {
+      "tfType": "aws_memorydb_snapshot",
+      "importIdField": "resourceId",
+      "reType": "memorydb:snapshot",
+      "source": "override"
+    },
+    "memorydb:subnetgroup": {
+      "tfType": "aws_memorydb_subnet_group",
+      "importIdField": "resourceId",
+      "reType": "memorydb:subnetgroup",
+      "source": "override"
+    },
+    "memorydb:user": {
+      "tfType": "aws_memorydb_user",
+      "importIdField": "resourceId",
+      "reType": "memorydb:user",
+      "source": "override"
+    },
+    "mq:broker": {
+      "tfType": "aws_mq_broker",
+      "importIdField": "resourceId",
+      "reType": "mq:broker",
+      "source": "override"
+    },
+    "mq:configuration": {
+      "tfType": "aws_mq_configuration",
+      "importIdField": "resourceId",
+      "reType": "mq:configuration",
+      "source": "override"
+    },
+    "network-firewall:firewall": {
+      "tfType": "aws_networkfirewall_firewall",
+      "importIdField": "resourceId",
+      "reType": "network-firewall:firewall",
+      "source": "override"
+    },
+    "network-firewall:firewall-policy": {
+      "tfType": "aws_networkfirewall_firewall_policy",
+      "importIdField": "resourceId",
+      "reType": "network-firewall:firewall-policy",
+      "source": "override"
+    },
+    "network-firewall:stateful-rulegroup": {
+      "tfType": "aws_networkfirewall_rule_group",
+      "importIdField": "resourceId",
+      "reType": "network-firewall:stateful-rulegroup",
+      "source": "override"
+    },
+    "network-firewall:stateless-rulegroup": {
+      "tfType": "aws_networkfirewall_rule_group",
+      "importIdField": "resourceId",
+      "reType": "network-firewall:stateless-rulegroup",
+      "source": "override"
+    },
+    "networkmanager:core-network": {
+      "tfType": "aws_networkmanager_core_network",
+      "importIdField": "resourceId",
+      "reType": "networkmanager:core-network",
+      "source": "override"
+    },
+    "networkmanager:device": {
+      "tfType": "aws_networkmanager_device",
+      "importIdField": "resourceId",
+      "reType": "networkmanager:device",
+      "source": "override"
+    },
+    "networkmanager:global-network": {
+      "tfType": "aws_networkmanager_global_network",
+      "importIdField": "resourceId",
+      "reType": "networkmanager:global-network",
+      "source": "override"
+    },
+    "networkmanager:link": {
+      "tfType": "aws_networkmanager_link",
+      "importIdField": "resourceId",
+      "reType": "networkmanager:link",
+      "source": "override"
+    },
+    "oam:sink": {
+      "tfType": "aws_oam_sink",
+      "importIdField": "resourceId",
+      "reType": "oam:sink",
+      "source": "override"
+    },
+    "pipes:pipe": {
+      "tfType": "aws_pipes_pipe",
+      "importIdField": "resourceId",
+      "reType": "pipes:pipe",
+      "source": "override"
+    },
+    "ram:resource-share": {
+      "tfType": "aws_ram_resource_share",
+      "importIdField": "resourceId",
+      "reType": "ram:resource-share",
+      "source": "override"
+    },
+    "rds:cluster": {
+      "tfType": "aws_rds_cluster",
+      "importIdField": "resourceId",
+      "reType": "rds:cluster",
+      "source": "override"
+    },
+    "rds:cluster-endpoint": {
+      "tfType": "aws_rds_cluster_endpoint",
+      "importIdField": "resourceId",
+      "reType": "rds:cluster-endpoint",
+      "source": "override"
+    },
+    "rds:cluster-pg": {
+      "tfType": "aws_rds_cluster_parameter_group",
+      "importIdField": "resourceId",
+      "reType": "rds:cluster-pg",
+      "source": "override"
+    },
+    "rds:cluster-snapshot": {
+      "tfType": "aws_db_cluster_snapshot",
+      "importIdField": "resourceId",
+      "reType": "rds:cluster-snapshot",
+      "source": "override"
+    },
+    "rds:db": {
+      "tfType": "aws_db_instance",
+      "importIdField": "resourceId",
+      "reType": "rds:db",
+      "source": "override"
+    },
+    "rds:db-proxy": {
+      "tfType": "aws_db_proxy",
+      "importIdField": "resourceId",
+      "reType": "rds:db-proxy",
+      "source": "override"
+    },
+    "rds:db-proxy-endpoint": {
+      "tfType": "aws_db_proxy_endpoint",
+      "importIdField": "resourceId",
+      "reType": "rds:db-proxy-endpoint",
+      "source": "override"
+    },
+    "rds:es": {
+      "tfType": "aws_db_event_subscription",
+      "importIdField": "resourceId",
+      "reType": "rds:es",
+      "source": "override"
+    },
+    "rds:global-cluster": {
+      "tfType": "aws_rds_global_cluster",
+      "importIdField": "resourceId",
+      "reType": "rds:global-cluster",
+      "source": "override"
+    },
+    "rds:og": {
+      "tfType": "aws_db_option_group",
+      "importIdField": "resourceId",
+      "reType": "rds:og",
+      "source": "override"
+    },
+    "rds:pg": {
+      "tfType": "aws_db_parameter_group",
+      "importIdField": "resourceId",
+      "reType": "rds:pg",
+      "source": "override"
+    },
+    "rds:ri": {
+      "tfType": "aws_db_instance",
+      "importIdField": "resourceId",
+      "reType": "rds:ri",
+      "source": "override"
+    },
+    "rds:secgrp": {
+      "tfType": "aws_db_security_group",
+      "importIdField": "resourceId",
+      "reType": "rds:secgrp",
+      "source": "override"
+    },
+    "rds:snapshot": {
+      "tfType": "aws_db_snapshot",
+      "importIdField": "resourceId",
+      "reType": "rds:snapshot",
+      "source": "override"
+    },
+    "rds:subgrp": {
+      "tfType": "aws_db_subnet_group",
+      "importIdField": "resourceId",
+      "reType": "rds:subgrp",
+      "source": "override"
+    },
+    "redshift:cluster": {
+      "tfType": "aws_redshift_cluster",
+      "importIdField": "resourceId",
+      "reType": "redshift:cluster",
+      "source": "override"
+    },
+    "redshift:eventsubscription": {
+      "tfType": "aws_redshift_event_subscription",
+      "importIdField": "resourceId",
+      "reType": "redshift:eventsubscription",
+      "source": "override"
+    },
+    "redshift:parametergroup": {
+      "tfType": "aws_redshift_parameter_group",
+      "importIdField": "resourceId",
+      "reType": "redshift:parametergroup",
+      "source": "override"
+    },
+    "redshift:snapshotcopygrant": {
+      "tfType": "aws_redshift_snapshot_copy_grant",
+      "importIdField": "resourceId",
+      "reType": "redshift:snapshotcopygrant",
+      "source": "override"
+    },
+    "redshift:snapshotschedule": {
+      "tfType": "aws_redshift_snapshot_schedule",
+      "importIdField": "resourceId",
+      "reType": "redshift:snapshotschedule",
+      "source": "override"
+    },
+    "redshift:subnetgroup": {
+      "tfType": "aws_redshift_subnet_group",
+      "importIdField": "resourceId",
+      "reType": "redshift:subnetgroup",
+      "source": "override"
+    },
+    "redshift:usagelimit": {
+      "tfType": "aws_redshift_usage_limit",
+      "importIdField": "resourceId",
+      "reType": "redshift:usagelimit",
+      "source": "override"
+    },
+    "resource-groups:group": {
+      "tfType": "aws_resourcegroups_group",
+      "importIdField": "resourceId",
+      "reType": "resource-groups:group",
+      "source": "override"
+    },
+    "route53-recovery-control:cluster": {
+      "tfType": "aws_route53recoverycontrolconfig_cluster",
+      "importIdField": "resourceId",
+      "reType": "route53-recovery-control:cluster",
+      "source": "override"
+    },
+    "route53:healthcheck": {
+      "tfType": "aws_route53_health_check",
+      "importIdField": "resourceId",
+      "reType": "route53:healthcheck",
+      "source": "override"
+    },
+    "route53:hostedzone": {
+      "tfType": "aws_route53_zone",
+      "importIdField": "resourceId",
+      "reType": "route53:hostedzone",
+      "source": "override"
+    },
+    "route53resolver:firewall-domain-list": {
+      "tfType": "aws_route53_resolver_firewall_domain_list",
+      "importIdField": "resourceId",
+      "reType": "route53resolver:firewall-domain-list",
+      "source": "override"
+    },
+    "route53resolver:firewall-rule-group": {
+      "tfType": "aws_route53_resolver_firewall_rule_group",
+      "importIdField": "resourceId",
+      "reType": "route53resolver:firewall-rule-group",
+      "source": "override"
+    },
+    "route53resolver:firewall-rule-group-association": {
+      "tfType": "aws_route53_resolver_firewall_rule_group_association",
+      "importIdField": "resourceId",
+      "reType": "route53resolver:firewall-rule-group-association",
+      "source": "override"
+    },
+    "route53resolver:resolver-endpoint": {
+      "tfType": "aws_route53_resolver_endpoint",
+      "importIdField": "resourceId",
+      "reType": "route53resolver:resolver-endpoint",
+      "source": "override"
+    },
+    "route53resolver:resolver-query-log-config": {
+      "tfType": "aws_route53_resolver_query_log_config",
+      "importIdField": "resourceId",
+      "reType": "route53resolver:resolver-query-log-config",
+      "source": "override"
+    },
+    "route53resolver:resolver-rule": {
+      "tfType": "aws_route53_resolver_rule",
+      "importIdField": "resourceId",
+      "reType": "route53resolver:resolver-rule",
+      "source": "override"
+    },
+    "rum:appmonitor": {
+      "tfType": "aws_rum_app_monitor",
+      "importIdField": "resourceId",
+      "reType": "rum:appmonitor",
+      "source": "override"
+    },
+    "s3:accesspoint": {
+      "tfType": "aws_s3_access_point",
+      "importIdField": "resourceId",
+      "reType": "s3:accesspoint",
+      "source": "override"
+    },
+    "s3": {
+      "tfType": "aws_s3_bucket",
+      "importIdField": "resourceRaw",
+      "reType": "s3:bucket",
+      "source": "override"
+    },
+    "s3:storage-lens": {
+      "tfType": "aws_s3control_storage_lens_configuration",
+      "importIdField": "resourceId",
+      "reType": "s3:storage-lens",
+      "source": "override"
+    },
+    "sagemaker:app": {
+      "tfType": "aws_sagemaker_app",
+      "importIdField": "resourceId",
+      "reType": "sagemaker:app",
+      "source": "override"
+    },
+    "sagemaker:app-image-config": {
+      "tfType": "aws_sagemaker_app_image_config",
+      "importIdField": "resourceId",
+      "reType": "sagemaker:app-image-config",
+      "source": "override"
+    },
+    "sagemaker:code-repository": {
+      "tfType": "aws_sagemaker_code_repository",
+      "importIdField": "resourceId",
+      "reType": "sagemaker:code-repository",
+      "source": "override"
+    },
+    "sagemaker:domain": {
+      "tfType": "aws_sagemaker_domain",
+      "importIdField": "resourceId",
+      "reType": "sagemaker:domain",
+      "source": "override"
+    },
+    "sagemaker:endpoint": {
+      "tfType": "aws_sagemaker_endpoint",
+      "importIdField": "resourceId",
+      "reType": "sagemaker:endpoint",
+      "source": "override"
+    },
+    "sagemaker:endpoint-config": {
+      "tfType": "aws_sagemaker_endpoint_configuration",
+      "importIdField": "resourceId",
+      "reType": "sagemaker:endpoint-config",
+      "source": "override"
+    },
+    "sagemaker:feature-group": {
+      "tfType": "aws_sagemaker_feature_group",
+      "importIdField": "resourceId",
+      "reType": "sagemaker:feature-group",
+      "source": "override"
+    },
+    "sagemaker:flow-definition": {
+      "tfType": "aws_sagemaker_flow_definition",
+      "importIdField": "resourceId",
+      "reType": "sagemaker:flow-definition",
+      "source": "override"
+    },
+    "sagemaker:human-task-ui": {
+      "tfType": "aws_sagemaker_human_task_ui",
+      "importIdField": "resourceId",
+      "reType": "sagemaker:human-task-ui",
+      "source": "override"
+    },
+    "sagemaker:image": {
+      "tfType": "aws_sagemaker_image",
+      "importIdField": "resourceId",
+      "reType": "sagemaker:image",
+      "source": "override"
+    },
+    "sagemaker:image-version": {
+      "tfType": "aws_sagemaker_image_version",
+      "importIdField": "resourceId",
+      "reType": "sagemaker:image-version",
+      "source": "override"
+    },
+    "sagemaker:model": {
+      "tfType": "aws_sagemaker_model",
+      "importIdField": "resourceId",
+      "reType": "sagemaker:model",
+      "source": "override"
+    },
+    "sagemaker:model-package-group": {
+      "tfType": "aws_sagemaker_model_package_group",
+      "importIdField": "resourceId",
+      "reType": "sagemaker:model-package-group",
+      "source": "override"
+    },
+    "sagemaker:notebook-instance": {
+      "tfType": "aws_sagemaker_notebook_instance",
+      "importIdField": "resourceId",
+      "reType": "sagemaker:notebook-instance",
+      "source": "override"
+    },
+    "sagemaker:notebook-instance-lifecycle-config": {
+      "tfType": "aws_sagemaker_notebook_instance_lifecycle_configuration",
+      "importIdField": "resourceId",
+      "reType": "sagemaker:notebook-instance-lifecycle-config",
+      "source": "override"
+    },
+    "sagemaker:pipeline": {
+      "tfType": "aws_sagemaker_pipeline",
+      "importIdField": "resourceId",
+      "reType": "sagemaker:pipeline",
+      "source": "override"
+    },
+    "sagemaker:project": {
+      "tfType": "aws_sagemaker_project",
+      "importIdField": "resourceId",
+      "reType": "sagemaker:project",
+      "source": "override"
+    },
+    "sagemaker:space": {
+      "tfType": "aws_sagemaker_space",
+      "importIdField": "resourceId",
+      "reType": "sagemaker:space",
+      "source": "override"
+    },
+    "sagemaker:user-profile": {
+      "tfType": "aws_sagemaker_user_profile",
+      "importIdField": "resourceId",
+      "reType": "sagemaker:user-profile",
+      "source": "override"
+    },
+    "sagemaker:workforce": {
+      "tfType": "aws_sagemaker_workforce",
+      "importIdField": "resourceId",
+      "reType": "sagemaker:workforce",
+      "source": "override"
+    },
+    "sagemaker:workteam": {
+      "tfType": "aws_sagemaker_workteam",
+      "importIdField": "resourceId",
+      "reType": "sagemaker:workteam",
+      "source": "override"
+    },
+    "scheduler:schedule-group": {
+      "tfType": "aws_scheduler_schedule_group",
+      "importIdField": "resourceId",
+      "reType": "scheduler:schedule-group",
+      "source": "override"
+    },
+    "schemas:discoverer": {
+      "tfType": "aws_schemas_discoverer",
+      "importIdField": "resourceId",
+      "reType": "schemas:discoverer",
+      "source": "override"
+    },
+    "secretsmanager:secret": {
+      "tfType": "aws_secretsmanager_secret",
+      "importIdField": "arn",
+      "reType": "secretsmanager:secret",
+      "source": "override"
+    },
+    "servicediscovery:service": {
+      "tfType": "aws_service_discovery_service",
+      "importIdField": "resourceId",
+      "reType": "servicediscovery:service",
+      "source": "override"
+    },
+    "ses:configuration-set": {
+      "tfType": "aws_ses_configuration_set",
+      "importIdField": "resourceId",
+      "reType": "ses:configuration-set",
+      "source": "override"
+    },
+    "ses:identity": {
+      "tfType": "aws_ses_domain_identity",
+      "importIdField": "resourceId",
+      "reType": "ses:identity",
+      "source": "override"
+    },
+    "shield:protection": {
+      "tfType": "aws_shield_protection",
+      "importIdField": "resourceId",
+      "reType": "shield:protection",
+      "source": "override"
+    },
+    "shield:protection-group": {
+      "tfType": "aws_shield_protection_group",
+      "importIdField": "resourceId",
+      "reType": "shield:protection-group",
+      "source": "override"
+    },
+    "signer:signing-profiles": {
+      "tfType": "aws_signer_signing_profile",
+      "importIdField": "resourceId",
+      "reType": "signer:signing-profiles",
+      "source": "override"
+    },
+    "sns": {
+      "tfType": "aws_sns_topic",
+      "importIdField": "arn",
+      "reType": "sns:topic",
+      "source": "override"
+    },
+    "sqs": {
+      "tfType": "aws_sqs_queue",
+      "importIdTemplate": "https://sqs.${region}.amazonaws.com/${accountId}/${resourceId}",
+      "reType": "sqs:queue",
+      "source": "override"
+    },
+    "ssm-incidents:response-plan": {
+      "tfType": "aws_ssmincidents_response_plan",
+      "importIdField": "resourceId",
+      "reType": "ssm-incidents:response-plan",
+      "source": "override"
+    },
+    "ssm:association": {
+      "tfType": "aws_ssm_association",
+      "importIdField": "resourceId",
+      "reType": "ssm:association",
+      "source": "override"
+    },
+    "ssm:document": {
+      "tfType": "aws_ssm_document",
+      "importIdField": "resourceId",
+      "reType": "ssm:document",
+      "source": "override"
+    },
+    "ssm:maintenancewindow": {
+      "tfType": "aws_ssm_maintenance_window",
+      "importIdField": "resourceId",
+      "reType": "ssm:maintenancewindow",
+      "source": "override"
+    },
+    "ssm:parameter": {
+      "tfType": "aws_ssm_parameter",
+      "importIdField": "resourceId",
+      "reType": "ssm:parameter",
+      "source": "override"
+    },
+    "ssm:resource-data-sync": {
+      "tfType": "aws_ssm_resource_data_sync",
+      "importIdField": "resourceId",
+      "reType": "ssm:resource-data-sync",
+      "source": "override"
+    },
+    "ssm:windowtarget": {
+      "tfType": "aws_ssm_maintenance_window_target",
+      "importIdField": "resourceId",
+      "reType": "ssm:windowtarget",
+      "source": "override"
+    },
+    "ssm:windowtask": {
+      "tfType": "aws_ssm_maintenance_window_task",
+      "importIdField": "resourceId",
+      "reType": "ssm:windowtask",
+      "source": "override"
+    },
+    "states:activity": {
+      "tfType": "aws_sfn_activity",
+      "importIdField": "arn",
+      "reType": "states:activity",
+      "source": "override"
+    },
+    "states:stateMachine": {
+      "tfType": "aws_sfn_state_machine",
+      "importIdField": "arn",
+      "reType": "states:stateMachine",
+      "source": "override"
+    },
+    "storagegateway:gateway": {
+      "tfType": "aws_storagegateway_gateway",
+      "importIdField": "resourceId",
+      "reType": "storagegateway:gateway",
+      "source": "override"
+    },
+    "synthetics:canary": {
+      "tfType": "aws_synthetics_canary",
+      "importIdField": "resourceId",
+      "reType": "synthetics:canary",
+      "source": "override"
+    },
+    "synthetics:group": {
+      "tfType": "aws_synthetics_group",
+      "importIdField": "resourceId",
+      "reType": "synthetics:group",
+      "source": "override"
+    },
+    "transfer:connector": {
+      "tfType": "aws_transfer_connector",
+      "importIdField": "resourceId",
+      "reType": "transfer:connector",
+      "source": "override"
+    },
+    "transfer:server": {
+      "tfType": "aws_transfer_server",
+      "importIdField": "resourceId",
+      "reType": "transfer:server",
+      "source": "override"
+    },
+    "transfer:user": {
+      "tfType": "aws_transfer_user",
+      "importIdField": "resourceId",
+      "reType": "transfer:user",
+      "source": "override"
+    },
+    "transfer:workflow": {
+      "tfType": "aws_transfer_workflow",
+      "importIdField": "resourceId",
+      "reType": "transfer:workflow",
+      "source": "override"
+    },
+    "verifiedpermissions:policy-store": {
+      "tfType": "aws_verifiedpermissions_policy_store",
+      "importIdField": "resourceId",
+      "reType": "verifiedpermissions:policy-store",
+      "source": "override"
+    },
+    "vpc-lattice:service": {
+      "tfType": "aws_vpclattice_service",
+      "importIdField": "resourceId",
+      "reType": "vpc-lattice:service",
+      "source": "override"
+    },
+    "vpc-lattice:servicenetwork": {
+      "tfType": "aws_vpclattice_service_network",
+      "importIdField": "resourceId",
+      "reType": "vpc-lattice:servicenetwork",
+      "source": "override"
+    },
+    "vpc-lattice:targetgroup": {
+      "tfType": "aws_vpclattice_target_group",
+      "importIdField": "resourceId",
+      "reType": "vpc-lattice:targetgroup",
+      "source": "override"
+    },
+    "wafv2:ipset": {
+      "tfType": "aws_wafv2_ip_set",
+      "importIdField": "resourceId",
+      "reType": "wafv2:ipset",
+      "source": "override"
+    },
+    "wafv2:regexpatternset": {
+      "tfType": "aws_wafv2_regex_pattern_set",
+      "importIdField": "resourceId",
+      "reType": "wafv2:regexpatternset",
+      "source": "override"
+    },
+    "wafv2:rulegroup": {
+      "tfType": "aws_wafv2_rule_group",
+      "importIdField": "resourceId",
+      "reType": "wafv2:rulegroup",
+      "source": "override"
+    },
+    "wafv2:webacl": {
+      "tfType": "aws_wafv2_web_acl",
+      "importIdField": "resourceId",
+      "reType": "wafv2:webacl",
+      "source": "override"
+    },
+    "workspaces:workspace": {
+      "tfType": "aws_workspaces_workspace",
+      "importIdField": "resourceId",
+      "reType": "workspaces:workspace",
+      "source": "override"
+    },
+    "xray:sampling-rule": {
+      "tfType": "aws_xray_sampling_rule",
+      "importIdField": "resourceId",
+      "reType": "xray:sampling-rule",
+      "source": "convention"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+node_modules
+dist
+.git
+.terraform
+.terraform.lock.hcl
+*.md
+.gitignore
+.dockerignore
+.env
