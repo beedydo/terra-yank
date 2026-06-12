@@ -10,3 +10,4 @@ extracted/i2cv2-i2cv2.v1/node_modules/
 
 # OS files
 .DS_Store
+*.db
