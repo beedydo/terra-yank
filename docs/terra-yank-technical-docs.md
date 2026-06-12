@@ -159,12 +159,12 @@ After line removals, empty blocks like `route {}` or `point_in_time_recovery { e
 | Setting | Value | Source |
 |---------|-------|--------|
 | Model | `bedrock.claude-sonnet-4-6` | User-configurable in Settings |
-| Base URL | `https://api.ai.tech.gov.sg/platform/models` | GCC AI Gateway |
+| Base URL | `https://api.anthropic.com/v1` | cloud platform AI Gateway |
 | Max output tokens | 32,768 per call | Hardcoded |
 | Token budget | 100,000 default (max 10M) | User-configurable in Settings |
 | Max iterations | 5 | Hardcoded |
 | API key | User-provided (BYOK) | Stored encrypted per-user |
-| Streaming | Required | GCC AI Gateway mandate |
+| Streaming | Required | cloud platform AI Gateway mandate |
 
 ### Chunked Processing (>200 resources)
 
@@ -181,7 +181,7 @@ When workspace has >200 resources, the agent splits into chunks of ~150 resource
 
 | Issue | Impact | Workaround |
 |-------|--------|------------|
-| GCC AI Gateway ~5min idle timeout | Long LLM responses killed mid-stream | Chunked processing for large workspaces |
+| cloud platform AI Gateway ~5min idle timeout | Long LLM responses killed mid-stream | Chunked processing for large workspaces |
 | 32k output token limit | Can't output >~200 resources in one call | Chunked processing auto-triggers |
 | Streaming required | Non-streaming `messages.create()` rejected | Uses `messages.stream().finalMessage()` |
 | Resource truncation | Model may output fewer resources than input | Safety check retries with emphasis on completeness |
@@ -244,12 +244,12 @@ UI Form → POST /api/credentials/aws → encrypt(accessKeyId, secretAccessKey, 
 | Var | Purpose |
 |-----|---------|
 | `ENCRYPTION_KEY` | AES-256-GCM key for credential encryption. **Must be consistent across restarts.** |
-| `NODE_ENV` | `development` bypasses TechPass auth |
+| `NODE_ENV` | `development` bypasses OAuth auth |
 | `PORT` | Server port (default 4000) |
 | `BETTER_AUTH_SECRET` | Session secret (prod) |
 | `BETTER_AUTH_URL` | App base URL (prod) |
-| `TECHPASS_CLIENT_ID` | TechPass OAuth (prod) |
-| `TECHPASS_CLIENT_SECRET` | TechPass OAuth (prod) |
+| `OAUTH_CLIENT_ID` | OAuth provider (prod) |
+| `OAUTH_CLIENT_SECRET` | OAuth provider (prod) |
 | `NODE_EXTRA_CA_CERTS` | CA bundle for GitLab Dedicated TLS (prod) |
 
 ### Local Development
@@ -262,7 +262,7 @@ ENCRYPTION_KEY=supersecret NODE_ENV=development node src/server.js
 
 ### Known Deployment Issues
 
-- **Ephemeral DB**: SQLite wiped on every Airbase deploy (no persistent volumes). Users must re-enter credentials after each deploy.
+- **Ephemeral DB**: SQLite wiped on every Docker deploy (no persistent volumes). Users must re-enter credentials after each deploy.
 - **DB path is relative**: `file:./terra-yank-auth.db` — must start server from project root.
 - **Resource Explorer index**: Must be enabled in `ap-southeast-1`. If results say "incomplete", the index may need to be an aggregator type to cover cross-region resources.
 

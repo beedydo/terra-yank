@@ -29,15 +29,15 @@ function isGcciOwned(tags) {
   }
 
   return (
-    "gcci" in normalized ||
-    normalized["gcc:team"] === "gcci" ||
-    normalized.gcc_team === "gcci" ||
-    normalized.team === "gcci"
+    "platform" in normalized ||
+    normalized["gcc:team"] === "platform" ||
+    normalized.gcc_team === "platform" ||
+    normalized.team === "platform"
   );
 }
 
-function gcciValue(tags) {
-  return tags.gcci || tags.GCCI || tags["gcc:team"] || tags.gcc_team || tags.Team || tags.team || "gcci";
+function platformValue(tags) {
+  return tags.platform || tags.Platform || tags["platform:team"] || tags.Team || tags.team || "platform";
 }
 
 function categoryLabel(category) {
@@ -208,7 +208,7 @@ async function searchResourceExplorer(client, queryString) {
 
 async function discoverResources(region, credentials) {
   const { resourceExplorer: client } = getClients(region, credentials);
-  const gcciTagged = [];
+  const platformTagged = [];
   const notTagged = [];
 
   const [regionalResults, globalResults, ...supplementalResults] = await Promise.all([
@@ -247,8 +247,8 @@ async function discoverResources(region, credentials) {
     Object.assign(resource, importSupport(resource));
 
     if (isGcciOwned(tags)) {
-      resource.gcciValue = gcciValue(tags);
-      gcciTagged.push(resource);
+      resource.platformValue = platformValue(tags);
+      platformTagged.push(resource);
     } else {
       notTagged.push(resource);
     }
@@ -256,11 +256,11 @@ async function discoverResources(region, credentials) {
 
   return {
     region,
-    totalDiscovered: gcciTagged.length + notTagged.length,
-    gcciTaggedCount: gcciTagged.length,
+    totalDiscovered: platformTagged.length + notTagged.length,
+    platformTaggedCount: platformTagged.length,
     notTaggedCount: notTagged.length,
-    gcciGroups: groupBy(gcciTagged, (r) => r.gcciValue || "gcci", (_r, key) => ({
-      gcciValue: key,
+    platformGroups: groupBy(platformTagged, (r) => r.platformValue || "platform", (_r, key) => ({
+      platformValue: key,
       count: 0,
       services: {},
       resources: [],

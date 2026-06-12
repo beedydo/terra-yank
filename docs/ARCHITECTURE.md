@@ -17,7 +17,7 @@ Discovery runs two queries in parallel:
 
 Results are combined, deduplicated, and each resource is mapped to a Terraform type using the generated `resource-map.json` (see Resource Mapping below).
 
-Resources with platform ownership tags (`gcci`, `gcc:team=gcci`, `gcc_team=gcci`, `team=gcci`) are classified as GCCI-owned baseline and segregated in the UI.
+Resources with platform ownership tags (`platform`, `platform:team`, or custom ownership tags) are classified as platform-owned baseline and segregated in the UI.
 
 ### 2. IaC Ownership Detector
 
@@ -26,7 +26,7 @@ Classifies each discovered resource.
 Suggested statuses:
 
 - `managed`: resource is known to be in Terraform state.
-- `excluded`: resource has an exclusion tag or is GCCI-owned.
+- `excluded`: resource has an exclusion tag or is platform-owned.
 - `candidate`: resource appears unmanaged and can be imported.
 - `unknown`: insufficient evidence.
 
@@ -280,7 +280,7 @@ State entries are filtered by the user's selected discovery region. Entries for 
 ### Discovery Exclusion Policy
 
 - Exclude resources with tag key `TerraYank` (any value).
-- Exclude resources with GCCI ownership tags (`gcci`, `gcc:team=gcci`, `gcc_team=gcci`, `team=gcci`).
+- Exclude resources with platform ownership tags (`platform`, `platform:team`, or custom ownership tags).
 - Keep an audit log entry for every excluded resource with exclusion reason.
 
 ### Phase 2
@@ -290,7 +290,7 @@ Compare discovered resources against Terraform state.
 State sources:
 
 - Local `terraform.tfstate`, for PoC.
-- GitLab-managed state, if GCC-IaC uses GitLab Terraform state.
+- GitLab-managed state, if cloud platform-IaC uses GitLab Terraform state.
 - S3/DynamoDB backend, if agencies use AWS-native Terraform backends.
 
 Edge case handling: orphaned but tagged resources
@@ -323,7 +323,7 @@ LLM-assisted import generation.
 ## Important Edge Cases
 
 - Resources tagged as IaC-managed but absent from Terraform state.
-- Resources carrying `TerraYank` or `gcci` tags should be excluded from discovery candidates.
+- Resources carrying `TerraYank` or platform ownership tags should be excluded from discovery candidates.
 - Resources with stale IaC tags but no Terraform ownership (`orphaned_tagged`).
 - Resources in Terraform state but deleted from AWS.
 - Untagged baseline infrastructure.

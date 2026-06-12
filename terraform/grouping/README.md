@@ -52,7 +52,7 @@ This directory contains three approaches to organizing Terraform resources into 
 - Not granular enough for strict per-service ownership models
 
 ### When to use
-- Standard GCC team size (5–20 engineers)
+- Standard cloud platform team size (5–20 engineers)
 - Moderate resource count (200–1000 managed resources)
 - You want structure without excessive file proliferation
 - **This is the default in terra-yank**

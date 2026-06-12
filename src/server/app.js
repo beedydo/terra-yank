@@ -126,7 +126,7 @@ async function createApp() {
   });
 
   const VALID_AWS_REGION = /^[a-z]{2}-[a-z]+-\d{1,2}$/;
-  const ANTHROPIC_BASE_URL = process.env.ANTHROPIC_BASE_URL || "https://api.ai.tech.gov.sg/platform/models";
+  const ANTHROPIC_BASE_URL = process.env.ANTHROPIC_BASE_URL || "https://api.anthropic.com/v1";
   const ALLOWED_MODELS = new Set(["bedrock.claude-sonnet-4-6", "bedrock.claude-haiku-4-5"]);
 
   function decryptAwsCredentials(aws) {
@@ -206,7 +206,7 @@ async function createApp() {
     }
 
     const allDiscovered = [
-      ...(discovery.gcciGroups || []),
+      ...(discovery.platformGroups || []),
       ...(discovery.notTaggedCategoryGroups || []),
     ].flatMap((g) => g.resources);
 
@@ -219,7 +219,7 @@ async function createApp() {
       .map((g) => ({ ...g, count: g.resources.length }))
       .filter((g) => g.count > 0);
 
-    const gcciGroups = (discovery.gcciGroups || []).map((g) => ({
+    const platformGroups = (discovery.platformGroups || []).map((g) => ({
       ...g,
       resources: g.resources.map((r) => {
         const managedBy = managedByArn.get(r.arn);
@@ -237,10 +237,10 @@ async function createApp() {
     res.json({
       region: discovery.region,
       totalDiscovered: discovery.totalDiscovered,
-      gcciTaggedCount: gcciGroups.reduce((sum, g) => sum + g.count, 0),
+      platformTaggedCount: platformGroups.reduce((sum, g) => sum + g.count, 0),
       notTaggedCount: notTaggedCategoryGroups.reduce((sum, g) => sum + g.count, 0),
       managedCount: managed.length,
-      gcciGroups,
+      platformGroups,
       notTaggedCategoryGroups,
       managedCategoryGroups,
       staleStateResources,

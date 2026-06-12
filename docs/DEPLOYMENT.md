@@ -20,7 +20,7 @@ git init
 git add .
 git commit -m "Initial terra-yank application"
 git branch -M main
-git remote add origin https://sgts.gitlab-dedicated.com/<group>/<project>.git
+git remote add origin https://your-gitlab-instance.example.com/<group>/<project>.git
 git push -u origin main
 ```
 
@@ -106,7 +106,7 @@ For temporary internal testing, the GitLab integration screen currently allows S
 Set variables:
 
 ```bash
-export GITLAB_REGISTRY=sgts.gitlab-dedicated.com:5050
+export GITLAB_REGISTRY=your-gitlab-instance.example.com:5050
 export GITLAB_PROJECT=<group>/<project>
 export IMAGE="$GITLAB_REGISTRY/$GITLAB_PROJECT/terra-yank:latest"
 ```

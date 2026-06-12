@@ -414,7 +414,7 @@ function renderDiscovery() {
       const groupId = event.target.dataset.groupId;
       const checked = event.target.checked;
       const groups = [...(state.discovery.notTaggedCategoryGroups || [])];
-      const group = groups.find((g) => (g.category || g.gcciValue || g.label || "unknown") === groupId);
+      const group = groups.find((g) => (g.category || g.platformValue || g.label || "unknown") === groupId);
       if (!group) return;
       const importable = group.resources.filter((r) => r.importSupported);
       for (const resource of importable) {
@@ -440,7 +440,7 @@ function renderStats(d) {
   return `
     <div class="stats">
       <div class="stat"><label>Total</label><span>${d.totalDiscovered}</span></div>
-      <div class="stat"><label>GCCI Owned</label><span>${d.gcciTaggedCount}</span></div>
+      <div class="stat"><label>Platform Owned</label><span>${d.platformTaggedCount}</span></div>
       <div class="stat"><label>Importable</label><span>${importable}</span></div>
       <div class="stat"><label>Skipped</label><span>${skipped}</span></div>
       <div class="stat"><label>Managed</label><span>${d.managedCount ?? 0}</span></div>
@@ -449,14 +449,14 @@ function renderStats(d) {
 }
 
 function tabLabel(tab) {
-  if (tab === "gcci") return "GCCI Owned";
+  if (tab === "platform") return "Platform Owned";
   if (tab === "skipped") return "Skipped";
   return tab[0].toUpperCase() + tab.slice(1);
 }
 
 function renderResourceTabs() {
   const d = state.discovery;
-  const tabs = ["importable", "skipped", "gcci", "managed"];
+  const tabs = ["importable", "skipped", "platform", "managed"];
   return `
     <div class="tabs">
       ${tabs.map((tab) => `
@@ -520,12 +520,12 @@ function renderSubResources(d) {
 }
 
 function allResources(d) {
-  return [...(d.notTaggedCategoryGroups || []), ...(d.gcciGroups || [])].flatMap((group) => group.resources || []);
+  return [...(d.notTaggedCategoryGroups || []), ...(d.platformGroups || [])].flatMap((group) => group.resources || []);
 }
 
 function renderActiveGroups() {
   const d = state.discovery;
-  if (state.tab === "gcci") return renderGroups(d.gcciGroups || [], { disabled: true, note: "GCCI-owned baseline resource" });
+  if (state.tab === "platform") return renderGroups(d.platformGroups || [], { disabled: true, note: "Platform-owned baseline resource" });
 
   if (state.tab === "managed") {
     if (!d.tfstateLoaded) return `<div class="empty">Upload .tfstate files above to compare.</div>`;
@@ -547,7 +547,7 @@ function renderActiveGroups() {
 function renderGroups(groups, options = {}) {
   const INITIAL_SHOW = 50;
   return groups.map((group) => {
-    const groupId = escapeHtml(group.category || group.gcciValue || group.label || "unknown");
+    const groupId = escapeHtml(group.category || group.platformValue || group.label || "unknown");
     const showAll = state.expandedGroups && state.expandedGroups.has(groupId);
     const visibleResources = (showAll || group.resources.length <= INITIAL_SHOW)
       ? group.resources
@@ -559,7 +559,7 @@ function renderGroups(groups, options = {}) {
     return `
     <details class="group" ${group.resources.length < 80 ? "open" : ""}>
       <summary>
-        <strong>${escapeHtml(group.label || group.gcciValue || group.category)}</strong>
+        <strong>${escapeHtml(group.label || group.platformValue || group.category)}</strong>
         <span class="pill">${group.resources.length} resources</span>
         <span>+</span>
       </summary>

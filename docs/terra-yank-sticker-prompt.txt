@@ -4,8 +4,8 @@ STICKER IMAGE GENERATION PROMPT — terra-yank
 PROJECT CONTEXT
 ---------------
 This sticker is for a developer tool called "terra-yank" (pronounced "I to C V2", short for
-"TerraYank"). It is a web application built for Singapore Government cloud
-engineers who manage cloud infrastructure on GCC (Government Commercial Cloud) — Singapore's
+"TerraYank"). It is a web application built for cloud
+engineers who manage cloud infrastructure on cloud platform (Government Commercial Cloud) — Singapore's
 sovereign cloud environment built on AWS.
 
 THE CORE PROBLEM IT SOLVES
@@ -23,7 +23,7 @@ WHAT THE TOOL ACTUALLY DOES (the magic)
    VPCs, IAM roles, etc.) using AWS Resource Explorer.
 2. Compares discovered resources against uploaded Terraform state files to classify what's
    already managed vs what's rogue/unmanaged.
-3. Separates government-owned baseline infrastructure (GCCI-tagged) from your agency's
+3. Separates platform-owned baseline infrastructure (platform-tagged) from your team's
    own resources.
 4. You select the unmanaged resources you want to bring under code.
 5. The tool spins up a temporary Terraform workspace, runs "terraform plan -generate-config-out"
@@ -40,9 +40,9 @@ KEY TECHNOLOGIES IN THE STACK
 - AWS Resource Explorer 2 (discovery engine)
 - Terraform CLI (bundled inside the Docker container, v1.12.1)
 - Anthropic Claude AI (the LLM that writes and refines Terraform code)
-- GitLab API (Singapore Government Tech Stack: sgts.gitlab-dedicated.com)
-- TechPass OAuth (Singapore Government single sign-on)
-- Deployed on Airbase (GDS Singapore's container platform)
+- GitLab API (GitLab instance)
+- OAuth provider (SSO)
+- Deployed via Docker
 - Docker container
 - SQLite database
 
@@ -51,7 +51,7 @@ THE BRAND / TOOL NAME
 - Full name: terra-yank
 - Subtitle options: "Infrastructure to Code", "ClickOps to GitOps", "Tame your cloud"
 - Version badge: v2
-- Made for: Singapore Government GCC engineers
+- Made for: cloud platform engineers
 
 THE EMOTIONAL VIBE / STORY
 ---------------------------
@@ -60,7 +60,7 @@ The sticker should capture the feeling of:
     making it ordered, versioned, and beautiful (clean Terraform code in GitLab).
   - The transformation from "ClickOps" to "GitOps".
   - AI doing the boring, tedious Terraform writing work so engineers don't have to.
-  - A government engineer finally having control and visibility over their cloud.
+  - An engineer finally having control and visibility over their cloud.
   - The satisfaction of running "terraform plan" and seeing zero changes.
 
 VISUAL METAPHOR IDEAS (choose one or blend)
@@ -113,7 +113,7 @@ CHOOSE ONE tagline:
 
 OPTIONAL small badge text:
   - "Powered by Claude AI"  OR  "AI-assisted Terraform"
-  - "Built for GCC"  OR  "Singapore Government Cloud"
+  - "Built for AWS" OR "Infrastructure to Code"
   - "v2"
 
 STICKER FORMAT REQUIREMENTS
@@ -128,7 +128,7 @@ STICKER FORMAT REQUIREMENTS
     Accent 1: Neon green (Terraform/terminal green: #00ED64 or similar)
     Accent 2: Electric blue or orange
     Text: White or off-white
-    Optional: Singapore red (#EF3340) as an accent to signal SG government context
+    Optional: accent color to signal cloud infrastructure context
 - Art style: Flat vector / modern tech sticker aesthetic (similar to Kubernetes, Terraform,
   Docker, HashiCorp sticker style) — clean lines, bold shapes, minimal gradients
 - NOT a photo-realistic style — should look like a developer conference sticker
@@ -149,15 +149,15 @@ WHAT TO AVOID
 -------------
 - Avoid busy/cluttered designs — must read clearly at 3 inch
 - Avoid light backgrounds (won't show on silver MacBooks)
-- Avoid overly corporate/government-bland aesthetic — this is a developer tool, it should
+- Avoid overly corporate-bland aesthetic — this is a developer tool, it should
   feel like something engineers are PROUD to put on their laptop
-- Avoid the word "government" in large text — keep it subtle
+- Keep branding developer-focused
 - Avoid realistic human faces
 
 FINAL SUMMARY SENTENCE FOR THE AI
 -----------------------------------
 Generate a bold, dark-background developer sticker for a tool called "terra-yank"
-(TerraYank) — a Singapore Government cloud tool that uses AI (Claude)
+(TerraYank) — a cloud tool that uses AI (Claude)
 to automatically scan AWS accounts, find unmanaged infrastructure, and write production-ready
 Terraform code to bring everything under GitLab version control. The sticker should feel
 like a proud badge for a cloud engineer who has finally tamed their AWS environment.

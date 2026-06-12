@@ -1,14 +1,14 @@
 # TerraYank - TerraYank
 
-TerraYank helps GCC cloud engineers discover AWS resources that are not managed by Terraform, select resources to bring under IaC, generate/import Terraform, and iteratively refactor the result into a governed GitLab workflow.
+TerraYank helps cloud engineers discover AWS resources that are not managed by Terraform, select resources to bring under IaC, generate/import Terraform, and iteratively refactor the result into a governed GitLab workflow.
 
 ## Problem
 
-Government engineers managing cloud infrastructure on GCC often have manually provisioned AWS resources outside Infrastructure-as-Code workflows. There is no reliable, standardised way to discover, import, and convert those resources into Terraform across multiple environments and AWS accounts.
+Engineers often have manually provisioned AWS resources outside Infrastructure-as-Code workflows. There is no reliable, standardised way to discover, import, and convert those resources into Terraform across multiple environments and AWS accounts.
 
 ## Primary Users
 
-Cloud and DevOps engineers in Singapore government agencies who manage GCC cloud infrastructure and already understand Terraform.
+Cloud and DevOps engineers in Singapore teams who manage AWS infrastructure and already understand Terraform.
 
 ## Product Goal
 
@@ -17,7 +17,7 @@ TerraYank is a full import-to-code workflow that uses LLM agents to produce prod
 1. Configure integrations: GitLab (personal access token) and LLM provider (BYOK API key).
 2. Load accessible GitLab repositories or create a new repository.
 3. Discover AWS resources in an account and region.
-4. Separate GCCI-owned baseline resources from candidate resources.
+4. Separate platform-owned baseline resources from candidate resources.
 5. Optionally upload Terraform state files to filter already-managed resources.
 6. Select resources to import.
 7. Generate Terraform code via an LLM-assisted pipeline:
@@ -32,7 +32,7 @@ TerraYank is a full import-to-code workflow that uses LLM agents to produce prod
 
 1. Discover unmanaged resources in an AWS account and region.
 2. Upload Terraform state files to filter out already-managed resources.
-3. Exclude GCCI-owned baseline and other resources that should not be managed.
+3. Exclude platform-owned baseline and other resources that should not be managed.
 4. Select resources to import.
 5. Configure LLM settings: provide API key, set token budget.
 6. Generate Terraform code — the LLM agent creates, refines, and validates the config automatically.
@@ -44,7 +44,7 @@ TerraYank is a full import-to-code workflow that uses LLM agents to produce prod
 
 - AWS account and region scan via AWS Resource Explorer (regional + global resources). Requires an **aggregator index** in the discovery region.
 - Resource classification by service and infrastructure domain.
-- GCCI-owned baseline segregation using `gcci`, `gcc:team=gcci`, `gcc_team=gcci`, or `team=gcci`.
+- platform-owned baseline segregation using `platform`, `platform:team`, or custom ownership tags.
 - Terraform state file upload and comparison to filter managed resources.
 - Stale state detection (resources in state but not discovered in the target region).
 - Sub-resource classification (state entries for types not discoverable by Resource Explorer).
@@ -115,7 +115,7 @@ Do not decide IaC ownership purely by resource existence. Treat ownership as a c
 - Terraform state contains the resource.
 - Resource has known IaC management tags.
 - Resource has exclusion tags.
-- Resource belongs to GCCI-managed baseline infrastructure.
+- Resource belongs to platform-managed baseline infrastructure.
 - Resource appears orphaned or manually created.
 
 ## Application Structure
@@ -136,13 +136,13 @@ src/server/store.js        # local persisted integration/config store
 src/public/                # browser UI
 ```
 
-## Docker and Airbase Readiness
+## Docker and Docker Readiness
 
 This repository now includes deployment scaffolding for a containerized app:
 
 - `Dockerfile` for a Node.js multi-stage build.
 - `.dockerignore` to keep images smaller and avoid local artifacts.
-- `airbase.json` as a starter Airbase app config.
+- `docker.json` as a starter Docker app config.
 - `src/server.js` as the runnable API service entrypoint.
 - `package.json` scripts for build and start.
 
@@ -176,35 +176,35 @@ curl -X POST http://localhost:4000/api/discovery/runs \
 Response shape:
 
 - `totalDiscovered`: total resources found via Resource Explorer (regional + global).
-- `groups[]`: resources grouped by `gcci` tag value.
+- `groups[]`: resources grouped by platform ownership tag value.
 - `groups[].services`: service-level count per group.
 - `groups[].resources`: discovered resource ARNs and tags.
 
-### Deploy to Airbase
+### Deploy to Docker
 
-Prerequisites: Airbase CLI installed (`airbase -v`), logged in (`airbase login`), and a project created in the [Airbase Console](https://go.gov.sg/airbase). The `airbase.json` handle must match your project.
+Prerequisites: Docker CLI installed (`docker -v`), logged in (`docker login`), and a project created in the [Docker Console](https://hub.docker.com). The `docker.json` handle must match your project.
 
 ```bash
-airbase container build
-airbase container deploy --yes
+docker container build
+docker container deploy --yes
 ```
 
-The app will be available at `https://terra-yank-demo.app.tc1.airbase.sg`.
+The app will be available at `https://your-domain.example.com`.
 
-### Iterative Testing on Airbase
+### Iterative Testing on Docker
 
 Use on-demand environments to test changes without affecting the default deployment.
 
 **1. Make changes locally and build:**
 
 ```bash
-airbase container build
+docker container build
 ```
 
 **2. Deploy to a staging environment:**
 
 ```bash
-airbase container deploy --yes staging
+docker container deploy --yes staging
 ```
 
 This creates an isolated deployment at a separate URL for testing.
@@ -221,8 +221,8 @@ Open the staging URL in a browser and verify:
 
 ```bash
 # edit code...
-airbase container build
-airbase container deploy --yes staging
+docker container build
+docker container deploy --yes staging
 ```
 
 Repeat until the feature works as expected.
@@ -230,18 +230,18 @@ Repeat until the feature works as expected.
 **5. Promote to default:**
 
 ```bash
-airbase container deploy --yes
+docker container deploy --yes
 ```
 
 **6. Clean up the staging environment:**
 
 ```bash
-airbase container destroy --yes staging
+docker container destroy --yes staging
 ```
 
 **Environment-specific configuration:**
 
-Place environment variables in `.env` (default) and `.env.staging` (staging). Airbase injects the correct file at runtime based on the deployment target.
+Place environment variables in `.env` (default) and `.env.staging` (staging). Docker injects the correct file at runtime based on the deployment target.
 
 ```
 # .env.staging

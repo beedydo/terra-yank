@@ -22,7 +22,7 @@
               │                ▼           ▼            ▼           ▼      │
               │  ┌──────────┐ ┌─────────┐ ┌──────────┐ ┌───────────────┐  │
               │  │ LibSQL   │ │  AWS    │ │Terraform │ │ Claude AI     │  │
-              │  │ (SQLite) │ │  APIs   │ │ CLI 1.12 │ │ (GCC Gateway) │  │
+              │  │ (SQLite) │ │  APIs   │ │ CLI 1.12 │ │ (cloud platform Gateway) │  │
               │  └──────────┘ └─────────┘ └──────────┘ └───────────────┘  │
               │                                                            │
               │  ┌──────────┐ ┌─────────────┐                             │
@@ -51,7 +51,7 @@ src/
 │   ├── tfstate.js             ← tfstate parsing, indexing, comparison
 │   ├── gitlab.js              ← GitLab API: projects, commits, file operations
 │   ├── db.js                  ← LibSQL/SQLite: user_settings CRUD
-│   ├── auth.mjs               ← TechPass OIDC via better-auth (bypassed in dev)
+│   ├── auth.mjs               ← OAuth OIDC via better-auth (bypassed in dev)
 │   ├── crypto.js              ← AES-256-GCM encrypt/decrypt for stored credentials
 │   ├── utils.js               ← slugify(), parseArn()
 │   └── resource-map.json      ← 657 AWS→Terraform type mappings
@@ -130,8 +130,8 @@ src/
  │                                                                 │
  │  Layer 1 — Tag-based ownership:                                 │
  │  ┌──────────────────────────────────────────────────────────┐   │
- │  │ Tags: gcci | gcc:team=gcci | gcc_team=gcci | team=gcci   │   │
- │  │ → Classified as GCCI-owned platform baseline             │   │
+ │  │ Tags: platform | platform:team | custom ownership   │   │
+ │  │ → Classified as platform-owned platform baseline             │   │
  │  └──────────────────────────────────────────────────────────┘   │
  │                                                                 │
  │  Layer 2 — State comparison (if .tfstate uploaded):             │
@@ -150,7 +150,7 @@ src/
  │  UI presents resources in tabs:                                 │
  │  • Importable — supported types, not managed (checkbox select)  │
  │  • Unsupported — no Terraform mapping (read-only)               │
- │  • GCCI — platform-owned baseline (info-only)                   │
+ │  • platform — platform-owned baseline (info-only)                   │
  │  • Managed — already in Terraform state (read-only)             │
  │                                                                 │
  │  User checks resources → selection basket fills on right side.  │
@@ -322,7 +322,7 @@ src/
            /runs    │          │         │    to Resource Explorer│
                     │          │         │ 2. Deduplicate by ARN │
                     │          │         │ 3. Extract tags       │
-                    │          │         │ 4. Detect GCCI owner  │
+                    │          │         │ 4. Detect platform owner  │
                     │          │         │ 5. Categorize by svc  │
                     │          │         └───────────┬───────────┘
                     │          │                     │
@@ -337,7 +337,7 @@ src/
                     │◄─────────┼─────────────────────┘
                     │          │
                     │  Response:
-                    │  • gcciGroups (tagged by team)
+                    │  • platformGroups (tagged by team)
                     │  • notTaggedCategoryGroups (unmanaged)
                     │  • managedCategoryGroups (in tfstate)
                     │  • staleStateResources (in state, not found)
@@ -354,14 +354,14 @@ src/
                     ┌────────────────┬┴────────────────┐
                     ▼                ▼                  ▼
             ┌─────────────┐  ┌─────────────┐  ┌──────────────────┐
-            │ Has GCCI tag│  │ No GCCI tag │  │  In tfstate?     │
+            │ Has platform tag│  │ No platform tag │  │  In tfstate?     │
             │ (gcc:team,  │  │             │  │  (ARN or type:id │
-            │  gcci, etc) │  │             │  │   match)         │
+            │  platform, etc) │  │             │  │   match)         │
             └──────┬──────┘  └──────┬──────┘  └────────┬─────────┘
                    │                │                   │
                    ▼                ▼                   ▼
          ┌──────────────┐  ┌──────────────┐  ┌──────────────────┐
-         │ gcciGroups   │  │ notTagged    │  │ managedCategory  │
+         │ platformGroups   │  │ notTagged    │  │ managedCategory  │
          │ (platform    │  │ CategoryGrps │  │ Groups           │
          │  baseline)   │  │ (unmanaged)  │  │ (already in IaC) │
          └──────────────┘  └──────────────┘  └──────────────────┘
@@ -476,7 +476,7 @@ POST /api/workspace (SSE)
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│                    Airbase Platform (GCC)                         │
+│                    Docker Platform (cloud platform)                         │
 │                    Instance: f.small                              │
 │                    Handle: terra-yank/terra-yank-demo                       │
 ├─────────────────────────────────────────────────────────────────┤
@@ -503,8 +503,8 @@ POST /api/workspace (SSE)
            │                    │                    │
            ▼                    ▼                    ▼
 ┌─────────────────┐  ┌──────────────────┐  ┌───────────────────┐
-│ AWS APIs        │  │ GitLab Dedicated │  │ GCC AI Gateway    │
-│ • STS           │  │ (sgts.gitlab-    │  │ api.ai.tech.gov.sg│
+│ AWS APIs        │  │ GitLab Dedicated │  │ cloud platform AI Gateway    │
+│ • STS           │  │ (your-gitlab-    │  │ api.your-ai-provider.com│
 │ • IAM           │  │  dedicated.com)  │  │                   │
 │ • Resource      │  │ • Projects API   │  │ bedrock.claude-   │
 │   Explorer 2    │  │ • Repository     │  │ sonnet-4-6        │
@@ -524,7 +524,7 @@ POST /api/workspace (SSE)
 │                                                                 │
 │  Layer 1: Authentication                                        │
 │  ┌───────────────────────────────────────────────────────────┐  │
-│  │ TechPass OIDC → better-auth → session cookie             │  │
+│  │ OAuth OIDC → better-auth → session cookie             │  │
 │  │ (Dev mode: bypassed, hardcoded default-user)              │  │
 │  └───────────────────────────────────────────────────────────┘  │
 │                                                                 │
@@ -537,7 +537,7 @@ POST /api/workspace (SSE)
 │                                                                 │
 │  Layer 3: Transport Security                                    │
 │  ┌───────────────────────────────────────────────────────────┐  │
-│  │ HTTPS everywhere (Airbase terminates TLS)                 │  │
+│  │ HTTPS everywhere (Docker terminates TLS)                 │  │
 │  │ NODE_EXTRA_CA_CERTS for GitLab Dedicated self-signed      │  │
 │  └───────────────────────────────────────────────────────────┘  │
 │                                                                 │
@@ -576,7 +576,7 @@ POST /api/workspace (SSE)
 │  │ │ user_settings (user_id, key, value, updated_at)            │   │  │
 │  │ │   Keys: aws | llm | gitlab | projects                     │   │  │
 │  │ └────────────────────────────────────────────────────────────┘   │  │
-│  │ ⚠️  EPHEMERAL on Airbase — wiped on every deploy!               │  │
+│  │ ⚠️  EPHEMERAL on Docker — wiped on every deploy!               │  │
 │  └──────────────────────────────────────────────────────────────────┘  │
 │                                                                        │
 │  In-Memory (survives requests, NOT restarts):                          │
@@ -597,7 +597,7 @@ POST /api/workspace (SSE)
 │                                                                        │
 │  External (persistent):                                                │
 │  ┌──────────────────────────────────────────────────────────────────┐  │
-│  │ S3: gcci-managed-pipeline-states-826696545629 (tfstate backend)  │  │
+│  │ S3: your-terraform-state-bucket (tfstate backend)  │  │
 │  │ GitLab: committed Terraform files (final output)                 │  │
 │  └──────────────────────────────────────────────────────────────────┘  │
 │                                                                        │
@@ -670,7 +670,7 @@ Cancellation: Client closes SSE → server detects via `res.on('close')` → Abo
 | `ENCRYPTION_KEY` | AES-256 key for credential encryption | (required) |
 | `BETTER_AUTH_SECRET` | Auth session secret | (required) |
 | `BETTER_AUTH_URL` | App base URL | (required) |
-| `TECHPASS_CLIENT_ID` | TechPass OAuth client ID | (required) |
-| `TECHPASS_CLIENT_SECRET` | TechPass OAuth secret | (required) |
-| `ANTHROPIC_BASE_URL` | LLM API endpoint | `https://api.ai.tech.gov.sg/platform/models` |
+| `OAUTH_CLIENT_ID` | OAuth client ID | (required) |
+| `OAUTH_CLIENT_SECRET` | OAuth OAuth secret | (required) |
+| `ANTHROPIC_BASE_URL` | LLM API endpoint | `https://api.your-ai-provider.com/platform/models` |
 | `NODE_EXTRA_CA_CERTS` | CA bundle for GitLab TLS | (optional) |

@@ -463,7 +463,7 @@ async function applyLlmFiles(workspaceDir, newFiles, onProgress) {
 }
 
 async function runSingleRefinement({ workspaceDir, apiKey, baseURL, model, customPrompt, signal, onProgress }) {
-  const resolvedBaseURL = baseURL || process.env.ANTHROPIC_BASE_URL || "https://api.ai.tech.gov.sg/platform/models";
+  const resolvedBaseURL = baseURL || process.env.ANTHROPIC_BASE_URL || "https://api.anthropic.com/v1";
   const client = new Anthropic({ apiKey, baseURL: resolvedBaseURL });
   const modelId = model || "bedrock.claude-sonnet-4-6";
   const send = onProgress || (() => {});
@@ -615,7 +615,7 @@ function extractPlanErrorsForChunk(planOutput, chunkContent) {
 }
 
 async function runAgentLoop({ workspaceDir, apiKey, baseURL, model, maxIterations, tokenBudget, signal, onProgress }) {
-  const resolvedBaseURL = baseURL || process.env.ANTHROPIC_BASE_URL || "https://api.ai.tech.gov.sg/platform/models";
+  const resolvedBaseURL = baseURL || process.env.ANTHROPIC_BASE_URL || "https://api.anthropic.com/v1";
   console.log(`[agent] baseURL=${resolvedBaseURL}, apiKey prefix=${apiKey?.slice(0,8)}, model=${model}`);
   const client = new Anthropic({ apiKey, baseURL: resolvedBaseURL });
   const modelId = model || "bedrock.claude-sonnet-4-6";

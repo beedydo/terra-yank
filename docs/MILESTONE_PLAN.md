@@ -36,7 +36,7 @@ Acceptance criteria:
 
 - User can run a discovery scan.
 - User can see candidate unmanaged resources.
-- User can exclude GCCI or TerraYank-tagged resources.
+- User can exclude platform or TerraYank-tagged resources.
 - User can select a subset of resources.
 - User can export a machine-readable import selection.
 
@@ -101,14 +101,14 @@ Deliverables:
 
 Outcome:
 
-- Show whole-of-government value.
+- Show whole-of-organization value.
 
 Demo script:
 
 1. Scan an AWS account.
 2. Show unmanaged resources.
 3. Upload Terraform state to filter managed resources.
-4. Filter out excluded/GCCI resources.
+4. Filter out excluded/platform resources.
 5. Select resources for import.
 6. Configure LLM (API key, token budget).
 7. Generate Terraform code — show real-time progress.

@@ -4,10 +4,10 @@ Test resources to create manually in the AWS Console (ap-southeast-1) for
 validating the terra-yank discovery-and-import workflow.
 
 **Important:** The app uses AWS Resource Explorer for discovery. Resources are
-discovered by type, not by tags — but tags are used to classify GCCI ownership.
+discovered by type, not by tags — but tags are used to classify platform ownership.
 Use the tags below to validate the classification workflow.
-Do **not** add `gcci`, `gcc:team`, or `Team=gcci` tags — those mark resources
-as GCCI-owned and the app will bucket them separately from the importable set.
+Do **not** add `platform`, `platform:team`, or ownership tags — those mark resources
+as platform-owned and the app will bucket them separately from the importable set.
 
 ---
 

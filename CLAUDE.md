@@ -2,7 +2,7 @@
 
 ## What This Is
 
-i2cv2 (Infrastructure to Code v2) — web app for Singapore Government GCC cloud engineers.
+i2cv2 (Infrastructure to Code v2) — web app for cloud engineers.
 Discovers unmanaged AWS resources, classifies them against Terraform state, and uses Claude AI
 to auto-generate production-ready Terraform code committed to GitLab.
 
@@ -27,7 +27,7 @@ extracted/i2cv2-i2cv2.v1/
   src/server/utils.js           # parseArn, slugify helpers
   src/public/                   # vanilla JS SPA (no framework)
   Dockerfile                    # multi-stage: deps + terraform + node-20
-  airbase.json                  # Airbase deploy config
+  docker.json                  # Docker deploy config
   backend.tf                    # S3 backend for Terraform state
   providers.tf                  # AWS + archive providers
 ```
@@ -35,13 +35,13 @@ extracted/i2cv2-i2cv2.v1/
 ## Key Technical Facts
 
 - **Runtime**: Node.js 20, Express 5.2.1, CommonJS
-- **Auth**: `auth.mjs` referenced in docs but NOT present in extracted zip. Dev mode bypasses auth (`NODE_ENV=development`). No TechPass code in source.
+- **Auth**: `auth.mjs` referenced in docs but NOT present in extracted zip. Dev mode bypasses auth (`NODE_ENV=development`). No OAuth code in source.
 - **DB**: LibSQL SQLite (`i2cv2-auth.db`) — stores sessions + `user_settings` (GitLab token encrypted, per-user settings)
-- **CRITICAL**: DB is ephemeral on Airbase (no persistent volumes). Wiped on every redeploy.
-- **LLM**: Anthropic Claude via GCC AI Gateway (BYOK key via `X-Anthropic-Key` header). Default model: `bedrock.claude-sonnet-4-6`
+- **CRITICAL**: DB is ephemeral on Docker (no persistent volumes). Wiped on every redeploy.
+- **LLM**: Anthropic Claude via AI Gateway (BYOK key via `X-Anthropic-Key` header). Default model: `bedrock.claude-sonnet-4-6`
 - **Terraform**: Bundled in Docker container
-- **Deployed at**: `https://i2cv2-demo.app.tc1.airbase.sg`
-- **Airbase instance**: `f.small`, handle `i2cv2/i2cv2-demo`
+- **Deployed at**: `https://i2cv2-demo.app.tc1.docker.sg`
+- **Docker instance**: `f.small`, handle `i2cv2/i2cv2-demo`
 
 ## AWS Accounts
 
@@ -97,7 +97,7 @@ The SYSTEM_PROMPT in agent.js is **largely redundant**. Pre-processor handles ev
 
 ## Known Issues
 
-- **Ephemeral DB**: SQLite wiped on every Airbase deploy. Need external persistence.
+- **Ephemeral DB**: SQLite wiped on every Docker deploy. Need external persistence.
 - **No auth.mjs**: File referenced in docs but missing from zip. Auth bypassed in dev.
 - **No tests**: `package.json` test script is a no-op.
 - **LLM refinement**: SYSTEM_PROMPT needs redesign (see above).

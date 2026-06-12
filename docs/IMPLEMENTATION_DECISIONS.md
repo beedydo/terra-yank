@@ -9,7 +9,7 @@ AWS access: AWS SDK for JavaScript v3
 LLM access: @anthropic-ai/sdk (BYOK keys)
 Terraform: CLI bundled in container (v1.12.1)
 Storage: In-memory (session-scoped) + browser sessionStorage
-Deployment: Airbase (containerized, gdssingapore/airbase base images)
+Deployment: Docker (containerized, gdssingapore/docker base images)
 ```
 
 Reasoning:
@@ -18,7 +18,7 @@ Reasoning:
 - Easy to call AWS SDK, GitLab APIs, and LLM SDKs from the same backend.
 - Terraform CLI in the container enables `plan -generate-config-out` and validation.
 - BYOK model keys avoid managing API key infrastructure.
-- Airbase provides compliant hosting for GCC.
+- Docker provides compliant hosting for cloud platform.
 
 ## Build Order
 
@@ -107,7 +107,7 @@ SSE chosen because:
 
 - Unidirectional server→client fits the use case (server streams status, client just listens).
 - Native browser `EventSource` API — no library needed on the frontend.
-- Works through HTTP proxies and load balancers (important for Airbase).
+- Works through HTTP proxies and load balancers (important for Docker).
 - Simpler than WebSocket for a single long-running operation.
 - Cancellation via connection close is natural.
 
@@ -124,14 +124,14 @@ Each import run gets a temporary directory under `/tmp/i2c-workspace-<runId>/`. 
 
 Provider initialization is the slowest step (~10-15s for first init, cached after). The workspace uses a local backend — no remote state.
 
-AWS credentials for the Terraform workspace come from the same credentials the user provides for discovery (environment variables injected by Airbase).
+AWS credentials for the Terraform workspace come from the same credentials the user provides for discovery (environment variables injected by Docker).
 
 ## Tagging Rules
 
 ```text
 TerraYankStatus=excluded
 TerraYankManaged=true
-GCCIManaged=true
+platformManaged=true
 Environment=dev|staging|prod
 Application=<app-name>
 Owner=<team>
@@ -144,7 +144,7 @@ For now, do not mutate existing resources. Treat tag mutation as a post-import s
 The demo should prove:
 
 - The tool finds resources engineers did not know were unmanaged.
-- The user can avoid importing GCCI/platform-owned resources.
+- The user can avoid importing platform/platform-owned resources.
 - The selected resources can be converted into production-ready Terraform code automatically.
 - The LLM agent produces a clean `terraform plan` with zero infrastructure changes.
 - The workflow can fit a GitLab MR review process.
